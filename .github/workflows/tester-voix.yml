@@ -3,6 +3,8 @@ name: Tester les voix bambara
 # À lancer une fois à la main (onglet Actions) : génère des échantillons avec chaque moteur et chaque voix.
 on:
   workflow_dispatch:
+  push:
+    paths: ["voice-tests/request.txt"]
 
 permissions:
   contents: write
