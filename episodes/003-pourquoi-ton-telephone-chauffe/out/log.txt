@@ -1,0 +1,19 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 8.0s
+[voix] scène 0 phrase 0: 1.58s audio en 0.5s — I ka telefɔni bɛ kalaya mun na?
+[voix] scène 1 phrase 0: 0.95s audio en 0.4s — A sababu ye tile ye,
+[voix] scène 1 phrase 1: 1.29s audio en 0.4s — sarzi ni baara ɲɔgɔn fɛ,
+[voix] scène 1 phrase 2: 1.07s audio en 0.4s — ani apuli caman.
+[voix] scène 2 phrase 0: 2.24s audio en 0.6s — Ka a bila firigo kɔnɔ: tiɲɛ wa, nkalon wa?
+[voix] scène 2 phrase 1: 1.54s audio en 0.4s — Nkalon! O bɛ a tiɲɛ.
+[voix] scène 3 phrase 0: 0.74s audio en 0.3s — A bɔ tile la,
+[voix] scène 3 phrase 1: 1.57s audio en 0.5s — a bila suma la ka lafiɲɛ.
+[voix] scène 4 phrase 0: 2.23s audio en 0.7s — I ka telefɔni bɛ kalaya wa? A fɔ an ye!
+[voix] durée totale 20.5s avec le moteur vits
+[mix] audio.wav 20.5 s
+[rendu] image 0/615 (0s)
+[rendu] image 300/615 (25s)
+[rendu] image 600/615 (48s)
+[rendu] 003-pourquoi-ton-telephone-chauffe.mp4 prêt en 51s
+[statut] {"episode": "003-pourquoi-ton-telephone-chauffe", "started": "2026-09-27 14:52:07", "voice_s": 12, "engine": "vits", "mix_s": 1, "render_s": 53, "ok": true, "video": "out/003-pourquoi-ton-telephone-chauffe.mp4", "duration": 20.527}
