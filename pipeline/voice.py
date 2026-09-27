@@ -51,18 +51,28 @@ class Vits:
 
 
 class Spark:
+    """Voix Spark MALIBA-AI (10 voix maliennes) via le serveur local lancé par pipeline/spark_server.sh."""
     name = "spark"
 
     def __init__(self, speaker="Seydou"):
-        from maliba_ai.tts.inference import BambaraTTSInference
-        from maliba_ai.config.settings import Speakers
-        self.tts = BambaraTTSInference()
-        self.spk = getattr(Speakers, speaker, None) or getattr(Speakers, "Seydou")
+        import urllib.request
+        self.url = os.environ.get("MALIBA_SERVER")
+        if not self.url:
+            raise RuntimeError("serveur Spark non démarré (MALIBA_SERVER absent)")
+        with urllib.request.urlopen(self.url + "/health", timeout=10) as r:
+            if b'"ok"' not in r.read():
+                raise RuntimeError("serveur Spark pas prêt")
+        self.speaker = speaker
         self.sr = 16000
 
-    def say(self, text):
-        a = self.tts.generate_speech(text=text, speaker_id=self.spk)
-        return np.asarray(a, dtype=np.float32).squeeze()
+    def say(self, text, temperature=0.7):
+        import io, urllib.request
+        body = json.dumps({"text": text, "speaker": self.speaker, "temperature": temperature}).encode()
+        req = urllib.request.Request(self.url + "/tts", data=body, headers={"content-type": "application/json"})
+        with urllib.request.urlopen(req, timeout=600) as r:
+            a, sr = sf.read(io.BytesIO(r.read()), dtype="float32")
+        self.sr = sr
+        return a if a.ndim == 1 else a.mean(1)
 
 
 class SherpaSw:
