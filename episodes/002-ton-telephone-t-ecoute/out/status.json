@@ -1,0 +1,11 @@
+{
+ "episode": "002-ton-telephone-t-ecoute",
+ "started": "2026-09-27 14:24:39",
+ "voice_s": 13,
+ "engine": "vits",
+ "mix_s": 1,
+ "render_s": 49,
+ "ok": true,
+ "video": "out/002-ton-telephone-t-ecoute.mp4",
+ "duration": 19.723
+}

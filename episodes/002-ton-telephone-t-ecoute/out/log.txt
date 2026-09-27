@@ -1,0 +1,18 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 9.1s
+[voix] scène 0 phrase 0: 1.50s audio en 0.5s — I ka telefɔni bɛ i lamɛn wa?
+[voix] scène 1 phrase 0: 1.25s audio en 0.4s — Tiɲɛ wa, nkalon wa?
+[voix] scène 1 phrase 1: 2.16s audio en 0.6s — Nkalon! A tɛ i lamɛn tuma bɛɛ.
+[voix] scène 2 phrase 0: 1.35s audio en 0.4s — Nka a bɛ i taayɔrɔw dɔn,
+[voix] scène 2 phrase 1: 0.64s audio en 0.2s — i ka ɲininiw,
+[voix] scène 2 phrase 2: 0.80s audio en 0.3s — ani i teriw.
+[voix] scène 3 phrase 0: 1.76s audio en 0.6s — I ka telefɔni paramɛtiri lajɛ,
+[voix] scène 3 phrase 1: 1.03s audio en 0.3s — ka i ka mikoro tanga.
+[voix] scène 4 phrase 0: 1.92s audio en 0.5s — I tun b'a dɔn wa? A fɔ an ye!
+[voix] durée totale 19.7s avec le moteur vits
+[mix] audio.wav 19.7 s
+[rendu] image 0/591 (0s)
+[rendu] image 300/591 (25s)
+[rendu] 002-ton-telephone-t-ecoute.mp4 prêt en 48s
+[statut] {"episode": "002-ton-telephone-t-ecoute", "started": "2026-09-27 14:24:39", "voice_s": 13, "engine": "vits", "mix_s": 1, "render_s": 49, "ok": true, "video": "out/002-ton-telephone-t-ecoute.mp4", "duration": 19.723}
