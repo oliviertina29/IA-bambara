@@ -1,32 +1,28 @@
 vits: ÉCHEC
-e "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/quantization/quant_api.py", line 47, in <module>
-    from torchao.prototype.quantization.quant_api import (
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/prototype/quantization/__init__.py", line 2, in <module>
-    from .quant_api import Int8DynamicActivationUIntxWeightConfig, UIntxWeightOnlyConfig
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/prototype/quantization/quant_api.py", line 37, in <module>
-    from torchao.quantization.quantize_.workflows import (
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/quantization/quantize_/workflows/__init__.py", line 4, in <module>
-    from .float8.float8_sparse_2x4_1d_data_1d_metadata_tensor import (
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/quantization/quantize_/workflows/float8/float8_sparse_2x4_1d_data_1d_metadata_tensor.py", line 39, in <module>
-    from .float8_tensor import QuantizeTensorToFloat8Kwargs
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torchao/quantization/quantize_/workflows/float8/float8_tensor.py", line 12, in <module>
-    from torch.nn.functional import ScalingType, scaled_grouped_mm
-ImportError: cannot import name 'ScalingType' from 'torch.nn.functional' (/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/nn/functional.py)
+^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/utils/hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/utils/hub.py", line 511, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/MALIBA-AI/malian-tts.
+401 Client Error. (Request ID: Root=1-6ab91664-2baf0a8f61f5996a47356d9e;7823e594-9bd1-4df7-b967-61da162893d5)
+
+Cannot access gated repo for url https://huggingface.co/MALIBA-AI/malian-tts/resolve/main/models/bambara/config.json.
+Access to model MALIBA-AI/malian-tts is restricted. You must have access to it and be authenticated to access it. Please log in.
 
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
     t = time.time(); s = voice.Spark(spk); load = time.time() - t
                          ^^^^^^^^^^^^^^^^
-  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 57, in __init__
-    from maliba_ai.tts.inference import BambaraTTSInference
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/maliba_ai/tts/inference.py", line 5, in <module>
-    from maliba_ai.models.models import load_tts_model, load_audio_tokenizer
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/maliba_ai/models/models.py", line 2, in <module>
-    from unsloth import FastModel
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/unsloth/__init__.py", line 88, in <module>
-    DEVICE_TYPE : str = get_device_type()
-                        ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/unsloth/__init__.py", line 86, in get_device_type
-    raise NotImplementedError("Unsloth currently only works on NVIDIA GPUs and Intel GPUs.")
-NotImplementedError: Unsloth currently only works on NVIDIA GPUs and Intel GPUs.
+  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 61, in __init__
+    raise RuntimeError("serveur Spark non démarré (MALIBA_SERVER absent)")
+RuntimeError: serveur Spark non démarré (MALIBA_SERVER absent)
