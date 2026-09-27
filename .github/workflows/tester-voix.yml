@@ -28,14 +28,14 @@ jobs:
       - name: Démarrer la voix Spark (MALIBA-AI, CPU)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
-        run: bash pipeline/spark_server.sh
+        run: bash pipeline/spark_server.sh > /tmp/spark_setup.log 2>&1 || (tail -60 /tmp/spark_setup.log; exit 1)
       - name: Générer les échantillons
         run: python pipeline/voice_test.py 2>&1 | tee voice-tests.log
       - name: Enregistrer
         if: always()
         run: |
           mkdir -p voice-tests && cp voice-tests.log voice-tests/log.txt || true
-          tail -c 20000 /tmp/llama.log > voice-tests/llama.log 2>/dev/null || true; tail -c 20000 /tmp/gateway.log > voice-tests/gateway.log 2>/dev/null || true
+          tail -c 20000 /tmp/llama.log > voice-tests/llama.log 2>/dev/null || true; tail -c 20000 /tmp/gateway.log > voice-tests/gateway.log 2>/dev/null || true; tail -c 20000 /tmp/spark_setup.log > voice-tests/spark_setup.log 2>/dev/null || true
           git config user.name "ia-bamanankan-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -f voice-tests && git commit -m "[bot] échantillons de voix [skip ci]" || true

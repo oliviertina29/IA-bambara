@@ -58,7 +58,7 @@ jobs:
       - name: Démarrer la voix Spark (MALIBA-AI, CPU)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
-        run: bash pipeline/spark_server.sh
+        run: bash pipeline/spark_server.sh > /tmp/spark_setup.log 2>&1 || (tail -60 /tmp/spark_setup.log; exit 1)
       - name: Produire
         run: python pipeline/produce.py ${{ steps.ep.outputs.list }} 2>&1 | tee produce.log
 
