@@ -53,6 +53,7 @@ jobs:
         run: |
           pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install -r pipeline/requirements.txt
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python -m playwright install --with-deps chromium
 
       - name: Démarrer la voix Spark (MALIBA-AI, CPU)
