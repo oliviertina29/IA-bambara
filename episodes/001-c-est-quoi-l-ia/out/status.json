@@ -1,0 +1,11 @@
+{
+ "episode": "001-c-est-quoi-l-ia",
+ "started": "2026-09-27 13:48:37",
+ "voice_s": 18,
+ "engine": "vits",
+ "mix_s": 3,
+ "render_s": 115,
+ "ok": false,
+ "error": "ValueError: '/home/runner/work/IA-bambara/IA-bambara/episodes/001-c-est-quoi-l-ia/out/001-c-est-quoi-l-ia.mp4' is not in the subpath of 'episodes/001-c-est-quoi-l-ia' OR one path is relative and the other is absolute.",
+ "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/IA-bambara/IA-bambara/pipeline/produce.py\", line 17, in main\n    status.update(ok=True, video=str(video.relative_to(ep_dir)), duration=tm[\"duration\"])\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/pathlib.py\", line 730, in relative_to\n    raise ValueError(\"{!r} is not in the subpath of {!r}\"\nValueError: '/home/runner/work/IA-bambara/IA-bambara/episodes/001-c-est-quoi-l-ia/out/001-c-est-quoi-l-ia.mp4' is not in the subpath of 'episodes/001-c-est-quoi-l-ia' OR one path is relative and the other is absolute.\n"
+}
