@@ -1,0 +1,29 @@
+{
+  "slug": "002-ton-telephone-t-ecoute",
+  "title": "Ton téléphone t'écoute-t-il ?",
+  "lesson": 2,
+  "tag": "IA · Bamanankan na",
+  "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "I ka telefɔni\nbɛ i lamɛn wa?", "icon": "phone", "badge": "ear", "color": "red"},
+     "bm": ["I ka [telefɔni] bɛ i lamɛn wa?"],
+     "fr": "Ton téléphone t'écoute ?"},
+    {"type": "vrai_faux", "params": {"claim": "Telefɔni bɛ i ka\nkuma bɛɛ lamɛn", "answer": "faux"},
+     "bm": ["Tiɲɛ wa, nkalon wa?", "[Nkalon]! A tɛ i lamɛn tuma bɛɛ."],
+     "fr": "Vrai ou faux ? Faux : il ne t'écoute pas en permanence."},
+    {"type": "cards", "params": {"cards": [
+        {"title": "I taayɔrɔw", "sub": "Tes déplacements", "icon": "pin", "color": "red"},
+        {"title": "I ka ɲininiw", "sub": "Tes recherches", "icon": "search", "color": "teal"},
+        {"title": "I teriw", "sub": "Tes amis", "icon": "people", "color": "orange"}]},
+     "bm": ["Nka a bɛ [i taayɔrɔw] dɔn,", "i ka [ɲininiw],", "ani [i teriw]."],
+     "fr": "Mais il connaît tes déplacements, tes recherches et tes amis."},
+    {"type": "robot_says", "params": {"icon": "mic", "label": "Mikoro"},
+     "bm": ["I ka telefɔni [paramɛtiri] lajɛ,", "ka i ka [mikoro] tanga."],
+     "fr": "Vérifie les réglages de ton téléphone pour protéger ton micro."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I tun b'a dɔn wa?"},
+     "bm": ["I tun b'a dɔn wa? A fɔ an ye!"],
+     "fr": "Tu le savais ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}

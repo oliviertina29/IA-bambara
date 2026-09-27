@@ -1,11 +1,68 @@
 {
-  "_doc": "Timing rules per scene type (seconds). lead = silence before the voice starts, tail = time kept after the voice ends, min = minimum scene length, robot = whether the big robot is on screen (otherwise a small narrator robot appears top-right).",
-  "intro":      {"lead": 1.3, "tail": 1.0, "min": 5.0, "robot": true},
-  "concept":    {"lead": 0.6, "tail": 1.4, "min": 6.0, "robot": false},
-  "learn":      {"lead": 0.7, "tail": 2.4, "min": 8.0, "robot": false},
-  "data":       {"lead": 0.6, "tail": 2.0, "min": 8.0, "robot": true},
-  "cards":      {"lead": 0.5, "tail": 1.8, "min": 7.0, "robot": false},
-  "robot_says": {"lead": 0.5, "tail": 1.2, "min": 4.5, "robot": true},
-  "compare":    {"lead": 0.5, "tail": 1.4, "min": 5.5, "robot": false},
-  "outro":      {"lead": 0.8, "tail": 2.2, "min": 5.5, "robot": true}
+ "_doc": "Timing rules per scene type (seconds). lead = silence before the voice starts, tail = time kept after the voice ends, min = minimum scene length, robot = whether the big robot is on screen (otherwise a small narrator robot appears top-right).",
+ "intro": {
+  "lead": 1.3,
+  "tail": 1.0,
+  "min": 5.0,
+  "robot": true
+ },
+ "concept": {
+  "lead": 0.6,
+  "tail": 1.4,
+  "min": 6.0,
+  "robot": false
+ },
+ "learn": {
+  "lead": 0.7,
+  "tail": 2.4,
+  "min": 8.0,
+  "robot": false
+ },
+ "data": {
+  "lead": 0.6,
+  "tail": 2.0,
+  "min": 8.0,
+  "robot": true
+ },
+ "cards": {
+  "lead": 0.5,
+  "tail": 1.8,
+  "min": 7.0,
+  "robot": false
+ },
+ "robot_says": {
+  "lead": 0.5,
+  "tail": 1.2,
+  "min": 4.5,
+  "robot": true
+ },
+ "compare": {
+  "lead": 0.5,
+  "tail": 1.4,
+  "min": 5.5,
+  "robot": false
+ },
+ "outro": {
+  "lead": 0.8,
+  "tail": 2.2,
+  "min": 5.5,
+  "robot": true
+ },
+ "hook": {
+  "lead": 0.15,
+  "tail": 0.5,
+  "min": 2.8,
+  "robot": false
+ },
+ "vrai_faux": {
+  "lead": 0.3,
+  "tail": 1.2,
+  "min": 5.0,
+  "robot": false
+ },
+ "_pace_fast": {
+  "lead": 0.5,
+  "tail": 0.55,
+  "min": 0.6
+ }
 }

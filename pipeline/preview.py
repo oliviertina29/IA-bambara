@@ -9,10 +9,18 @@ ROOT = Path(__file__).resolve().parent.parent
 TYPES = json.loads((ROOT / "engine" / "scene_types.json").read_text(encoding="utf-8"))
 
 
+def pace_rules(r, ep):
+    """Rythme rapide (episode.pace = "fast") : moins de silences, scènes plus courtes."""
+    if ep.get("pace") != "fast":
+        return r
+    f = TYPES.get("_pace_fast", {})
+    return {**r, **{k: r[k] * f.get(k, 1) for k in ("lead", "tail", "min")}}
+
+
 def fake_timing(ep):
     sc, words, clauses, t = [], [], [], 0.0
     for s in ep["scenes"]:
-        r = TYPES.get(s["type"], TYPES["robot_says"]); lt = r["lead"]; cl = []; wt = []
+        r = pace_rules(TYPES.get(s["type"], TYPES["robot_says"]), ep); lt = r["lead"]; cl = []; wt = []
         for line in s.get("bm", []):
             ws = [w for w in line.replace("[", "").replace("]", "").split() if not re.fullmatch(r"[!?.,:;]+", w)]
             d = 0.4 * len(ws) + 0.2

@@ -128,6 +128,11 @@ const ICON={
  car:`<path d="M-44 10 V-2 L-30 -22 H22 L38 -2 H44 V10Z" fill="#E4572E"/><rect x="-24" y="-18" width="42" height="14" rx="3" fill="#5FF2EE"/><circle cx="-24" cy="12" r="10" fill="#1B1E42"/><circle cx="26" cy="12" r="10" fill="#1B1E42"/>`,
  medicine:`<rect x="-36" y="-14" width="72" height="28" rx="14" fill="#fff" transform="rotate(-35)"/><path d="M0 -14 H36 A14 14 0 0 1 36 14 H0Z" fill="#E4572E" transform="rotate(-35)"/>`,
  mosquito:`<ellipse cx="0" cy="4" rx="8" ry="22" fill="#34302E"/><ellipse cx="-18" cy="-8" rx="18" ry="8" fill="#B9C3D8" opacity=".8"/><ellipse cx="18" cy="-8" rx="18" ry="8" fill="#B9C3D8" opacity=".8"/><path d="M0 -18 V-40" stroke="#34302E" stroke-width="3"/><path d="M-6 16 L-22 34 M6 16 L22 34" stroke="#34302E" stroke-width="3"/>`,
+ mic:`<rect x="-16" y="-42" width="32" height="56" rx="16" fill="#1B1E42"/><path d="M-28 0 A28 28 0 0 0 28 0" stroke="#1B1E42" stroke-width="7" fill="none"/><path d="M0 28 V42 M-16 42 H16" stroke="#1B1E42" stroke-width="7" stroke-linecap="round"/><rect x="-8" y="-30" width="16" height="6" rx="3" fill="#5FF2EE"/><rect x="-8" y="-18" width="16" height="6" rx="3" fill="#5FF2EE"/>`,
+ pin:`<path d="M0 44 C-10 26 -34 6 -34 -12 A34 34 0 0 1 34 -12 C34 6 10 26 0 44Z" fill="#E4572E"/><circle cx="0" cy="-12" r="13" fill="#fff"/>`,
+ search:`<circle cx="-8" cy="-8" r="26" fill="#fff" stroke="#1B1E42" stroke-width="8"/><path d="M12 12 L36 36" stroke="#1B1E42" stroke-width="12" stroke-linecap="round"/>`,
+ ear:`<path d="M-4 -40 C22 -40 32 -20 30 -2 C28 14 14 18 10 30 C6 42 -8 44 -16 34" stroke="#F2B9A0" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M-4 -40 C-24 -40 -32 -24 -30 -10" stroke="#F2B9A0" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M-6 -18 C8 -22 14 -8 4 2" stroke="#C98B72" stroke-width="7" fill="none" stroke-linecap="round"/>`,
+ settings:`<circle r="30" fill="none" stroke="#B9C3D8" stroke-width="16" stroke-dasharray="12 9"/><circle r="24" fill="#B9C3D8"/><circle r="10" fill="#1B1E42"/>`,
  image:`<rect x="-40" y="-30" width="80" height="60" rx="8" fill="#fff" stroke="#1B1E42" stroke-width="4"/><circle cx="-16" cy="-10" r="8" fill="#F2A541"/><path d="M-36 26 L-10 0 L6 14 L18 4 L36 26Z" fill="#2FB36B"/>`
 };
 const ICON_KEYS=Object.keys(ICON);
@@ -380,19 +385,69 @@ LIB.compare={
   T(st.r,810,720+Math.sin(lt*2+1)*8,S(E.outBack(P(lt,st.tR,st.tR+.6))));
  }};
 
+
+/* ---- hook : punchy opening — big question text + big icon with pulsing waves, visible from frame 1 ---- */
+LIB.hook={
+ build(g,p){
+  const lines=String(p.text||'?').split('\n').slice(0,3);const fs=lines.some(l=>l.length>14)?84:100;
+  const flash=add(g,`<circle cx="540" cy="860" r="10" fill="#FFF1D6" opacity="0"/>`);
+  const waves=[];for(let i=0;i<3;i++)for(const side of[-1,1])waves.push({el:add(g,`<path d="M${side*40} -120 Q${side*150} 0 ${side*40} 120" stroke="${i%2?'#F2A541':'#5FF2EE'}" stroke-width="14" fill="none" stroke-linecap="round"/>`),i,side});
+  const big=add(g,`<g><circle r="210" fill="${col(p.color||'red')}" opacity=".2"/><circle r="170" fill="${col(p.color||'red')}"/>${icon(p.icon||'phone',3.1)}
+    ${p.badge?`<g transform="translate(135 -130)"><circle r="62" fill="#FFF1D6"/>${icon(p.badge,1.1)}</g>`:''}</g>`);
+  const words=[];const txt=add(g,'<g></g>');
+  lines.forEach((l,li)=>{const y=470+li*fs*1.12-(lines.length-1)*fs*0.3;
+    const t=add(txt,`<text x="540" y="${y}" text-anchor="middle" font-size="${fs}" fill="${li===lines.length-1?'#F2A541':'#FFF1D6'}" stroke="#1B1E42" stroke-width="10" paint-order="stroke" filter="url(#glowS)">${esc(l)}</text>`);words.push(t)});
+  return{flash,waves,big,words}},
+ render(st,lt,len,t){
+  const shake=lt<0.5?Math.sin(lt*70)*14*(1-lt/0.5):0;
+  T(st.big,540+shake,860+Math.sin(lt*3)*8,S(0.6+0.4*E.outElastic(P(lt,0,0.7))),Math.sin(lt*2.5)*5);
+  st.waves.forEach(w=>{const ph=((lt*1.4+w.i/3)%1);w.el.setAttribute('transform',`translate(${540+w.side*(170+ph*170)} 860) scale(${(0.7+ph*0.6).toFixed(3)})`);w.el.setAttribute('opacity',(lt>0.3?(1-ph)*.9:0).toFixed(2))});
+  st.words.forEach((w,i)=>{const k=E.outBack(P(lt,i*0.12,i*0.12+0.35));w.setAttribute('transform',`translate(540 ${(1-k)*40}) scale(${S(0.75+0.25*k).toFixed(3)}) translate(-540 0)`);w.setAttribute('opacity',Math.min(1,k*1.4).toFixed(2))});
+  const f=P(lt,0,0.35);st.flash.setAttribute('r',(20+f*900).toFixed(0));st.flash.setAttribute('opacity',(f<1?(1-f)*.35:0).toFixed(2));
+ }};
+
+/* ---- vrai_faux : a claim, two big buttons, countdown, then the answer is revealed ---- */
+LIB.vrai_faux={
+ build(g,p,ctx){
+  const claim=String(p.claim||'').split('\n');const lab=Object.assign({vrai:'Tiɲɛ',faux:'Nkalon'},p.labels||{});
+  const card=add(g,`<g><rect x="-440" y="-150" width="880" height="300" rx="50" fill="#FFF1D6" filter="url(#shadow)"/>
+    ${claim.map((l,i)=>`<text x="0" y="${-20+i*64-(claim.length-1)*32+20}" text-anchor="middle" font-size="${claim.some(c=>c.length>18)?46:54}" fill="#1B1E42">${esc(l)}</text>`).join('')}</g>`);
+  const btn=(key,c,ic)=>add(g,`<g><rect x="-190" y="-95" width="380" height="190" rx="46" fill="${c}" filter="url(#shadow)"/>
+    <g transform="translate(-105 0) scale(.95)">${ICON[ic]}</g><text x="50" y="4" text-anchor="middle" font-size="${lab[key].length>6?46:56}" fill="#fff">${esc(lab[key])}</text>
+    <text x="50" y="52" text-anchor="middle" class="pop" font-size="26" fill="rgba(255,255,255,.85)">${key==='vrai'?'VRAI':'FAUX'}</text></g>`);
+  const bv=btn('vrai','#2FB36B','check'),bf=btn('faux','#E4572E','cross');
+  const timer=add(g,`<g><circle r="70" fill="#1B1E42" stroke="#FFF1D6" stroke-width="6"/><circle class="arc" r="70" fill="none" stroke="#F2A541" stroke-width="12" pathLength="1" stroke-dasharray="1 1" transform="rotate(-90)"/><text class="n pop" x="0" y="22" text-anchor="middle" font-size="64" fill="#FFF1D6">3</text></g>`);
+  const stamp=add(g,`<g><rect x="-230" y="-70" width="460" height="140" rx="24" fill="none" stroke="#FFF1D6" stroke-width="10"/><text x="0" y="24" text-anchor="middle" font-size="70" fill="#FFF1D6">${esc(p.answer==='vrai'?lab.vrai:lab.faux)}!</text></g>`);
+  const cls=ctx.clauses;const reveal=cls.length>1?cls[1][0]-0.2:ctx.len*0.55;
+  return{card,bv,bf,timer,arc:timer.querySelector('.arc'),n:timer.querySelector('.n'),stamp,reveal,ans:p.answer==='vrai'?'vrai':'faux'}},
+ render(st,lt,len,t){
+  T(st.card,540,470,S(E.outBack(P(lt,0,0.45))));
+  const r=st.reveal,after=lt>r;const pulse=1+0.04*Math.sin(lt*9);
+  const win=st.ans==='vrai'?st.bv:st.bf,lose=st.ans==='vrai'?st.bf:st.bv;
+  const kb=E.outBack(P(lt,0.25,0.7));
+  T(st.bv,300,820,S(kb*(after&&st.ans==='vrai'?1.18:after?0.85:pulse)),after?0:Math.sin(lt*6)*2);
+  T(st.bf,780,820,S(kb*(after&&st.ans==='faux'?1.18:after?0.85:pulse)),after?0:-Math.sin(lt*6)*2);
+  lose.style.opacity=after?0.3:1;win.style.opacity=1;
+  const cd=P(lt,0.5,r);st.arc.setAttribute('stroke-dashoffset',cd.toFixed(3));st.n.textContent=Math.max(1,3-Math.floor(cd*3));
+  T(st.timer,540,1040,S(E.outBack(P(lt,0.4,0.8))*(after?0:1)));
+  const sk=E.outElastic(P(lt,r,r+0.7));T(st.stamp,st.ans==='vrai'?300:780,1075,S(sk),-6);st.stamp.style.opacity=after?1:0;
+ }};
+
 /* ---- outro : robot waves, confetti, follow button ---- */
 LIB.outro={
  build(g,p){
   const f=add(g,`<g><rect x="-290" y="-52" width="580" height="104" rx="52" fill="#E4572E" filter="url(#shadow)"/>
    <g transform="translate(-225 0)"><circle r="30" fill="#fff"/><path d="M-13 0 H13 M0 -13 V13" stroke="#E4572E" stroke-width="7" stroke-linecap="round"/></g>
    <text x="30" y="16" text-anchor="middle" font-size="44" fill="#fff">${esc(p.cta||'Aw ye an tugu!')}</text></g>`);
+  const ask=p.ask?add(g,`<g><rect x="-380" y="-60" width="760" height="120" rx="60" fill="#FFF1D6" filter="url(#shadow)"/>${icon('chat',.9).replace('<g ','<g transform="translate(-310 0) scale(.9)" ')}<text x="30" y="17" text-anchor="middle" font-size="${p.ask.length>20?38:46}" fill="#1B1E42">${esc(p.ask)}</text></g>`):null;
   const r=rng(21),cols=['#F2A541','#5FF2EE','#E4572E','#FFF1D6','#2FB36B'];const conf=[];
   for(let i=0;i<80;i++)conf.push({el:add(g,`<rect x="-9" y="-5" width="18" height="10" rx="3" fill="${cols[i%5]}"/>`),x:r()*1080,t0:.2+r()*2.2,v:420+r()*380,rot:(r()-.5)*900,sw:20+r()*50,ph:r()*6});
   const hearts=[];for(let i=0;i<7;i++)hearts.push({el:add(g,`<path d="M0 12 C-26 -6 -18 -30 0 -16 C18 -30 26 -6 0 12Z" fill="${i%2?'#E4572E':'#F2A541'}"/>`),t0:1.2+i*.45,dx:(i%2?1:-1)*(40+i*12)});
-  return{f,conf,hearts}},
+  return{f,conf,hearts,ask}},
  render(st,lt,len,t){
   setRobot({t,x:540,y:700+Math.sin(lt*3)*8,s:.9*E.outBack(P(lt,0.1,0.8)),armL:22+Math.sin(lt*3)*5,armR:lt>0.6?-150+Math.sin(lt*10)*24:-14,happy:talking(t)===0,core:.6+.3*Math.sin(lt*5),halo:.6,headR:Math.sin(lt*5)*5});
   T(st.f,540,1085,S(E.outElastic(P(lt,1.0,2.0)))*(1+.05*Math.sin(lt*6)));
+  if(st.ask)T(st.ask,540,330,S(E.outBack(P(lt,0.3,0.8))),Math.sin(lt*3)*2);
   st.conf.forEach(c=>{const d=lt-c.t0;show(c.el,d>0);if(d<=0)return;T(c.el,c.x+Math.sin(d*3+c.ph)*c.sw,-40+d*c.v,1,c.rot*d,Math.cos(d*6+c.ph))});
   st.hearts.forEach(h=>{const d=lt-h.t0;const k=P(d,0,1.6);show(h.el,k>0&&k<1);if(k<=0||k>=1)return;
     T(h.el,760+h.dx*k+Math.sin(d*5)*14,1060-k*380,.8+k*.8,Math.sin(d*4)*14);h.el.style.opacity=1-k});

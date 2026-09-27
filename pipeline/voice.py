@@ -17,6 +17,14 @@ TYPES = json.loads((ROOT / "engine" / "scene_types.json").read_text(encoding="ut
 DEFAULT_SAY = {"IA": "i a", "AI": "e ai"}
 
 
+def pace_rules(r, ep):
+    """Rythme rapide (episode.pace = "fast") : moins de silences, scènes plus courtes."""
+    if ep.get("pace") != "fast":
+        return r
+    f = TYPES.get("_pace_fast", {})
+    return {**r, **{k: r[k] * f.get(k, 1) for k in ("lead", "tail", "min")}}
+
+
 def log(*a):
     print("[voix]", *a, flush=True)
 
@@ -139,7 +147,7 @@ def run(ep_dir):
     sc, words_all, clauses_all, voice = [], [], [], []
     t = 0.0
     for i, scene in enumerate(ep["scenes"]):
-        rules = TYPES.get(scene["type"], TYPES["robot_says"])
+        rules = pace_rules(TYPES.get(scene["type"], TYPES["robot_says"]), ep)
         lt = rules["lead"]
         cl = []
         lines = [c if isinstance(c, str) else c["text"] for c in scene.get("bm", [])]
