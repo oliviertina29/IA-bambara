@@ -1,0 +1,29 @@
+{
+  "slug": "003-pourquoi-ton-telephone-chauffe",
+  "title": "Pourquoi ton téléphone chauffe ?",
+  "lesson": 3,
+  "tag": "IA · Bamanankan na",
+  "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "I ka telefɔni\nbɛ kalaya mun na?", "icon": "phone", "badge": "sun", "color": "red"},
+     "bm": ["I ka [telefɔni] bɛ kalaya mun na?"],
+     "fr": "Pourquoi ton téléphone chauffe ?"},
+    {"type": "cards", "params": {"cards": [
+        {"title": "Tile", "sub": "Le soleil", "icon": "sun", "color": "red"},
+        {"title": "Sarzi + baara", "sub": "L'utiliser en charge", "icon": "bolt", "color": "blue"},
+        {"title": "Apuli caman", "sub": "Trop d'applis ouvertes", "icon": "settings", "color": "teal"}]},
+     "bm": ["A sababu ye [tile] ye,", "[sarzi] ni baara ɲɔgɔn fɛ,", "ani [apuli caman]."],
+     "fr": "À cause du soleil, de l'utilisation pendant la charge et des applis ouvertes."},
+    {"type": "vrai_faux", "params": {"claim": "Ka a bila firigo kɔnɔ\nka a nɛnɛ", "answer": "faux"},
+     "bm": ["Ka a bila firigo kɔnɔ: tiɲɛ wa, nkalon wa?", "[Nkalon]! O bɛ a tiɲɛ."],
+     "fr": "Le mettre au frigo pour le refroidir ? Faux : ça l'abîme."},
+    {"type": "robot_says", "params": {"icon": "tree", "label": "Suma la"},
+     "bm": ["A bɔ tile la,", "a bila [suma] la ka lafiɲɛ."],
+     "fr": "Sors-le du soleil, laisse-le se reposer à l'ombre."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I ta bɛ kalaya wa?"},
+     "bm": ["I ka telefɔni bɛ kalaya wa? A fɔ an ye!"],
+     "fr": "Ton téléphone chauffe aussi ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
