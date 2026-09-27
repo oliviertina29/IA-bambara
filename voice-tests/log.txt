@@ -1,25 +1,7 @@
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
-vits: ÉCHEC
-^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/configuration_utils.py", line 747, in get_config_dict
-    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/configuration_utils.py", line 802, in _get_config_dict
-    resolved_config_file = cached_file(
-                           ^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/utils/hub.py", line 294, in cached_file
-    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/transformers/utils/hub.py", line 511, in cached_files
-    raise OSError(
-OSError: You are trying to access a gated repo.
-Make sure to have access to it at https://huggingface.co/MALIBA-AI/malian-tts.
-401 Client Error. (Request ID: Root=1-6ab91664-2baf0a8f61f5996a47356d9e;7823e594-9bd1-4df7-b967-61da162893d5)
-
-Cannot access gated repo for url https://huggingface.co/MALIBA-AI/malian-tts/resolve/main/models/bambara/config.json.
-Access to model MALIBA-AI/malian-tts is restricted. You must have access to it and be authenticated to access it. Please log in.
-
+Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 367/762 [00:00<00:00, 3668.74it/s]Loading weights:  96%|█████████▋| 734/762 [00:00<00:00, 3526.45it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 3568.42it/s]
+vits: chargement 9s, génération 1.8s pour 5.2s d'audio
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
