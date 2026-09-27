@@ -25,7 +25,7 @@ Sauf s'il a dit « valide automatiquement », montrer avec AskUserQuestion : le 
 
 ## 3. Production (GitHub Actions)
 1. Supprimer `episodes/<slug>/out` s'il existe, commit `Épisode NNN : <titre>` sur `main`, push. Le workflow « Produire la vidéo » démarre seul.
-2. Attendre : toutes les 60 s, `git pull` et vérifier `episodes/<slug>/out/status.json` (boucle Bash avec timeout ≤ 10 min, répétée ; maximum ~60 min).
+2. Attendre : suivre la course GitHub Actions (API publique), puis `git pull` et vérifier `episodes/<slug>/out/status.json` (boucle Bash avec timeout ≤ 10 min, répétée ; maximum ~60 min).
 3. `status.ok = true` → la vidéo est `episodes/<slug>/out/<slug>.mp4`.
    `status.ok = false` → lire `error`, `trace` et `out/log.txt`, corriger (épisode ou pipeline), re-push.
    Rien après 60 min → dire à Olivier de vérifier l'onglet Actions (secret `HF_TOKEN`, quota).
@@ -38,3 +38,5 @@ Envoyer le MP4 avec SendUserFile. Réponse courte : titre, durée, voix utilisé
 - Le bambara doit sonner parlé, pas traduit mot à mot. En cas de doute, demander à Olivier.
 - Si un visuel manque vraiment, ajouter une icône ou un type de scène dans `engine/index.html`, le documenter dans `docs/GUIDE.md`, et le tester avec `preview.py`.
 - Mon environnement ne joint pas Hugging Face : la voix se fait **uniquement** sur GitHub Actions.
+- Voix par défaut : `"voice": {"engine": "vits", "lang": "bambara"}` (MALIBA-AI/malian-tts, seul modèle activé). La voix Spark (10 voix) ne s'active que si la variable GitHub `USE_SPARK=true` existe et qu'Olivier a accepté MALIBA-AI/bambara-tts.
+- La production prend ~4 min ; suivre la course via `https://api.github.com/repos/oliviertina29/IA-bambara/actions/runs?per_page=3` (champ head_sha du commit poussé).
