@@ -1,15 +1,15 @@
 ---
 name: video-bambara
-description: Produire une vidéo TikTok éducative en bambara (tech, IA, science) de bout en bout avec l'équipe d'agents et le dépôt oliviertina29/ia-bamanankan. Utiliser quand Olivier demande une vidéo en bambara ou tape /video-bambara <sujet>.
+description: Produire une vidéo TikTok éducative en bambara (tech, IA, science) de bout en bout avec l'équipe d'agents et le dépôt oliviertina29/IA-bambara. Utiliser quand Olivier demande une vidéo en bambara ou tape /video-bambara <sujet>.
 ---
 
 # /video-bambara <sujet>
 
 Projet éducatif d'Olivier : expliquer la technologie et l'IA **en bambara parlé** à des personnes qui ne lisent pas forcément.
-Le dépôt `oliviertina29/ia-bamanankan` contient le moteur d'animation, le pipeline et `docs/GUIDE.md` (catalogue des scènes, format JSON). **Tout se fait gratuitement** : Claude (abonnement) pour le texte, GitHub Actions pour la voix et le rendu.
+Le dépôt `oliviertina29/IA-bambara` contient le moteur d'animation, le pipeline et `docs/GUIDE.md` (catalogue des scènes, format JSON). **Tout se fait gratuitement** : Claude (abonnement) pour le texte, GitHub Actions pour la voix et le rendu.
 
 ## 0. Préparer (silencieux)
-1. `add_repo` owner `oliviertina29`, repo `ia-bamanankan`, access `push`, puis clone. Lire `docs/GUIDE.md` en entier.
+1. `add_repo` owner `oliviertina29`, repo `IA-bambara`, access `push`, puis clone. Lire `docs/GUIDE.md` en entier.
 2. Numéro d'épisode = dernier dossier `episodes/NNN-*` + 1. Slug = `NNN-mots-cles-du-sujet` (minuscules, tirets, sans accents).
 3. Créer une liste de tâches : Recherche → Script → Bambara → Réalisation → Contrôle → Validation → Production → Livraison.
 
