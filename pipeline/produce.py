@@ -14,7 +14,7 @@ def main(ep_dir):
         t = time.time(); tm = voice.run(ep_dir); status["voice_s"] = round(time.time() - t); status["engine"] = tm["engine"]
         t = time.time(); mix.run(ep_dir); status["mix_s"] = round(time.time() - t)
         t = time.time(); video = render.run(ep_dir); status["render_s"] = round(time.time() - t)
-        status.update(ok=True, video=str(video.relative_to(ep_dir)), duration=tm["duration"])
+        status.update(ok=True, video="out/" + video.name, duration=tm["duration"])
     except Exception as e:  # noqa
         status.update(ok=False, error=f"{type(e).__name__}: {e}", trace=traceback.format_exc()[-3000:])
         print(status["trace"], flush=True)
