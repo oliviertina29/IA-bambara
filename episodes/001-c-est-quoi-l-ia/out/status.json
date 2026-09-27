@@ -1,0 +1,10 @@
+{
+ "episode": "001-c-est-quoi-l-ia",
+ "started": "2026-09-27 13:45:41",
+ "voice_s": 17,
+ "engine": "vits",
+ "mix_s": 3,
+ "ok": false,
+ "error": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'",
+ "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/IA-bambara/IA-bambara/pipeline/produce.py\", line 16, in main\n    t = time.time(); video = render.run(ep_dir); status[\"render_s\"] = round(time.time() - t)\n                             ^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/IA-bambara/IA-bambara/pipeline/render.py\", line 37, in run\n    ff = subprocess.Popen([\"ffmpeg\", \"-y\", \"-loglevel\", \"error\", \"-f\", \"image2pipe\", \"-framerate\", str(FPS), \"-i\", \"-\",\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/subprocess.py\", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'\n"
+}

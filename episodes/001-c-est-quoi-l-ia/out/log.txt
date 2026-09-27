@@ -1,0 +1,34 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 9.1s
+[voix] scène 0 phrase 0: 1.24s audio en 0.6s — I ye i a tɔgɔ mɛn wa?
+[voix] scène 0 phrase 1: 0.83s audio en 0.4s — A kɔrɔ ye mun ye?
+[voix] scène 1 phrase 0: 1.40s audio en 0.5s — i a ye hakili dilannen ye:
+[voix] scène 1 phrase 1: 1.64s audio en 0.6s — ordinatɛri ka hakili,
+[voix] scène 1 phrase 2: 1.05s audio en 0.5s — mɔgɔw ye min dilan.
+[voix] scène 2 phrase 0: 1.15s audio en 0.5s — Denmisɛn bɛ misi dɔn,
+[voix] scène 2 phrase 1: 1.73s audio en 0.7s — bawo a ye misi caman ye.
+[voix] scène 3 phrase 0: 1.59s audio en 0.6s — i a fana bɛ o cogo kelen kɛ:
+[voix] scène 3 phrase 1: 1.60s audio en 0.6s — a bɛ ja miliyɔn caman lajɛ,
+[voix] scène 3 phrase 2: 0.37s audio en 0.2s — ka kalan.
+[voix] scène 4 phrase 0: 1.29s audio en 0.5s — A bɛ se ka kan bayɛlɛma,
+[voix] scène 4 phrase 1: 0.98s audio en 0.4s — ka ɲininkaliw jaabi,
+[voix] scène 4 phrase 2: 0.91s audio en 0.4s — ka sɛnɛkɛlaw dɛmɛ.
+[voix] scène 5 phrase 0: 1.42s audio en 0.6s — An ka i a kalan ɲɔgɔn fɛ!
+[voix] scène 5 phrase 1: 0.71s audio en 0.3s — Aw ye an tugu.
+[voix] durée totale 40.8s avec le moteur vits
+[mix] audio.wav 40.8 s
+Traceback (most recent call last):
+  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/produce.py", line 16, in main
+    t = time.time(); video = render.run(ep_dir); status["render_s"] = round(time.time() - t)
+                             ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/render.py", line 37, in run
+    ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(FPS), "-i", "-",
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+
+[statut] {"episode": "001-c-est-quoi-l-ia", "started": "2026-09-27 13:45:41", "voice_s": 17, "engine": "vits", "mix_s": 3, "ok": false, "error": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"}
