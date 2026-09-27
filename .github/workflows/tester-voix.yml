@@ -1,0 +1,36 @@
+name: Tester les voix bambara
+
+# À lancer une fois à la main (onglet Actions) : génère des échantillons avec chaque moteur et chaque voix.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/huggingface, key: hf-models-v1 }
+      - name: Installer
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r pipeline/requirements.txt
+          pip install maliba-ai || echo "::warning::maliba-ai non installé"
+      - name: Générer les échantillons
+        run: python pipeline/voice_test.py 2>&1 | tee voice-tests.log
+      - name: Enregistrer
+        if: always()
+        run: |
+          mkdir -p voice-tests && cp voice-tests.log voice-tests/log.txt || true
+          git config user.name "ia-bamanankan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f voice-tests && git commit -m "[bot] échantillons de voix [skip ci]" || true
+          git pull --rebase && git push

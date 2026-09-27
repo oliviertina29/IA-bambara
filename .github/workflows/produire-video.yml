@@ -1,0 +1,70 @@
+name: Produire la vidéo
+
+# Se lance tout seul quand un épisode est ajouté/modifié, ou à la main (onglet Actions).
+on:
+  push:
+    paths: ["episodes/*/episode.json"]
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Dossier de l'épisode (ex. 001-c-est-quoi-l-ia). Vide = le dernier modifié."
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produire-video
+  cancel-in-progress: false
+
+jobs:
+  produire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_HUB_DISABLE_PROGRESS_BARS: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+
+      - name: Trouver les épisodes à produire
+        id: ep
+        run: |
+          if [ -n "${{ github.event.inputs.episode }}" ]; then
+            EPS="episodes/${{ github.event.inputs.episode }}"
+          else
+            EPS=$(git diff --name-only HEAD~1 HEAD -- 'episodes/*/episode.json' | xargs -r -n1 dirname | sort -u | tr '\n' ' ')
+            [ -z "$EPS" ] && EPS=$(ls -td episodes/*/ | head -1)
+          fi
+          echo "list=$EPS" >> "$GITHUB_OUTPUT"
+          echo "Épisodes : $EPS"
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+
+      - name: Cache des modèles Hugging Face
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-models-v1
+
+      - name: Installer
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r pipeline/requirements.txt
+          pip install maliba-ai || echo "::warning::maliba-ai (voix Spark) non installé, repli sur VITS"
+          python -m playwright install --with-deps chromium
+
+      - name: Produire
+        run: python pipeline/produce.py ${{ steps.ep.outputs.list }} 2>&1 | tee produce.log
+
+      - name: Enregistrer le résultat dans le dépôt
+        if: always()
+        run: |
+          for d in ${{ steps.ep.outputs.list }}; do mkdir -p $d/out; cp produce.log $d/out/log.txt 2>/dev/null || true; rm -f $d/out/audio.wav; done
+          git config user.name "ia-bamanankan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f episodes/*/out || true
+          git commit -m "[bot] vidéo produite : ${{ steps.ep.outputs.list }} [skip ci]" || echo "rien à enregistrer"
+          git pull --rebase && git push

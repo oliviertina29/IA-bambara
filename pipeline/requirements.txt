@@ -1,0 +1,6 @@
+numpy
+soundfile
+playwright
+transformers>=4.40
+sentencepiece
+huggingface_hub

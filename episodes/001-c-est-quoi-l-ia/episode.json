@@ -1,0 +1,32 @@
+{
+  "slug": "001-c-est-quoi-l-ia",
+  "title": "C'est quoi l'IA ?",
+  "lesson": 1,
+  "tag": "IA · Bamanankan na",
+  "voice": {"engine": "auto", "speaker": "Seydou"},
+  "pronounce": {"IA": "i a"},
+  "music_volume": 0.4,
+  "scenes": [
+    {"type": "intro", "params": {"title": "IA"},
+     "bm": ["I ye [IA] tɔgɔ mɛn wa?", "A kɔrɔ ye mun ye?"],
+     "fr": "Tu connais l'IA ? Qu'est-ce que ça veut dire ?"},
+    {"type": "concept", "params": {"icon": "brain", "people": true},
+     "bm": ["[IA] ye [hakili dilannen] ye:", "ordinatɛri ka hakili,", "mɔgɔw ye min dilan."],
+     "fr": "L'IA : une intelligence d'ordinateur, créée par l'humain."},
+    {"type": "learn", "params": {"animal": "cow", "word": "misi", "count": 4},
+     "bm": ["Denmisɛn bɛ misi dɔn,", "bawo a ye [misi caman] ye."],
+     "fr": "Un enfant reconnaît une vache parce qu'il en a vu beaucoup."},
+    {"type": "data", "params": {"to": 1000000, "label": "ja (images)"},
+     "bm": ["[IA] fana bɛ o cogo kelen kɛ:", "a bɛ [ja miliyɔn caman] lajɛ,", "ka kalan."],
+     "fr": "L'IA fait pareil : elle regarde des millions d'images pour apprendre."},
+    {"type": "cards", "params": {"cards": [
+        {"title": "Kan bayɛlɛma", "sub": "Traduire", "icon": "phone", "color": "teal"},
+        {"title": "Ɲininkaliw jaabi", "sub": "Répondre aux questions", "icon": "chat", "color": "red"},
+        {"title": "Sɛnɛkɛlaw dɛmɛ", "sub": "Aider les cultivateurs", "icon": "farmer", "color": "green"}]},
+     "bm": ["A bɛ se ka [kan bayɛlɛma],", "ka [ɲininkaliw jaabi],", "ka [sɛnɛkɛlaw dɛmɛ]."],
+     "fr": "Elle traduit, répond aux questions et aide les cultivateurs."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!"},
+     "bm": ["An ka [IA] kalan [ɲɔgɔn fɛ]!", "Aw ye an tugu."],
+     "fr": "Apprenons l'IA ensemble ! Abonne-toi."}
+  ]
+}
