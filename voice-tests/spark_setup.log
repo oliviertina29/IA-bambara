@@ -1,0 +1,8 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Downloading BiCodec (decode-only) assets ...
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  67%|██████▋   | 2/3 [00:00<00:00, 19.71it/s]Fetching 3 files: 100%|██████████| 3/3 [00:04<00:00,  1.54s/it]
+BiCodec ready under: Spark-TTS-0.5B
+Downloading GGUF bambara-tts-Q8_0.gguf from MALIBA-AI/bambara-tts-gguf ...
+GGUF ready: /tmp/mb/models/bambara-tts-Q8_0.gguf
+no assets match the file pattern

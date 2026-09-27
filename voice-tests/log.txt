@@ -1,7 +1,7 @@
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
-Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 367/762 [00:00<00:00, 3668.74it/s]Loading weights:  96%|█████████▋| 734/762 [00:00<00:00, 3526.45it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 3568.42it/s]
-vits: chargement 9s, génération 1.8s pour 5.2s d'audio
+Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 372/762 [00:00<00:00, 3706.80it/s]Loading weights:  98%|█████████▊| 743/762 [00:00<00:00, 3583.21it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 3610.38it/s]
+vits: chargement 7s, génération 1.8s pour 5.2s d'audio
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
