@@ -1,0 +1,11 @@
+{
+ "episode": "007-si-internet-s-arretait",
+ "started": "2026-09-29 22:29:10",
+ "voice_s": 4,
+ "engine": "vits",
+ "mix_s": 2,
+ "render_s": 42,
+ "ok": true,
+ "video": "out/007-si-internet-s-arretait.mp4",
+ "duration": 20.264
+}
