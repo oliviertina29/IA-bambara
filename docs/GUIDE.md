@@ -73,3 +73,6 @@ puis on le documente ici.
 python pipeline/preview.py episodes/<slug>   # images de contrôle sans voix
 python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin de Hugging Face)
 ```
+
+## Vocabulaire (validé par Olivier)
+- Dire **forfɛ** (forfait) et jamais « mega » : les gens ne comprennent pas « mega ».
