@@ -1,0 +1,11 @@
+{
+ "episode": "006-pourquoi-tes-megas-finissent",
+ "started": "2026-09-29 22:59:46",
+ "voice_s": 14,
+ "engine": "vits",
+ "mix_s": 2,
+ "render_s": 68,
+ "ok": true,
+ "video": "out/006-pourquoi-tes-megas-finissent.mp4",
+ "duration": 22.558
+}
