@@ -1,0 +1,19 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 7.2s
+[voix] scène 0 phrase 0: 1.85s audio en 0.7s — I ka forfɛ bɛ ban joona mun na?
+[voix] scène 1 phrase 0: 1.56s audio en 0.7s — Widewow bɛ u yɛrɛ daminɛ,
+[voix] scène 1 phrase 1: 1.56s audio en 0.7s — watsapu bɛ ja caman jigin,
+[voix] scène 1 phrase 2: 1.36s audio en 0.5s — apuliw bɛ u yɛrɛ kura kɛ.
+[voix] scène 2 phrase 0: 2.44s audio en 0.9s — tikitɔki bɛ forfɛ caman dun: tiɲɛ wa?
+[voix] scène 2 phrase 1: 1.93s audio en 0.8s — Tiɲɛ! Widewo bɛɛ bɛ forfɛ dun.
+[voix] scène 3 phrase 0: 1.76s audio en 0.8s — I ka watsapu paramɛtiri lajɛ,
+[voix] scène 3 phrase 1: 1.42s audio en 0.5s — ka ja jigin yɛrɛma bɔ a la.
+[voix] scène 4 phrase 0: 2.14s audio en 0.8s — I ka forfɛ bɛ mɛn wa? A fɔ an ye!
+[voix] durée totale 23.3s avec le moteur vits
+[mix] audio.wav 23.3 s
+[rendu] image 0/700 (0s)
+[rendu] image 300/700 (30s)
+[rendu] image 600/700 (57s)
+[rendu] 006-pourquoi-tes-megas-finissent.mp4 prêt en 68s
+[statut] {"episode": "006-pourquoi-tes-megas-finissent", "started": "2026-09-29 23:12:36", "voice_s": 14, "engine": "vits", "mix_s": 2, "render_s": 69, "ok": true, "video": "out/006-pourquoi-tes-megas-finissent.mp4", "duration": 23.345}
