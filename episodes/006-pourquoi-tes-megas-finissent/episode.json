@@ -1,0 +1,28 @@
+{
+  "slug": "006-pourquoi-tes-megas-finissent",
+  "title": "Pourquoi tes mégas finissent si vite ?",
+  "lesson": 6, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "pronounce": {"WhatsApp": "watsapu", "TikTok": "tikitɔki"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "I ka megaw bɛ ban\njoona mun na?", "icon": "phone", "badge": "wifi", "color": "orange"},
+     "bm": ["I ka [megaw] bɛ ban joona mun na?"],
+     "fr": "Pourquoi tes mégas finissent si vite ?"},
+    {"type": "cards", "params": {"cards": [
+        {"title": "Widewow", "sub": "Les vidéos qui se lancent seules", "icon": "camera", "color": "red"},
+        {"title": "WhatsApp jaw", "sub": "Photos et vidéos téléchargées", "icon": "image", "color": "green"},
+        {"title": "Apuli kuraw", "sub": "Les mises à jour", "icon": "settings", "color": "teal"}]},
+     "bm": ["[Widewow] bɛ u yɛrɛ daminɛ,", "[WhatsApp] bɛ ja caman jigin,", "[apuliw] bɛ u yɛrɛ kura kɛ."],
+     "fr": "Les vidéos se lancent seules, WhatsApp télécharge plein de médias, les applis se mettent à jour."},
+    {"type": "vrai_faux", "params": {"claim": "TikTok bɛ mega\ncaman dun", "answer": "vrai"},
+     "bm": ["TikTok bɛ mega caman dun: tiɲɛ wa?", "[Tiɲɛ]! Widewo bɛɛ bɛ mega dun."],
+     "fr": "TikTok mange beaucoup de mégas ? Vrai : toutes les vidéos en mangent."},
+    {"type": "robot_says", "params": {"icon": "settings", "label": "Paramɛtiri"},
+     "bm": ["I ka WhatsApp paramɛtiri lajɛ,", "ka [ja jigin yɛrɛma] bɔ a la."],
+     "fr": "Dans les réglages WhatsApp, désactive le téléchargement automatique des médias."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I ka megaw bɛ mɛn wa?"},
+     "bm": ["I ka megaw bɛ mɛn wa? A fɔ an ye!"],
+     "fr": "Tes mégas durent longtemps ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
