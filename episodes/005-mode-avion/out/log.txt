@@ -1,0 +1,32 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 12.3s
+[voix] scène 0 phrase 0: 2.16s audio en 0.6s — Jɔn bɛ se ka i ka watsapu cikanw kalan?
+[voix] scène 1 phrase 0: 2.43s audio en 0.7s — watsapu yɛrɛ bɛ u kalan: tiɲɛ wa, nkalon wa?
+[voix] scène 1 phrase 1: 1.70s audio en 0.5s — Nkalon! A tɛ se ka u kalan.
+[voix] scène 2 phrase 0: 0.95s audio en 0.4s — Nka farati bɛ yen:
+[voix] scène 2 phrase 1: 1.40s audio en 0.4s — ni mɔgɔ ye i ka kode sɔrɔ,
+[voix] scène 2 phrase 2: 1.50s audio en 0.4s — walima ka i ka telefɔni ta.
+[voix] scène 3 phrase 0: 1.45s audio en 0.4s — I ka kode kana di mɔgɔ si ma!
+[voix] scène 4 phrase 0: 2.17s audio en 0.6s — Nin ci i teriw ma, u ka tanga!
+[voix] durée totale 20.9s avec le moteur vits
+[mix] audio.wav 20.9 s
+[rendu] image 0/627 (0s)
+[rendu] image 300/627 (24s)
+[rendu] image 600/627 (47s)
+[rendu] 004-qui-lit-tes-messages-whatsapp.mp4 prêt en 50s
+[statut] {"episode": "004-qui-lit-tes-messages-whatsapp", "started": "2026-09-29 22:03:33", "voice_s": 16, "engine": "vits", "mix_s": 1, "render_s": 51, "ok": true, "video": "out/004-qui-lit-tes-messages-whatsapp.mp4", "duration": 20.925}
+[voix] moteur 'vits' chargé en 0.6s
+[voix] scène 0 phrase 0: 2.08s audio en 0.6s — I ka telefɔni bɛ se ka pankurun bin wa?
+[voix] scène 1 phrase 0: 1.07s audio en 0.3s — Tiɲɛ wa, nkalon wa?
+[voix] scène 1 phrase 1: 1.73s audio en 0.5s — Nkalon! A tɛ pankurun bin.
+[voix] scène 2 phrase 0: 1.64s audio en 0.5s — Nka a bɛ se ka pilotiw tɔɔrɔ
+[voix] scène 2 phrase 1: 0.79s audio en 0.3s — u ka arajo la.
+[voix] scène 3 phrase 0: 1.75s audio en 0.5s — O de kosɔn, modu awiyɔn bila!
+[voix] scène 4 phrase 0: 1.96s audio en 0.5s — I tun b'a dɔn wa? A fɔ an ye!
+[voix] durée totale 17.4s avec le moteur vits
+[mix] audio.wav 17.4 s
+[rendu] image 0/522 (0s)
+[rendu] image 300/522 (22s)
+[rendu] 005-mode-avion.mp4 prêt en 40s
+[statut] {"episode": "005-mode-avion", "started": "2026-09-29 22:04:41", "voice_s": 4, "engine": "vits", "mix_s": 1, "render_s": 41, "ok": true, "video": "out/005-mode-avion.mp4", "duration": 17.413}

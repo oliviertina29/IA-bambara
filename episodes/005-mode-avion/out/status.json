@@ -1,0 +1,11 @@
+{
+ "episode": "005-mode-avion",
+ "started": "2026-09-29 22:04:41",
+ "voice_s": 4,
+ "engine": "vits",
+ "mix_s": 1,
+ "render_s": 41,
+ "ok": true,
+ "video": "out/005-mode-avion.mp4",
+ "duration": 17.413
+}
