@@ -1,0 +1,28 @@
+{
+  "slug": "007-si-internet-s-arretait",
+  "title": "Et si Internet s'arrêtait un jour ?",
+  "lesson": 7, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "pronounce": {"WhatsApp": "watsapu", "TikTok": "tikitɔki"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Ni internɛti tigɛra\ntile kelen?", "icon": "wifi", "badge": "cross", "color": "red"},
+     "bm": ["Ni [internɛti] tigɛra tile kelen, mun bɛ kɛ?"],
+     "fr": "Et si Internet s'arrêtait un jour ?"},
+    {"type": "cards", "params": {"cards": [
+        {"title": "WhatsApp tɛ", "sub": "Plus de WhatsApp", "icon": "chat", "color": "green"},
+        {"title": "Wari tɛ ci", "sub": "Plus de transfert d'argent", "icon": "money", "color": "orange"},
+        {"title": "TikTok tɛ", "sub": "Plus de TikTok !", "icon": "phone", "color": "red"}]},
+     "bm": ["[WhatsApp] tɛ baara kɛ,", "[wari] tɛ se ka ci,", "[TikTok] fana tɛ!"],
+     "fr": "Plus de WhatsApp, plus de transfert d'argent, et plus de TikTok !"},
+    {"type": "vrai_faux", "params": {"claim": "Internɛti bɛ na\nkɔgɔji jukɔrɔ", "answer": "vrai"},
+     "bm": ["Internɛti bɛ na [kɔgɔji] jukɔrɔ: tiɲɛ wa?", "[Tiɲɛ]! Juru janw bɛ kɔgɔji jukɔrɔ."],
+     "fr": "Internet arrive sous la mer ? Vrai : de longs câbles passent sous l'océan."},
+    {"type": "robot_says", "params": {"icon": "globe", "label": "Juru janw"},
+     "bm": ["O [juru] ninnu de b'a lase an ma."],
+     "fr": "Ce sont ces câbles qui nous l'apportent."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I tun bɛ mun kɛ?"},
+     "bm": ["I tun bɛ mun kɛ ni internɛti tɛ? A fɔ an ye!"],
+     "fr": "Qu'est-ce que tu ferais sans Internet ? Dis-le en commentaire !"}
+  ]
+}
