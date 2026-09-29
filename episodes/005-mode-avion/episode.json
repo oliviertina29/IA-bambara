@@ -1,0 +1,25 @@
+{
+  "slug": "005-mode-avion",
+  "title": "Pourquoi le mode avion dans l'avion ?",
+  "lesson": 5, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "pronounce": {"mode avion": "modu awiyɔn"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Telefɔni bɛ se ka\npankurun bin wa?", "icon": "plane", "badge": "phone", "color": "blue"},
+     "bm": ["I ka [telefɔni] bɛ se ka [pankurun] bin wa?"],
+     "fr": "Ton téléphone peut-il faire tomber un avion ?"},
+    {"type": "vrai_faux", "params": {"claim": "Telefɔni bɛ se ka\npankurun bin", "answer": "faux"},
+     "bm": ["Tiɲɛ wa, nkalon wa?", "[Nkalon]! A tɛ pankurun bin."],
+     "fr": "Vrai ou faux ? Faux : il ne fait pas tomber l'avion."},
+    {"type": "robot_says", "params": {"icon": "wifi", "label": "Mankan"},
+     "bm": ["Nka a bɛ se ka [pilotiw] tɔɔrɔ", "u ka [arajo] la."],
+     "fr": "Mais il peut gêner les pilotes dans leur radio."},
+    {"type": "robot_says", "params": {"icon": "plane", "label": "Mode avion"},
+     "bm": ["O de kosɔn, [mode avion] bila!"],
+     "fr": "C'est pour ça : active le mode avion !"},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I tun b'a dɔn wa?"},
+     "bm": ["I tun b'a dɔn wa? A fɔ an ye!"],
+     "fr": "Tu le savais ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}

@@ -133,6 +133,7 @@ const ICON={
  search:`<circle cx="-8" cy="-8" r="26" fill="#fff" stroke="#1B1E42" stroke-width="8"/><path d="M12 12 L36 36" stroke="#1B1E42" stroke-width="12" stroke-linecap="round"/>`,
  ear:`<path d="M-4 -40 C22 -40 32 -20 30 -2 C28 14 14 18 10 30 C6 42 -8 44 -16 34" stroke="#F2B9A0" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M-4 -40 C-24 -40 -32 -24 -30 -10" stroke="#F2B9A0" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M-6 -18 C8 -22 14 -8 4 2" stroke="#C98B72" stroke-width="7" fill="none" stroke-linecap="round"/>`,
  settings:`<circle r="30" fill="none" stroke="#B9C3D8" stroke-width="16" stroke-dasharray="12 9"/><circle r="24" fill="#B9C3D8"/><circle r="10" fill="#1B1E42"/>`,
+ plane:`<rect x="-7" y="-44" width="14" height="84" rx="7" fill="#1B1E42"/><path d="M-46 8 L0 -12 L46 8 L46 16 L0 4 L-46 16Z" fill="#1B1E42"/><path d="M-18 40 L0 30 L18 40 L18 45 L0 40 L-18 45Z" fill="#1B1E42"/><circle cx="0" cy="-30" r="4" fill="#3FA7D6"/>`,
  image:`<rect x="-40" y="-30" width="80" height="60" rx="8" fill="#fff" stroke="#1B1E42" stroke-width="4"/><circle cx="-16" cy="-10" r="8" fill="#F2A541"/><path d="M-36 26 L-10 0 L6 14 L18 4 L36 26Z" fill="#2FB36B"/>`
 };
 const ICON_KEYS=Object.keys(ICON);
@@ -400,10 +401,10 @@ LIB.hook={
   return{flash,waves,big,words}},
  render(st,lt,len,t){
   const shake=lt<0.5?Math.sin(lt*70)*14*(1-lt/0.5):0;
-  T(st.big,540+shake,860+Math.sin(lt*3)*8,S(0.6+0.4*E.outElastic(P(lt,0,0.7))),Math.sin(lt*2.5)*5);
+  T(st.big,540+shake,860+Math.sin(lt*3)*8,S(0.92+0.08*E.outElastic(P(lt,0,0.7))),Math.sin(lt*2.5)*5);
   st.waves.forEach(w=>{const ph=((lt*1.4+w.i/3)%1);w.el.setAttribute('transform',`translate(${540+w.side*(170+ph*170)} 860) scale(${(0.7+ph*0.6).toFixed(3)})`);w.el.setAttribute('opacity',(lt>0.3?(1-ph)*.9:0).toFixed(2))});
-  st.words.forEach((w,i)=>{const k=E.outBack(P(lt,i*0.12,i*0.12+0.35));w.setAttribute('transform',`translate(540 ${(1-k)*40}) scale(${S(0.75+0.25*k).toFixed(3)}) translate(-540 0)`);w.setAttribute('opacity',Math.min(1,k*1.4).toFixed(2))});
-  const f=P(lt,0,0.35);st.flash.setAttribute('r',(20+f*900).toFixed(0));st.flash.setAttribute('opacity',(f<1?(1-f)*.35:0).toFixed(2));
+  st.words.forEach((w,i)=>{const k=E.outBack(P(lt,0,0.35));w.setAttribute('transform',`translate(540 ${(1-k)*12}) scale(${S(0.94+0.06*k).toFixed(3)}) translate(-540 0)`);w.setAttribute('opacity','1')});
+  const f=P(lt,0,0.35);st.flash.setAttribute('r',(20+f*900).toFixed(0));st.flash.setAttribute('opacity',(f>0.05&&f<1?(1-f)*.25:0).toFixed(2));
  }};
 
 /* ---- vrai_faux : a claim, two big buttons, countdown, then the answer is revealed ---- */
@@ -503,7 +504,7 @@ function render(t){
   LIB[s.type].render(s.st,lt,len,t);
   const hasRobot=(STATE.TYPES[s.type]||{}).robot;if(!hasRobot)narrator(t,lt);
   renderSubs(SUB,t,si,SC,TM.words||[]);
-  $('tag').style.opacity=cl(t/0.6);
+  $('tag').style.opacity=1;
 }
 window.render=render;window.init=init;
 

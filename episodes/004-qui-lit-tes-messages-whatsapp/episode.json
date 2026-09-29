@@ -1,0 +1,27 @@
+{
+  "slug": "004-qui-lit-tes-messages-whatsapp",
+  "title": "Qui peut lire tes messages WhatsApp ?",
+  "lesson": 4, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "pronounce": {"WhatsApp": "watsapu"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Jɔn bɛ se ka i ka\nWhatsApp kalan?", "icon": "chat", "badge": "search", "color": "green"},
+     "bm": ["Jɔn bɛ se ka i ka [WhatsApp] cikanw kalan?"],
+     "fr": "Qui peut lire tes messages WhatsApp ?"},
+    {"type": "vrai_faux", "params": {"claim": "WhatsApp yɛrɛ bɛ i ka\ncikanw kalan", "answer": "faux"},
+     "bm": ["WhatsApp yɛrɛ bɛ u kalan: tiɲɛ wa, nkalon wa?", "[Nkalon]! A tɛ se ka u kalan."],
+     "fr": "WhatsApp lui-même les lit ? Faux : il ne peut pas les lire."},
+    {"type": "cards", "params": {"cards": [
+        {"title": "I ka kode", "sub": "Le code à 6 chiffres", "icon": "lock", "color": "orange"},
+        {"title": "I ka telefɔni", "sub": "Quelqu'un prend ton téléphone", "icon": "phone", "color": "red"}]},
+     "bm": ["Nka farati bɛ yen:", "ni mɔgɔ ye [i ka kode] sɔrɔ,", "walima ka [i ka telefɔni] ta."],
+     "fr": "Mais attention : si quelqu'un obtient ton code, ou prend ton téléphone."},
+    {"type": "robot_says", "params": {"icon": "lock", "label": "Kode: i kelen"},
+     "bm": ["I ka [kode] kana di mɔgɔ si ma!"],
+     "fr": "Ne donne jamais ton code à personne !"},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "A ci i teriw ma!"},
+     "bm": ["Nin ci i teriw ma, u ka tanga!"],
+     "fr": "Envoie ça à tes amis pour les protéger ! Abonne-toi."}
+  ]
+}
