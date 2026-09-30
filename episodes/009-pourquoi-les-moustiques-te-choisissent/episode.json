@@ -1,0 +1,28 @@
+{
+  "slug": "009-pourquoi-les-moustiques-te-choisissent",
+  "title": "Pourquoi les moustiques te choisissent toi ?",
+  "lesson": 9, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "spark", "speaker": "Moussa"},
+  "pronounce": {"moustiquaire": "mustikɛri"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Mun na sosow bɛ\ni dɔrɔn kin?", "icon": "mosquito", "badge": "question", "color": "red"},
+     "bm": ["Mun na [sosow] bɛ i dɔrɔn kin?"],
+     "fr": "Pourquoi les moustiques ne piquent que toi ?"},
+    {"type": "vrai_faux", "params": {"claim": "Sosow bɛ mɔgɔ dɔw kin\nka tɛmɛ tɔw kan", "answer": "vrai"},
+     "bm": ["Sosow bɛ mɔgɔ dɔw kin ka tɛmɛ: tiɲɛ wa?", "[Tiɲɛ]! U bɛ mɔgɔ dɔw fɛ kosɛbɛ."],
+     "fr": "Les moustiques piquent certaines personnes plus que d'autres ? Vrai !"},
+    {"type": "cards", "params": {"cards": [
+        {"title": "I ninakili", "sub": "Ton souffle", "icon": "wifi", "color": "teal"},
+        {"title": "I ka wɔsi", "sub": "Ta sueur", "icon": "water", "color": "blue"},
+        {"title": "Farikolo funteni", "sub": "La chaleur de ton corps", "icon": "sun", "color": "red"}]},
+     "bm": ["[I ninakili] bɛ u sama,", "[i ka wɔsi],", "ani i [farikolo funteni]."],
+     "fr": "Ton souffle les attire, ta sueur, et la chaleur de ton corps."},
+    {"type": "robot_says", "params": {"icon": "health", "label": "Moustiquaire"},
+     "bm": ["I ka sunɔgɔ [moustiquaire] kɔnɔ,", "ka i ka [wɔsi] ko."],
+     "fr": "Dors sous la moustiquaire et lave ta sueur."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "Sosow bɛ i kin kosɛbɛ wa?"},
+     "bm": ["Sosow bɛ i kin kosɛbɛ wa? A fɔ an ye!"],
+     "fr": "Les moustiques te piquent beaucoup ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
