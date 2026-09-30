@@ -1,13 +1,15 @@
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
-Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 372/762 [00:00<00:00, 3706.80it/s]Loading weights:  98%|█████████▊| 743/762 [00:00<00:00, 3583.21it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 3610.38it/s]
-vits: chargement 7s, génération 1.8s pour 5.2s d'audio
+Invalid model-index. Not loading eval results into CardData.
+Invalid model-index. Not loading eval results into CardData.
+Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 9876.15it/s]
+vits: chargement 9s, génération 0.8s pour 5.2s d'audio
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
     t = time.time(); s = voice.Spark(spk); load = time.time() - t
                          ^^^^^^^^^^^^^^^^
-  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 61, in __init__
+  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 69, in __init__
     raise RuntimeError("serveur Spark non démarré (MALIBA_SERVER absent)")
 RuntimeError: serveur Spark non démarré (MALIBA_SERVER absent)
 

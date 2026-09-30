@@ -1,9 +1,9 @@
-vits: chargement 7s, génération 1.8s pour 5.2s d'audio
+vits: chargement 9s, génération 0.8s pour 5.2s d'audio
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
     t = time.time(); s = voice.Spark(spk); load = time.time() - t
                          ^^^^^^^^^^^^^^^^
-  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 61, in __init__
+  File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice.py", line 69, in __init__
     raise RuntimeError("serveur Spark non démarré (MALIBA_SERVER absent)")
 RuntimeError: serveur Spark non démarré (MALIBA_SERVER absent)
