@@ -38,5 +38,5 @@ Envoyer le MP4 avec SendUserFile. Réponse courte : titre, durée, voix utilisé
 - Le bambara doit sonner parlé, pas traduit mot à mot. En cas de doute, demander à Olivier.
 - Si un visuel manque vraiment, ajouter une icône ou un type de scène dans `engine/index.html`, le documenter dans `docs/GUIDE.md`, et le tester avec `preview.py`.
 - Mon environnement ne joint pas Hugging Face : la voix se fait **uniquement** sur GitHub Actions.
-- Voix par défaut : `"voice": {"engine": "vits", "lang": "bambara"}` (MALIBA-AI/malian-tts, seul modèle activé). La voix Spark (10 voix) ne s'active que si la variable GitHub `USE_SPARK=true` existe et qu'Olivier a accepté MALIBA-AI/bambara-tts.
-- La production prend ~4 min ; suivre la course via `https://api.github.com/repos/oliviertina29/IA-bambara/actions/runs?per_page=3` (champ head_sha du commit poussé).
+- Voix par défaut : `"voice": {"engine": "spark", "speaker": "Moussa"}` (Spark MALIBA-AI via GGUF public, choisie par Olivier). Repli automatique sur VITS.
+- La production prend ~5–6 min ; suivre la course via `https://api.github.com/repos/oliviertina29/IA-bambara/actions/runs?per_page=3` (champ head_sha du commit poussé).

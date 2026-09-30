@@ -23,7 +23,7 @@ pour des personnes qui ne lisent pas forcément. La **voix** porte le message ; 
   "title": "C'est quoi Internet ?",
   "lesson": 2,                              // "Kalan 2" affiché en haut
   "tag": "IA · Bamanankan na",
-  "voice": {"engine": "auto", "speaker": "Seydou", "speed": 1.0},
+  "voice": {"engine": "spark", "speaker": "Moussa"},
   "pronounce": {"IA": "i a"},              // remplacements pour la voix seulement
   "music_volume": 0.4,
   "scenes": [
@@ -94,3 +94,7 @@ Leçons :
 - À éviter : concepts abstraits ou jeux de mots (le « robot et les proverbes » n'était pas compréhensible → remplacé).
 - Vocabulaire : dire **forfɛ**, pas « mega ».
 - Prochaine étape : suivre la durée moyenne de visionnage (> 70 % = bon signe).
+
+## Voix (30/09/2026)
+- Voix par défaut : **Spark, voix Moussa** (choisie par Olivier : la plus stable). `"voice": {"engine": "spark", "speaker": "Moussa"}`.
+- Fonctionne sans modèle restreint : GGUF public MALIBA-AI/bambara-tts-gguf + vocodeur unsloth/Spark-TTS-0.5B, servis par llama.cpp sur CPU (pipeline/spark_server.sh). Repli automatique sur VITS si Spark échoue.

@@ -62,7 +62,7 @@ class Spark:
     """Voix Spark MALIBA-AI (10 voix maliennes) via le serveur local lancé par pipeline/spark_server.sh."""
     name = "spark"
 
-    def __init__(self, speaker="Seydou"):
+    def __init__(self, speaker="Moussa"):
         import urllib.request
         self.url = os.environ.get("MALIBA_SERVER")
         if not self.url:
@@ -113,7 +113,7 @@ def make_engine(cfg):
         try:
             t0 = time.time()
             if e == "spark":
-                obj = Spark(cfg.get("speaker", "Seydou"))
+                obj = Spark(cfg.get("speaker", "Moussa"))
             elif e == "vits":
                 obj = Vits(cfg.get("lang", "bambara"))
             else:
