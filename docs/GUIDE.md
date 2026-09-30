@@ -12,7 +12,7 @@ pour des personnes qui ne lisent pas forcément. La **voix** porte le message ; 
 | Traducteur bambara | Adapte en bambara parlé naturel, phrases courtes (≤ 8 mots par réplique), orthographe officielle (ɛ ɔ ɲ ŋ), nombres écrits en lettres, pas de mélange français/bambara sauf mots courants (ordinatɛri, telefɔni, internɛti) | répliques `bm` |
 | Réalisateur | Choisit un type de scène par idée dans le catalogue ci-dessous, avec les icônes | `episode.json` |
 | Contrôleur | Vérifie le JSON, la longueur, les icônes, lance `pipeline/preview.py` et regarde les images | feu vert |
-| ✋ Olivier | Relit et corrige le bambara (optionnel) | validation |
+| ✋ Relecteur | Relit et corrige le bambara (optionnel) | validation |
 | Voix + Monteur (GitHub Actions) | `pipeline/produce.py` : voix MALIBA-AI → mixage → rendu MP4 | `episodes/<slug>/out/<slug>.mp4` |
 
 ## Format `episodes/<slug>/episode.json`
@@ -74,7 +74,7 @@ python pipeline/preview.py episodes/<slug>   # images de contrôle sans voix
 python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin de Hugging Face)
 ```
 
-## Vocabulaire (validé par Olivier)
+## Vocabulaire
 - Dire **forfɛ** (forfait) et jamais « mega » : les gens ne comprennent pas « mega ».
 
 ## Ce qui marche sur TikTok (résultats réels, 30/09/2026, ~1 semaine)
@@ -89,12 +89,12 @@ python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin 
 | 006 Forfait (récente) | 64 |
 
 Leçons :
-- Les meilleures = **questions choc, pratiques et un peu inquiétantes** (« est-ce que X peut vraiment faire Y ? »). Garder ce style d'accroche **mais varier les thèmes** (consigne d'Olivier) : pas seulement le téléphone — aussi la vie quotidienne, la santé, l'argent, l'électricité, la maison, les transports, la nature, l'IA… toujours un angle tech/science simple.
+- Les meilleures = **questions choc, pratiques et un peu inquiétantes** (« est-ce que X peut vraiment faire Y ? »). Garder ce style d'accroche **mais varier les thèmes** : pas seulement le téléphone — aussi la vie quotidienne, la santé, l'argent, l'électricité, la maison, les transports, la nature, l'IA… toujours un angle tech/science simple.
 - Format court (17–23 s), accroche visible dès la 1re image (sert de miniature).
 - À éviter : concepts abstraits ou jeux de mots (le « robot et les proverbes » n'était pas compréhensible → remplacé).
 - Vocabulaire : dire **forfɛ**, pas « mega ».
 - Prochaine étape : suivre la durée moyenne de visionnage (> 70 % = bon signe).
 
 ## Voix (30/09/2026)
-- Voix par défaut : **Spark, voix Moussa** (choisie par Olivier : la plus stable). `"voice": {"engine": "spark", "speaker": "Moussa"}`.
+- Voix par défaut : **Spark, voix Moussa**. `"voice": {"engine": "spark", "speaker": "Moussa"}`.
 - Fonctionne sans modèle restreint : GGUF public MALIBA-AI/bambara-tts-gguf + vocodeur unsloth/Spark-TTS-0.5B, servis par llama.cpp sur CPU (pipeline/spark_server.sh). Repli automatique sur VITS si Spark échoue.
