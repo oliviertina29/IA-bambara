@@ -1,0 +1,19 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[voix] moteur 'vits' chargé en 8.4s
+[voix] scène 0 phrase 0: 2.21s audio en 0.5s — Ka sunɔgɔ ni wantilo ye, farati bɛ a la wa?
+[voix] scène 1 phrase 0: 1.78s audio en 0.6s — Ventilo bɛ se ka mɔgɔ faga: tiɲɛ wa?
+[voix] scène 1 phrase 1: 1.68s audio en 0.4s — Nkalon! A tɛ mɔgɔ faga.
+[voix] scène 2 phrase 0: 1.22s audio en 0.3s — Nka a bɛ se ka ɲɛw ja,
+[voix] scène 2 phrase 1: 0.57s audio en 0.2s — ka kan ja,
+[voix] scène 2 phrase 2: 0.93s audio en 0.3s — ka buguri fiyɛ i kan.
+[voix] scène 3 phrase 0: 1.74s audio en 0.4s — A kana i ɲɛda fiyɛ tigitigi,
+[voix] scène 3 phrase 1: 1.14s audio en 0.3s — ka a saniya tuma bɛɛ.
+[voix] scène 4 phrase 0: 2.42s audio en 0.5s — I bɛ sunɔgɔ ni wantilo ye wa? A fɔ an ye!
+[voix] durée totale 21.0s avec le moteur vits
+[mix] audio.wav 21.0 s
+[rendu] image 0/630 (0s)
+[rendu] image 300/630 (22s)
+[rendu] image 600/630 (41s)
+[rendu] 008-dormir-avec-le-ventilo.mp4 prêt en 44s
+[statut] {"episode": "008-dormir-avec-le-ventilo", "started": "2026-09-30 12:42:32", "voice_s": 12, "engine": "vits", "mix_s": 2, "render_s": 47, "ok": true, "video": "out/008-dormir-avec-le-ventilo.mp4", "duration": 21.003}

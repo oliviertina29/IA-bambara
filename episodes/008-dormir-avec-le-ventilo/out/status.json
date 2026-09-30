@@ -1,0 +1,11 @@
+{
+ "episode": "008-dormir-avec-le-ventilo",
+ "started": "2026-09-30 12:42:32",
+ "voice_s": 12,
+ "engine": "vits",
+ "mix_s": 2,
+ "render_s": 47,
+ "ok": true,
+ "video": "out/008-dormir-avec-le-ventilo.mp4",
+ "duration": 21.003
+}
