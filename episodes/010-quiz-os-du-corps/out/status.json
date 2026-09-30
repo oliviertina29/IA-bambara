@@ -1,0 +1,13 @@
+{
+ "episode": "010-quiz-os-du-corps",
+ "started": "2026-09-30 21:47:00",
+ "voice_s": 36,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 4,
+ "images_s": 177,
+ "render_s": 102,
+ "ok": true,
+ "video": "out/010-quiz-os-du-corps.mp4",
+ "duration": 29.121
+}

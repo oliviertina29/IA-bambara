@@ -1,0 +1,40 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 1.48s audio en 3.5s — Kolo joli bɛ i farikolo la?
+[voix] scène 1 phrase 0: 1.45s audio en 3.2s — Kolo joli bɛ mɔgɔ farikolo la?
+[voix] scène 1 phrase 1: 1.66s audio en 3.5s — A: bi duuru,
+[voix] scène 1 phrase 2: 0.99s audio en 2.7s — B: kɛmɛ fila ni wɔɔrɔ,
+[voix] scène 1 phrase 3: 1.73s audio en 3.4s — C: waa kelen?
+[voix] scène 1 phrase 4: 1.30s audio en 3.0s — I ka jaabi sɛbɛn sisan!
+[voix] scène 2 phrase 0: 0.86s audio en 2.6s — Jaabi ye B ye:
+[voix] scène 2 phrase 1: 1.41s audio en 3.2s — kolo kɛmɛ fila ni wɔɔrɔ!
+[voix] scène 3 phrase 0: 2.68s audio en 4.7s — Denmisɛnniw ta ka ca ni o ye:
+[voix] scène 3 phrase 1: 1.21s audio en 2.9s — kolo kɛmɛ saba ɲɔgɔn!
+[voix] scène 4 phrase 0: 1.93s audio en 3.8s — I ye jaabi sɔrɔ wa? A fɔ an ye!
+[voix] durée totale 29.1s avec le moteur spark
+[mix] audio.wav 29.1 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  7.99it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  6.87it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.12it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 17s
+[images] scène 0 en 39s : glowing blue x-ray of a full human skeleton, dark background, medical science illustration
+[images] scène 1 en 39s : human skeleton anatomy model in a bright science classroom
+[images] scène 2 en 38s : human skeleton anatomy model in a bright science classroom
+[images] scène 3 en 38s : cute newborn african baby sleeping peacefully, soft warm light
+[rendu] image 0/873 (0s)
+[rendu] image 300/873 (35s)
+[rendu] image 600/873 (72s)
+[rendu] 010-quiz-os-du-corps.mp4 prêt en 100s
+[statut] {"episode": "010-quiz-os-du-corps", "started": "2026-09-30 21:47:00", "voice_s": 36, "engine": "spark", "mix_s": 2, "images": 4, "images_s": 177, "render_s": 102, "ok": true, "video": "out/010-quiz-os-du-corps.mp4", "duration": 29.121}
