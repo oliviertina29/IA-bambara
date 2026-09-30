@@ -13,7 +13,7 @@ try:
     lines.append(f"vits: chargement {load:.0f}s, génération {time.time()-t:.1f}s pour {len(a)/v.sr:.1f}s d'audio")
 except Exception:
     lines.append("vits: ÉCHEC\n" + traceback.format_exc()[-1500:])
-for spk in ["Seydou", "Bourama", "Adama", "Modibo", "Amadou", "Bakary"]:
+for spk in ["Seydou", "Bourama", "Adama", "Moussa"]:
     try:
         t = time.time(); s = voice.Spark(spk); load = time.time() - t
         t = time.time(); a = s.say(TEXT); sf.write(out / f"spark_{spk}.wav", a, s.sr)
