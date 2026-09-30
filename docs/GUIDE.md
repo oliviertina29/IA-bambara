@@ -89,7 +89,7 @@ python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin 
 | 006 Forfait (récente) | 64 |
 
 Leçons :
-- Les meilleures = **questions choc un peu inquiétantes** sur le téléphone du quotidien (« est-ce que X peut vraiment faire Y ? »). Privilégier ce type d'accroche.
+- Les meilleures = **questions choc, pratiques et un peu inquiétantes** (« est-ce que X peut vraiment faire Y ? »). Garder ce style d'accroche **mais varier les thèmes** (consigne d'Olivier) : pas seulement le téléphone — aussi la vie quotidienne, la santé, l'argent, l'électricité, la maison, les transports, la nature, l'IA… toujours un angle tech/science simple.
 - Format court (17–23 s), accroche visible dès la 1re image (sert de miniature).
 - À éviter : concepts abstraits ou jeux de mots (le « robot et les proverbes » n'était pas compréhensible → remplacé).
 - Vocabulaire : dire **forfɛ**, pas « mega ».
