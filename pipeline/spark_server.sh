@@ -11,8 +11,8 @@ cd $MB
 python -m server.download_models --gguf "$GGUF"
 mkdir -p /tmp/llama
 if [ -z "$(find /tmp/llama -name llama-server -type f | head -1)" ]; then
-  gh release download -R ggml-org/llama.cpp --pattern '*-bin-ubuntu-x64.zip' -D /tmp/llama --clobber
-  unzip -q -o /tmp/llama/*.zip -d /tmp/llama
+  gh release download -R ggml-org/llama.cpp --pattern '*-bin-ubuntu-x64.tar.gz' -D /tmp/llama --clobber
+  tar -xzf /tmp/llama/*-bin-ubuntu-x64.tar.gz -C /tmp/llama
 fi
 BIN=$(dirname "$(find /tmp/llama -name llama-server -type f | head -1)")
 export LD_LIBRARY_PATH="$BIN:${LD_LIBRARY_PATH:-}"
