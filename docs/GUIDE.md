@@ -98,3 +98,9 @@ Leçons :
 ## Voix (30/09/2026)
 - Voix par défaut : **Spark, voix Moussa**. `"voice": {"engine": "spark", "speaker": "Moussa"}`.
 - Fonctionne sans modèle restreint : GGUF public MALIBA-AI/bambara-tts-gguf + vocodeur unsloth/Spark-TTS-0.5B, servis par llama.cpp sur CPU (pipeline/spark_server.sh). Repli automatique sur VITS si Spark échoue.
+
+## Quiz et images IA (30/09/2026)
+- `quiz` : `question` (\n pour couper), `options` (2–4 réponses courtes), `countdown` (secondes, défaut 5). Répliques : la question, puis une par option (« A: … »), puis « I ka jaabi sɛbɛn sisan! ». Le compte à rebours (avec tic-tac) démarre après la dernière réplique.
+- `quiz_reveal` : mêmes `options`, `answer` (indice 0,1,2…), `title` (ex. « Jaabi ye B ye! »). La bonne réponse s'allume, les autres s'éteignent, confettis.
+- **Images IA** : ajouter `"image": "<prompt en anglais>"` à n'importe quelle scène → illustration réaliste générée sur CPU (stabilityai/sd-turbo) en fond, avec lent zoom. Facultatif : si ça échoue, la vidéo sort sans image.
+- Nombres : les écrire en toutes lettres dans les répliques (bi duuru, kɛmɛ fila ni wɔɔrɔ…), en chiffres dans les options.

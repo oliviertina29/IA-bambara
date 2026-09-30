@@ -1,0 +1,28 @@
+{
+  "slug": "010-quiz-os-du-corps",
+  "title": "Quiz : combien d'os dans ton corps ?",
+  "lesson": 10, "tag": "Quiz · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "spark", "speaker": "Moussa"},
+  "music_volume": 0.3,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Kolo joli bɛ\ni farikolo la?", "icon": "health", "badge": "question", "color": "blue"},
+     "image": "glowing blue x-ray of a full human skeleton, dark background, medical science illustration",
+     "bm": ["Kolo joli bɛ i [farikolo] la?"],
+     "fr": "Combien d'os dans ton corps ?"},
+    {"type": "quiz", "params": {"question": "Kolo joli bɛ\nmɔgɔ farikolo la?", "options": ["50", "206", "1000"], "countdown": 5},
+     "image": "human skeleton anatomy model in a bright science classroom",
+     "bm": ["Kolo joli bɛ mɔgɔ farikolo la?", "A: bi duuru,", "B: kɛmɛ fila ni wɔɔrɔ,", "C: waa kelen?", "I ka jaabi sɛbɛn sisan!"],
+     "fr": "Combien d'os dans le corps humain ? A : 50, B : 206, C : 1000. Écris ta réponse !"},
+    {"type": "quiz_reveal", "params": {"options": ["50", "206", "1000"], "answer": 1, "title": "Jaabi ye B ye!"},
+     "image": "human skeleton anatomy model in a bright science classroom",
+     "bm": ["Jaabi ye [B] ye:", "kolo [kɛmɛ fila ni wɔɔrɔ]!"],
+     "fr": "La réponse est B : 206 os !"},
+    {"type": "robot_says", "params": {"icon": "people", "label": "~300"},
+     "image": "cute newborn african baby sleeping peacefully, soft warm light",
+     "bm": ["Denmisɛnniw ta ka ca ni o ye:", "kolo [kɛmɛ saba] ɲɔgɔn!"],
+     "fr": "Les bébés en ont plus : environ 300 !"},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I ye jaabi sɔrɔ wa?"},
+     "bm": ["I ye jaabi sɔrɔ wa? A fɔ an ye!"],
+     "fr": "Tu as trouvé ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}

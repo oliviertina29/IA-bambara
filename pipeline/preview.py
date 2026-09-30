@@ -26,7 +26,7 @@ def fake_timing(ep):
             d = 0.4 * len(ws) + 0.2
             for k in range(len(ws)): wt.append(round(t + lt + d * k / max(1, len(ws)), 3))
             cl.append([round(t + lt, 3), round(t + lt + d, 3)]); lt += d + 0.35
-        L = max(r["min"], lt + r["tail"]); sc.append([round(t, 3), round(t + L, 3)]); words.append(wt); clauses.append(cl); t += L
+        L = max(r["min"], lt + r["tail"] + float(s.get("params", {}).get("countdown", 0))); sc.append([round(t, 3), round(t + L, 3)]); words.append(wt); clauses.append(cl); t += L
     return {"engine": "estimation", "sc": sc, "words": words, "clauses": clauses, "voice": [], "duration": round(t, 3)}
 
 

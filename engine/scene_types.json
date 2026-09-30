@@ -64,5 +64,17 @@
   "lead": 0.5,
   "tail": 0.55,
   "min": 0.6
+ },
+ "quiz": {
+  "lead": 0.4,
+  "tail": 0.4,
+  "min": 6.0,
+  "robot": false
+ },
+ "quiz_reveal": {
+  "lead": 0.3,
+  "tail": 1.4,
+  "min": 4.5,
+  "robot": false
  }
 }

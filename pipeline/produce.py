@@ -3,7 +3,7 @@ import json, sys, time, traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import voice, mix, render  # noqa: E402
+import voice, mix, render, images  # noqa: E402
 
 
 def main(ep_dir):
@@ -13,6 +13,12 @@ def main(ep_dir):
     try:
         t = time.time(); tm = voice.run(ep_dir); status["voice_s"] = round(time.time() - t); status["engine"] = tm["engine"]
         t = time.time(); mix.run(ep_dir); status["mix_s"] = round(time.time() - t)
+        t = time.time()
+        try:
+            status["images"] = images.run(ep_dir)
+        except Exception as e:  # images optionnelles
+            status["images_error"] = f"{type(e).__name__}: {e}"
+        status["images_s"] = round(time.time() - t)
         t = time.time(); video = render.run(ep_dir); status["render_s"] = round(time.time() - t)
         status.update(ok=True, video="out/" + video.name, duration=tm["duration"])
     except Exception as e:  # noqa

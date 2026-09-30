@@ -84,6 +84,12 @@ def run(ep_dir):
 
     for a, _ in tm["sc"][1:]:
         whoosh(a)
+    for i, sc in enumerate(ep["scenes"]):
+        n = int(sc.get("params", {}).get("countdown", 0))
+        if n and tm["clauses"][i]:
+            c0 = tm["clauses"][i][-1][1] + 0.35
+            for k in range(n):
+                pop(c0 + k, 1500 if k < n - 1 else 2200, .5)
     for i, (a, b) in enumerate(tm["sc"]):
         pop(a + .35, 700 + 90 * (i % 5))
         if ep["scenes"][i]["type"] == "cards":

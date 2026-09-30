@@ -435,6 +435,53 @@ LIB.vrai_faux={
   const sk=E.outElastic(P(lt,r,r+0.7));T(st.stamp,st.ans==='vrai'?300:780,1075,S(sk),-6);st.stamp.style.opacity=after?1:0;
  }};
 
+
+/* ---- quiz : question + 2–4 answers (each appears when spoken) + countdown ---- */
+const OPTCOL=['#17BEBB','#F2A541','#8E6CDB','#E4572E'];
+function quizOptions(g,opts){return opts.map((o,i)=>{const el=add(g,`<g><rect x="-430" y="-60" width="860" height="120" rx="60" fill="#FFF1D6" filter="url(#shadow)"/>
+  <rect class="ring" x="-430" y="-60" width="860" height="120" rx="60" fill="none" stroke="#2FB36B" stroke-width="10" opacity="0"/>
+  <circle cx="-360" cy="0" r="46" fill="${OPTCOL[i%4]}"/><text x="-360" y="18" text-anchor="middle" class="pop" font-size="52" fill="#fff">${'ABCD'[i]}</text>
+  <text x="-290" y="17" font-size="${o.length>18?40:48}" fill="#1B1E42">${esc(o)}</text>
+  <g class="ok" transform="translate(370 0) scale(.001)">${ICON.check}</g><g class="no" transform="translate(370 0) scale(.001)">${ICON.cross}</g></g>`);
+  return{el,ring:el.querySelector('.ring'),ok:el.querySelector('.ok'),no:el.querySelector('.no')}})}
+LIB.quiz={
+ build(g,p,ctx){
+  const q=String(p.question||'?').split('\n');const card=add(g,`<g><rect x="-450" y="-${60+q.length*34}" width="900" height="${120+q.length*68}" rx="46" fill="#1B1E42" stroke="#F2A541" stroke-width="6" filter="url(#shadow)"/>
+   <g transform="translate(-450 -${60+q.length*34})"><rect x="40" y="-30" width="170" height="60" rx="30" fill="#F2A541"/><text x="125" y="12" text-anchor="middle" class="pop" font-size="32" fill="#1B1E42">QUIZ</text></g>
+   ${q.map((l,i)=>`<text x="0" y="${18+(i-(q.length-1)/2)*68}" text-anchor="middle" font-size="${q.some(x=>x.length>20)?50:58}" fill="#FFF1D6">${esc(l)}</text>`).join('')}</g>`);
+  const opts=quizOptions(g,p.options||[]);const cl=ctx.clauses;
+  opts.forEach((o,i)=>{o.t0=cl.length>i+1?cl[i+1][0]-0.1:0.8+i*0.5;o.y=620+i*150});
+  const n=Math.max(1,p.countdown||5);const cs=(cl.length?cl[cl.length-1][1]:ctx.len-n)+0.35;
+  const timer=add(g,`<g><circle r="80" fill="#1B1E42" stroke="#FFF1D6" stroke-width="6"/><circle class="arc" r="80" fill="none" stroke="#E4572E" stroke-width="14" pathLength="1" stroke-dasharray="1 1" transform="rotate(-90)"/><text class="n pop" x="0" y="26" text-anchor="middle" font-size="76" fill="#FFF1D6">${n}</text></g>`);
+  return{card,opts,timer,arc:timer.querySelector('.arc'),num:timer.querySelector('.n'),n,cs}},
+ render(st,lt,len,t){
+  T(st.card,540,390+Math.sin(lt*2)*4,S(E.outBack(P(lt,0,0.5))));
+  const cd=lt-st.cs;const inCd=cd>=0;
+  st.opts.forEach((o,i)=>{const k=E.outBack(P(lt,o.t0,o.t0+0.45));const pul=inCd?1+0.03*Math.sin(lt*8+i):1;
+    T(o.el,540+(1-E.outCubic(P(lt,o.t0,o.t0+0.45)))*(i%2?-900:900),o.y,S(k*pul))});
+  const tk=E.outElastic(P(cd,0,0.6));T(st.timer,540,1090,S(inCd?tk:0));
+  st.arc.setAttribute('stroke-dashoffset',cl(cd/st.n).toFixed(3));st.num.textContent=Math.max(1,st.n-Math.floor(Math.max(0,cd)));
+  st.num.setAttribute('transform',`scale(${(1+0.25*(1-E.outCubic((Math.max(0,cd))%1))).toFixed(3)})`);
+ }};
+
+/* ---- quiz_reveal : same answers, the right one lights up ---- */
+LIB.quiz_reveal={
+ build(g,p,ctx){
+  const opts=quizOptions(g,p.options||[]);const ans=p.answer||0;opts.forEach((o,i)=>o.y=560+i*150);
+  const r=(ctx.clauses[0]?ctx.clauses[0][0]:0.3)+0.4;
+  const head=add(g,`<g><text x="0" y="0" text-anchor="middle" font-size="64" fill="#FFF1D6" stroke="#1B1E42" stroke-width="10" paint-order="stroke">${esc(p.title||'Jaabi ye…')}</text></g>`);
+  const cf=[];const rr=rng(9);for(let i=0;i<40;i++)cf.push({el:add(g,`<rect x="-8" y="-4" width="16" height="8" rx="3" fill="${['#F2A541','#5FF2EE','#2FB36B','#FFF1D6'][i%4]}"/>`),a:rr()*6.28,v:300+rr()*500,rot:(rr()-.5)*800});
+  return{opts,ans,r,head,cf}},
+ render(st,lt,len,t){
+  T(st.head,540,400,S(E.outBack(P(lt,0,0.4))));const after=lt>st.r;
+  st.opts.forEach((o,i)=>{const good=i===st.ans;const k=E.outBack(P(lt,0.1+i*0.08,0.5+i*0.08));
+    T(o.el,540+(after&&!good?0:0),o.y,S(k*(after?(good?1.08+0.03*Math.sin(lt*6):0.9):1)));
+    o.el.style.opacity=after&&!good?0.35:1;o.ring.setAttribute('opacity',after&&good?(0.7+0.3*Math.sin(lt*8)).toFixed(2):'0');
+    const m=E.outElastic(P(lt,st.r,st.r+0.8));(good?o.ok:o.no).setAttribute('transform',`translate(370 0) scale(${(after?m*.9:0.001).toFixed(3)})`)});
+  const y0=st.opts[st.ans]?st.opts[st.ans].y:800;
+  st.cf.forEach(c=>{const d=lt-st.r;show(c.el,d>0&&d<2);if(d<=0)return;T(c.el,540+Math.cos(c.a)*c.v*d,y0+Math.sin(c.a)*c.v*d+300*d*d,1,c.rot*d)});
+ }};
+
 /* ---- outro : robot waves, confetti, follow button ---- */
 LIB.outro={
  build(g,p){
@@ -493,7 +540,10 @@ function init(EP,TM){
   const under=$('under');
   const scenes=EP.scenes.map((sc,i)=>{const type=LIB[sc.type]?sc.type:'robot_says';const g=add(under,'<g style="display:none"></g>');
     const len=SC[i][1]-SC[i][0];const ctx={len,clauses:(TM.clauses[i]||[]).map(([a,b])=>[a-SC[i][0],b-SC[i][0]])};
-    const st=LIB[type].build(g,sc.params||{},ctx);return{type,g,st,ctx,overlay:ctx.overlay}});
+    const st=LIB[type].build(g,sc.params||{},ctx);
+    let bg=null;if(sc.image_file){bg=document.createElementNS('http://www.w3.org/2000/svg','g');g.insertBefore(bg,g.firstChild);
+      bg.innerHTML=`<image href="${sc.image_file}" x="-60" y="-100" width="1200" height="2120" preserveAspectRatio="xMidYMid slice"/><rect x="0" y="0" width="1080" height="1920" fill="#0d0f24" opacity=".42"/><rect x="0" y="1150" width="1080" height="770" fill="#0d0f24" opacity=".35"/>`}
+    return{type,g,st,ctx,bg,overlay:ctx.overlay}});
   STATE={EP,TM,SC,scenes,SUB:buildSubs(EP.scenes),DUR:SC[SC.length-1][1],TYPES:window.SCENE_TYPES||{}};
   window.DUR=STATE.DUR;
 }
@@ -502,6 +552,7 @@ function render(t){
   renderBG(t);renderWipe(t,SC);
   scenes.forEach((s,i)=>{show(s.g,i===si);if(s.overlay)show(s.overlay,i===si)});show(RB.g,false);
   const s=scenes[si],lt=t-SC[si][0],len=SC[si][1]-SC[si][0];
+  if(s.bg){const k=lt/len;s.bg.firstChild.setAttribute('transform',`translate(${(-20*k).toFixed(1)} ${(-30*k).toFixed(1)}) scale(${(1+0.1*k).toFixed(4)})`)}
   LIB[s.type].render(s.st,lt,len,t);
   const hasRobot=(STATE.TYPES[s.type]||{}).robot;if(!hasRobot)narrator(t,lt);
   renderSubs(SUB,t,si,SC,TM.words||[]);

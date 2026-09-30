@@ -12,6 +12,10 @@ def run(ep_dir, preview_only=None):
     out = ep_dir / "out"
     ep = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
     tm = json.loads((out / "timing.json").read_text(encoding="utf-8"))
+    for i, sc in enumerate(ep["scenes"]):
+        f = out / "img" / f"s{i:02d}.png"
+        if f.exists():
+            sc["image_file"] = f.resolve().as_uri()
     types = json.loads((ROOT / "engine" / "scene_types.json").read_text(encoding="utf-8"))
     init = f"window.EPISODE={json.dumps(ep, ensure_ascii=False)};window.TIMING={json.dumps(tm)};window.SCENE_TYPES={json.dumps(types)};"
     url = (ROOT / "engine" / "index.html").as_uri() + "?capture=1"
