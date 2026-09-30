@@ -76,3 +76,21 @@ python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin 
 
 ## Vocabulaire (validé par Olivier)
 - Dire **forfɛ** (forfait) et jamais « mega » : les gens ne comprennent pas « mega ».
+
+## Ce qui marche sur TikTok (résultats réels, 30/09/2026, ~1 semaine)
+| Vidéo | Vues |
+|---|---|
+| 005 Mode avion (« Telefɔni bɛ se ka pankurun bin wa? ») | 140 |
+| 002 Le téléphone t'écoute | 124 |
+| 004 WhatsApp lu en cachette | 105 |
+| 001 C'est quoi l'IA (format long, lent) | 101 |
+| 007 Si Internet s'arrêtait | 95 |
+| 003 Téléphone qui chauffe | 93 |
+| 006 Forfait (récente) | 64 |
+
+Leçons :
+- Les meilleures = **questions choc un peu inquiétantes** sur le téléphone du quotidien (« est-ce que X peut vraiment faire Y ? »). Privilégier ce type d'accroche.
+- Format court (17–23 s), accroche visible dès la 1re image (sert de miniature).
+- À éviter : concepts abstraits ou jeux de mots (le « robot et les proverbes » n'était pas compréhensible → remplacé).
+- Vocabulaire : dire **forfɛ**, pas « mega ».
+- Prochaine étape : suivre la durée moyenne de visionnage (> 70 % = bon signe).
