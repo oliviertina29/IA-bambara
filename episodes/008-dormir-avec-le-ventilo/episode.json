@@ -1,0 +1,28 @@
+{
+  "slug": "008-dormir-avec-le-ventilo",
+  "title": "Dormir avec le ventilo, c'est dangereux ?",
+  "lesson": 8, "tag": "IA · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "vits", "lang": "bambara"},
+  "pronounce": {"ventilo": "wantilo"},
+  "music_volume": 0.35,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Sunɔgɔ ni ventilo ye,\nfarati bɛ a la wa?", "icon": "fan", "badge": "warning", "color": "teal"},
+     "bm": ["Ka sunɔgɔ ni [ventilo] ye, farati bɛ a la wa?"],
+     "fr": "Dormir avec le ventilo, c'est dangereux ?"},
+    {"type": "vrai_faux", "params": {"claim": "Ventilo bɛ se ka\nmɔgɔ faga su fɛ", "answer": "faux"},
+     "bm": ["Ventilo bɛ se ka mɔgɔ faga: tiɲɛ wa?", "[Nkalon]! A tɛ mɔgɔ faga."],
+     "fr": "Le ventilo peut tuer pendant la nuit ? Faux !"},
+    {"type": "cards", "params": {"cards": [
+        {"title": "Ɲɛw ja", "sub": "Yeux secs", "icon": "health", "color": "red"},
+        {"title": "Kan ja", "sub": "Gorge sèche", "icon": "water", "color": "blue"},
+        {"title": "Buguri", "sub": "La poussière soufflée sur toi", "icon": "warning", "color": "orange"}]},
+     "bm": ["Nka a bɛ se ka [ɲɛw] ja,", "ka [kan] ja,", "ka [buguri] fiyɛ i kan."],
+     "fr": "Mais il peut sécher les yeux, la gorge, et souffler la poussière sur toi."},
+    {"type": "robot_says", "params": {"icon": "fan", "label": "Saniya"},
+     "bm": ["A kana i [ɲɛda] fiyɛ tigitigi,", "ka a [saniya] tuma bɛɛ."],
+     "fr": "Ne le mets pas face à ton visage, et nettoie-le souvent."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I bɛ sunɔgɔ ni ventilo ye wa?"},
+     "bm": ["I bɛ sunɔgɔ ni ventilo ye wa? A fɔ an ye!"],
+     "fr": "Tu dors avec le ventilo ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
