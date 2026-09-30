@@ -1,0 +1,17 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.84s audio en 5.6s — Mun na sosow bɛ i dɔrɔn kin?
+[voix] scène 1 phrase 0: 3.14s audio en 5.4s — Sosow bɛ mɔgɔ dɔw kin ka tɛmɛ: tiɲɛ wa?
+[voix] scène 1 phrase 1: 2.21s audio en 4.4s — Tiɲɛ! U bɛ mɔgɔ dɔw fɛ kosɛbɛ.
+[voix] scène 2 phrase 0: 1.63s audio en 3.7s — I ninakili bɛ u sama,
+[voix] scène 2 phrase 1: 0.76s audio en 2.2s — i ka wɔsi,
+[voix] scène 2 phrase 2: 1.83s audio en 3.8s — ani i farikolo funteni.
+[voix] scène 3 phrase 0: 1.45s audio en 3.4s — I ka sunɔgɔ mustikɛri kɔnɔ,
+[voix] scène 3 phrase 1: 1.28s audio en 3.0s — ka i ka wɔsi ko.
+[voix] scène 4 phrase 0: 3.20s audio en 5.4s — Sosow bɛ i kin kosɛbɛ wa? A fɔ an ye!
+[voix] durée totale 25.7s avec le moteur spark
+[mix] audio.wav 25.7 s
+[rendu] image 0/770 (0s)
+[rendu] image 300/770 (29s)
+[rendu] image 600/770 (57s)
+[rendu] 009-pourquoi-les-moustiques-te-choisissent.mp4 prêt en 74s
+[statut] {"episode": "009-pourquoi-les-moustiques-te-choisissent", "started": "2026-09-30 17:14:56", "voice_s": 37, "engine": "spark", "mix_s": 2, "render_s": 75, "ok": true, "video": "out/009-pourquoi-les-moustiques-te-choisissent.mp4", "duration": 25.669}

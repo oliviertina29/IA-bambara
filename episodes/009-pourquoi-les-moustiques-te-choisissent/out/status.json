@@ -1,0 +1,11 @@
+{
+ "episode": "009-pourquoi-les-moustiques-te-choisissent",
+ "started": "2026-09-30 17:14:56",
+ "voice_s": 37,
+ "engine": "spark",
+ "mix_s": 2,
+ "render_s": 75,
+ "ok": true,
+ "video": "out/009-pourquoi-les-moustiques-te-choisissent.mp4",
+ "duration": 25.669
+}
