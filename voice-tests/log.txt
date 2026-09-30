@@ -2,8 +2,8 @@
   warnings.warn(
 Invalid model-index. Not loading eval results into CardData.
 Invalid model-index. Not loading eval results into CardData.
-Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 9876.15it/s]
-vits: chargement 9s, génération 0.8s pour 5.2s d'audio
+Loading weights:   0%|          | 0/762 [00:00<?, ?it/s]Loading weights:  61%|██████    | 462/762 [00:00<00:00, 4567.64it/s]Loading weights: 100%|██████████| 762/762 [00:00<00:00, 4092.33it/s]
+vits: chargement 11s, génération 1.8s pour 5.2s d'audio
 spark Seydou: ÉCHEC
 Traceback (most recent call last):
   File "/home/runner/work/IA-bambara/IA-bambara/pipeline/voice_test.py", line 18, in <module>
