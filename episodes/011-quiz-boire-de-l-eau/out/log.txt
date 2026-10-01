@@ -1,0 +1,42 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.32s audio en 5.0s — I ka kan ka ji litiri joli min don o don?
+[voix] scène 1 phrase 0: 2.80s audio en 4.9s — Mɔgɔ ka kan ka ji litiri joli min don o don?
+[voix] scène 1 phrase 1: 1.85s audio en 3.8s — A: litiri kelen,
+[voix] scène 1 phrase 2: 1.44s audio en 3.1s — B: litiri fila walima saba,
+[voix] scène 1 phrase 3: 0.83s audio en 2.4s — C: litiri duuru?
+[voix] scène 1 phrase 4: 1.37s audio en 3.0s — I ka jaabi sɛbɛn sisan!
+[voix] scène 2 phrase 0: 1.05s audio en 2.7s — Jaabi ye B ye:
+[voix] scène 2 phrase 1: 1.31s audio en 3.0s — litiri fila walima saba!
+[voix] scène 3 phrase 0: 1.08s audio en 2.8s — Funteni waati la,
+[voix] scène 3 phrase 1: 1.20s audio en 3.0s — i ka ji min ka caya!
+[voix] scène 3 phrase 2: 1.14s audio en 2.8s — Kana minnɔgɔ makɔnɔ.
+[voix] scène 4 phrase 0: 3.49s audio en 5.7s — Ele dun, i bɛ ji litiri joli min? A fɔ an ye!
+[voix] durée totale 32.8s avec le moteur spark
+[mix] audio.wav 32.8 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.39it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  5.97it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.06it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 20s
+[images] scène 0 en 39s : fresh clear water splashing into a glass, bright sunlight, blue background, high detail photo
+[images] scène 1 en 39s : three plastic bottles of water lined up on a wooden table in a sunny african courtyard
+[images] scène 2 en 39s : three plastic bottles of water lined up on a wooden table in a sunny african courtyard
+[images] scène 3 en 39s : hot sun over a dusty sahel road at midday, heat haze, african landscape
+[rendu] image 0/984 (0s)
+[rendu] image 300/984 (33s)
+[rendu] image 600/984 (70s)
+[rendu] image 900/984 (100s)
+[rendu] 011-quiz-boire-de-l-eau.mp4 prêt en 109s
+[statut] {"episode": "011-quiz-boire-de-l-eau", "started": "2026-10-01 17:50:58", "voice_s": 42, "engine": "spark", "mix_s": 3, "images": 4, "images_s": 181, "render_s": 111, "ok": true, "video": "out/011-quiz-boire-de-l-eau.mp4", "duration": 32.801}

@@ -1,0 +1,13 @@
+{
+ "episode": "011-quiz-boire-de-l-eau",
+ "started": "2026-10-01 17:50:58",
+ "voice_s": 42,
+ "engine": "spark",
+ "mix_s": 3,
+ "images": 4,
+ "images_s": 181,
+ "render_s": 111,
+ "ok": true,
+ "video": "out/011-quiz-boire-de-l-eau.mp4",
+ "duration": 32.801
+}
