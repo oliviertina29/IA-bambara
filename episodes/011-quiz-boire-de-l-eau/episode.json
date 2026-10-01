@@ -1,0 +1,28 @@
+{
+  "slug": "011-quiz-boire-de-l-eau",
+  "title": "Quiz : combien de litres d'eau par jour ?",
+  "lesson": 11, "tag": "Quiz · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "spark", "speaker": "Moussa"},
+  "music_volume": 0.3,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Ji litiri joli\nbɛ min don o don?", "icon": "water", "badge": "question", "color": "blue"},
+     "image": "fresh clear water splashing into a glass, bright sunlight, blue background, high detail photo",
+     "bm": ["I ka kan ka [ji] litiri joli min don o don?"],
+     "fr": "Combien de litres d'eau faut-il boire chaque jour ?"},
+    {"type": "quiz", "params": {"question": "Ji litiri joli\nka kan ka min\ndon o don?", "options": ["1 L", "2–3 L", "5 L"], "countdown": 5},
+     "image": "three plastic bottles of water lined up on a wooden table in a sunny african courtyard",
+     "bm": ["Mɔgɔ ka kan ka ji litiri joli min don o don?", "A: litiri kelen,", "B: litiri fila walima saba,", "C: litiri duuru?", "I ka jaabi sɛbɛn sisan!"],
+     "fr": "Combien de litres par jour ? A : 1 L, B : 2 à 3 L, C : 5 L. Écris ta réponse !"},
+    {"type": "quiz_reveal", "params": {"options": ["1 L", "2–3 L", "5 L"], "answer": 1, "title": "Jaabi ye B ye!"},
+     "image": "three plastic bottles of water lined up on a wooden table in a sunny african courtyard",
+     "bm": ["Jaabi ye [B] ye:", "litiri [fila walima saba]!"],
+     "fr": "La réponse est B : 2 à 3 litres (pour un adulte) !"},
+    {"type": "robot_says", "params": {"icon": "sun", "label": "+ ji"},
+     "image": "hot sun over a dusty sahel road at midday, heat haze, african landscape",
+     "bm": ["Funteni waati la,", "i ka [ji] min ka caya!", "Kana minnɔgɔ makɔnɔ."],
+     "fr": "Quand il fait chaud, bois encore plus ! N'attends pas d'avoir soif."},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I bɛ ji litiri joli min?"},
+     "bm": ["Ele dun, i bɛ ji litiri joli min? A fɔ an ye!"],
+     "fr": "Et toi, tu bois combien de litres ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
