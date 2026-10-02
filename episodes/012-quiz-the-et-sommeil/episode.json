@@ -1,0 +1,28 @@
+{
+  "slug": "012-quiz-the-et-sommeil",
+  "title": "Quiz : quel thé chasse le sommeil ?",
+  "lesson": 12, "tag": "Quiz · Bamanankan na", "pace": "fast",
+  "voice": {"engine": "spark", "speaker": "Moussa"},
+  "music_volume": 0.3,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Te jumɛn bɛ\nsunɔgɔ gɛn?", "icon": "people", "badge": "question", "color": "orange"},
+     "image": "small blue enamel teapot on glowing charcoal stove at night, small glasses of green tea with foam, african courtyard, warm light",
+     "bm": ["Grin na, te jumɛn de bɛ [sunɔgɔ] gɛn?"],
+     "fr": "Au grin, quel thé chasse le sommeil ?"},
+    {"type": "quiz", "params": {"question": "Te jumɛn fanga\nka bon ni tɔw ye?", "options": ["Te fɔlɔ", "Te filanan", "Te sabanan"], "countdown": 5},
+     "image": "three small glasses of mauritanian green tea with foam on a metal tray, night, warm light",
+     "bm": ["Te jumɛn fanga ka bon ni tɔw ye?", "A: te fɔlɔ,", "B: te filanan,", "C: te sabanan?", "I ka jaabi sɛbɛn sisan!"],
+     "fr": "Quel thé est le plus fort ? A : le premier, B : le deuxième, C : le troisième. Écris ta réponse !"},
+    {"type": "quiz_reveal", "params": {"options": ["Te fɔlɔ", "Te filanan", "Te sabanan"], "answer": 0, "title": "Jaabi ye A ye!"},
+     "image": "three small glasses of mauritanian green tea with foam on a metal tray, night, warm light",
+     "bm": ["Jaabi ye [A] ye:", "te [fɔlɔ]!"],
+     "fr": "La réponse est A : le premier !"},
+    {"type": "robot_says", "params": {"icon": "warning", "label": "Te fɔlɔ"},
+     "image": "a very dark strong glass of tea next to a lighter sweet glass of tea, close-up, dark background",
+     "bm": ["Te fɔlɔ de kumuna, a fanga ka bon.", "Filanan ni sabanan na, ji ni sukaro bɛ fara a kan.", "Ni i b'a fɛ ka sunɔgɔ, [te fɔlɔ] min joona!"],
+     "fr": "Le premier est amer : c'est le plus fort. Pour le 2e et le 3e, on ajoute eau et sucre. Pour bien dormir, bois le premier plus tôt !"},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "Te jumɛn de ka di i ye?"},
+     "bm": ["Ele dun, te jumɛn de ka di i ye? A fɔ an ye!"],
+     "fr": "Et toi, quel thé tu préfères ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
