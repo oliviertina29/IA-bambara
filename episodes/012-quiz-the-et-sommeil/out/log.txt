@@ -1,0 +1,42 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.63s audio en 5.8s — Grin na, te jumɛn de bɛ sunɔgɔ gɛn?
+[voix] scène 1 phrase 0: 1.74s audio en 4.0s — Te jumɛn fanga ka bon ni tɔw ye?
+[voix] scène 1 phrase 1: 0.74s audio en 2.6s — A: te fɔlɔ,
+[voix] scène 1 phrase 2: 0.64s audio en 2.7s — B: te filanan,
+[voix] scène 1 phrase 3: 0.80s audio en 2.7s — C: te sabanan?
+[voix] scène 1 phrase 4: 1.35s audio en 3.6s — I ka jaabi sɛbɛn sisan!
+[voix] scène 2 phrase 0: 1.08s audio en 3.0s — Jaabi ye A ye:
+[voix] scène 2 phrase 1: 0.55s audio en 2.2s — te fɔlɔ!
+[voix] scène 3 phrase 0: 2.80s audio en 5.3s — Te fɔlɔ de kumuna, a fanga ka bon.
+[voix] scène 3 phrase 1: 3.94s audio en 7.0s — Filanan ni sabanan na, ji ni sukaro bɛ fara a kan.
+[voix] scène 3 phrase 2: 3.12s audio en 6.1s — Ni i b'a fɛ ka sunɔgɔ, te fɔlɔ min joona!
+[voix] scène 4 phrase 0: 3.31s audio en 6.1s — Ele dun, te jumɛn de ka di i ye? A fɔ an ye!
+[voix] durée totale 35.8s avec le moteur spark
+[mix] audio.wav 35.8 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.01it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  6.99it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.28it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 17s
+[images] scène 0 en 40s : small blue enamel teapot on glowing charcoal stove at night, small glasses of green tea with foam, african courtyard, warm light
+[images] scène 1 en 40s : three small glasses of mauritanian green tea with foam on a metal tray, night, warm light
+[images] scène 2 en 40s : three small glasses of mauritanian green tea with foam on a metal tray, night, warm light
+[images] scène 3 en 40s : a very dark strong glass of tea next to a lighter sweet glass of tea, close-up, dark background
+[rendu] image 0/1074 (0s)
+[rendu] image 300/1074 (36s)
+[rendu] image 600/1074 (73s)
+[rendu] image 900/1074 (106s)
+[rendu] 012-quiz-the-et-sommeil.mp4 prêt en 124s
+[statut] {"episode": "012-quiz-the-et-sommeil", "started": "2026-10-02 21:55:53", "voice_s": 51, "engine": "spark", "mix_s": 3, "images": 4, "images_s": 183, "render_s": 125, "ok": true, "video": "out/012-quiz-the-et-sommeil.mp4", "duration": 35.815}

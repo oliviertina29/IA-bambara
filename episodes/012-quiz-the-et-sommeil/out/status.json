@@ -1,0 +1,13 @@
+{
+ "episode": "012-quiz-the-et-sommeil",
+ "started": "2026-10-02 21:55:53",
+ "voice_s": 51,
+ "engine": "spark",
+ "mix_s": 3,
+ "images": 4,
+ "images_s": 183,
+ "render_s": 125,
+ "ok": true,
+ "video": "out/012-quiz-the-et-sommeil.mp4",
+ "duration": 35.815
+}
