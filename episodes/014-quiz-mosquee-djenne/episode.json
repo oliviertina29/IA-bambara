@@ -1,0 +1,33 @@
+{
+  "slug": "014-quiz-mosquee-djenne",
+  "title": "Quiz : la grande mosquée de Djenné",
+  "lesson": 14, "tag": "Quiz · Mali tariku", "pace": "fast",
+  "voice": {"engine": "spark", "speaker": "Moussa"},
+  "music_volume": 0.3,
+  "scenes": [
+    {"type": "hook", "params": {"text": "Jenne misiriba\ndilanna ni mun ye?", "icon": "house", "badge": "question", "color": "orange"},
+     "image": "great mosque of djenne mali, huge mud brick building with wooden beams sticking out, blue sky, wide angle photo",
+     "bm": ["[Jenne] misiriba,", "a dilanna ni mun ye?"],
+     "fr": "La grande mosquée de Djenné, elle est faite avec quoi ?"},
+    {"type": "quiz", "params": {"question": "Jenne misiriba\ndilanna ni mun ye?", "options": ["Kabakurun", "Bɔgɔ (banco)", "Siman"], "countdown": 5},
+     "image": "close-up of the towers of the great mosque of djenne, mali, mud texture, wooden sticks, sunlight",
+     "bm": ["Jenne misiriba dilanna ni mun ye?", "A: kabakurun,", "B: bɔgɔ,", "C: siman?", "I ka jaabi sɛbɛn sisan!"],
+     "fr": "Avec quoi est construite la grande mosquée de Djenné ? A : de la pierre, B : du banco, C : du ciment."},
+    {"type": "quiz_reveal", "params": {"options": ["Kabakurun", "Bɔgɔ (banco)", "Siman"], "answer": 1, "title": "Jaabi ye B ye!"},
+     "image": "african hands shaping wet mud bricks banco drying in the sun, mali village, detailed photo",
+     "bm": ["Jaabi ye [B] ye:", "[bɔgɔ]!"],
+     "fr": "La réponse est B : du banco (terre crue) !"},
+    {"type": "robot_says", "params": {"icon": "globe", "label": "N°1"},
+     "image": "aerial view of djenne town in mali with the great mud mosque and market square, golden hour",
+     "bm": ["Diɲɛ bɔgɔso min ka bon ni bɛɛ ye,", "[o de] don!"],
+     "fr": "C'est le plus grand bâtiment en terre crue du monde !"},
+    {"type": "robot_says", "params": {"icon": "people", "label": "San o san"},
+     "image": "crowd of malian men climbing the great mosque of djenne to plaster it with fresh mud during the annual festival, joyful, photo",
+     "bm": ["San o san, dugu mɔgɔw bɛɛ bɛ ɲɔgɔn dɛmɛ,", "ka [bɔgɔ kura] da a kan!"],
+     "fr": "Chaque année, toute la ville s'entraide pour la recouvrir de banco neuf : c'est le crépissage !"},
+    {"type": "outro", "params": {"cta": "Aw ye an tugu!", "ask": "I taara Jenne ka ye wa?"},
+     "image": "great mosque of djenne mali at night under a starry sky, warm lights, peaceful",
+     "bm": ["Ele dun, i taara Jenne wa? A fɔ an ye!"],
+     "fr": "Et toi, tu es déjà allé à Djenné ? Dis-le en commentaire ! Abonne-toi."}
+  ]
+}
