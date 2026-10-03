@@ -1,0 +1,13 @@
+{
+ "episode": "014-quiz-mosquee-djenne",
+ "started": "2026-10-03 22:39:44",
+ "voice_s": 48,
+ "engine": "spark",
+ "mix_s": 3,
+ "images": 6,
+ "images_s": 232,
+ "render_s": 120,
+ "ok": true,
+ "video": "out/014-quiz-mosquee-djenne.mp4",
+ "duration": 35.455
+}

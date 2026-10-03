@@ -1,0 +1,13 @@
+{
+ "episode": "013-quiz-kankou-moussa",
+ "started": "2026-10-03 22:32:00",
+ "voice_s": 59,
+ "engine": "spark",
+ "mix_s": 3,
+ "images": 6,
+ "images_s": 254,
+ "render_s": 147,
+ "ok": true,
+ "video": "out/013-quiz-kankou-moussa.mp4",
+ "duration": 42.371
+}

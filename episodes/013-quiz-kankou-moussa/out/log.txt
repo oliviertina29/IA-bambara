@@ -1,0 +1,90 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.94s audio en 5.5s — Diɲɛ nafolotigi min ka bon ni bɛɛ ye,
+[voix] scène 0 phrase 1: 0.97s audio en 2.8s — Malika de tun don!
+[voix] scène 1 phrase 0: 1.77s audio en 3.7s — San kɛmɛ wolonwula ɲɔgɔn ye nin ye,
+[voix] scène 1 phrase 1: 2.12s audio en 4.2s — Kankan Musa taara Maka,
+[voix] scène 1 phrase 2: 1.16s audio en 2.8s — ni sanu caman ye.
+[voix] scène 2 phrase 0: 2.70s audio en 4.8s — A sera Misira tuma min na, mun kɛra?
+[voix] scène 2 phrase 1: 2.03s audio en 4.0s — A: a ye dugu san,
+[voix] scène 2 phrase 2: 1.17s audio en 2.9s — B: sanu sɔngɔ jigira,
+[voix] scène 2 phrase 3: 1.14s audio en 2.8s — C: a donna kaso la?
+[voix] scène 2 phrase 4: 1.26s audio en 3.0s — I ka jaabi sɛbɛn sisan!
+[voix] scène 3 phrase 0: 0.94s audio en 2.7s — Jaabi ye B ye:
+[voix] scène 3 phrase 1: 1.77s audio en 3.9s — a ye sanu caman di mɔgɔw ma,
+[voix] scène 3 phrase 2: 1.35s audio en 3.4s — fo sanu sɔngɔ jigira!
+[voix] scène 4 phrase 0: 2.49s audio en 4.7s — Misira la, sanu sɔngɔ ma wuli tugun
+[voix] scène 4 phrase 1: 1.23s audio en 3.0s — fo san caman kɔfɛ!
+[voix] scène 5 phrase 0: 2.61s audio en 4.9s — I tun b'a dɔn wa? A fɔ an ye!
+[voix] durée totale 42.4s avec le moteur spark
+[mix] audio.wav 42.4 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 13.55it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.34it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 16s
+[images] scène 0 en 39s : majestic medieval west african emperor on a golden throne wearing gold jewelry and white robes, royal court, cinematic lighting, detailed painting
+[images] scène 1 en 39s : huge medieval caravan of camels crossing the sahara desert carrying gold, hundreds of people, sunset, epic cinematic painting
+[images] scène 2 en 39s : medieval cairo city with minarets and busy market, egypt, golden hour, detailed painting
+[images] scène 3 en 38s : pile of shining gold coins and gold nuggets spilling on a market table, medieval cairo, cinematic
+[images] scène 4 en 38s : old arabic manuscript with handwritten script on a wooden desk, candle light, historian
+[images] scène 5 en 39s : great mud mosque of timbuktu djinguereber at sunset, mali, warm colors, detailed
+[rendu] image 0/1271 (0s)
+[rendu] image 300/1271 (33s)
+[rendu] image 600/1271 (67s)
+[rendu] image 900/1271 (104s)
+[rendu] image 1200/1271 (136s)
+[rendu] 013-quiz-kankou-moussa.mp4 prêt en 146s
+[statut] {"episode": "013-quiz-kankou-moussa", "started": "2026-10-03 22:32:00", "voice_s": 59, "engine": "spark", "mix_s": 3, "images": 6, "images_s": 254, "render_s": 147, "ok": true, "video": "out/013-quiz-kankou-moussa.mp4", "duration": 42.371}
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 1.01s audio en 2.7s — Jenne misiriba,
+[voix] scène 0 phrase 1: 1.24s audio en 3.0s — a dilanna ni mun ye?
+[voix] scène 1 phrase 0: 2.83s audio en 5.1s — Jenne misiriba dilanna ni mun ye?
+[voix] scène 1 phrase 1: 1.56s audio en 3.5s — A: kabakurun,
+[voix] scène 1 phrase 2: 0.45s audio en 2.1s — B: bɔgɔ,
+[voix] scène 1 phrase 3: 0.57s audio en 2.3s — C: siman?
+[voix] scène 1 phrase 4: 1.39s audio en 3.2s — I ka jaabi sɛbɛn sisan!
+[voix] scène 2 phrase 0: 1.04s audio en 2.7s — Jaabi ye B ye:
+[voix] scène 2 phrase 1: 0.51s audio en 2.0s — bɔgɔ!
+[voix] scène 3 phrase 0: 2.88s audio en 5.0s — Diɲɛ bɔgɔso min ka bon ni bɛɛ ye,
+[voix] scène 3 phrase 1: 0.55s audio en 2.2s — o de don!
+[voix] scène 4 phrase 0: 2.80s audio en 5.1s — San o san, dugu mɔgɔw bɛɛ bɛ ɲɔgɔn dɛmɛ,
+[voix] scène 4 phrase 1: 1.20s audio en 3.0s — ka bɔgɔ kura da a kan!
+[voix] scène 5 phrase 0: 3.31s audio en 5.6s — Ele dun, i taara Jenne wa? A fɔ an ye!
+[voix] durée totale 35.5s avec le moteur spark
+[mix] audio.wav 35.5 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 16.28it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.97it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 1s
+[images] scène 0 en 39s : great mosque of djenne mali, huge mud brick building with wooden beams sticking out, blue sky, wide angle photo
+[images] scène 1 en 39s : close-up of the towers of the great mosque of djenne, mali, mud texture, wooden sticks, sunlight
+[images] scène 2 en 39s : african hands shaping wet mud bricks banco drying in the sun, mali village, detailed photo
+[images] scène 3 en 39s : aerial view of djenne town in mali with the great mud mosque and market square, golden hour
+[images] scène 4 en 38s : crowd of malian men climbing the great mosque of djenne to plaster it with fresh mud during the annual festival, joyful, photo
+[images] scène 5 en 38s : great mosque of djenne mali at night under a starry sky, warm lights, peaceful
+[rendu] image 0/1063 (0s)
+[rendu] image 300/1063 (32s)
+[rendu] image 600/1063 (69s)
+[rendu] image 900/1063 (100s)
+[rendu] 014-quiz-mosquee-djenne.mp4 prêt en 119s
+[statut] {"episode": "014-quiz-mosquee-djenne", "started": "2026-10-03 22:39:44", "voice_s": 48, "engine": "spark", "mix_s": 3, "images": 6, "images_s": 232, "render_s": 120, "ok": true, "video": "out/014-quiz-mosquee-djenne.mp4", "duration": 35.455}
