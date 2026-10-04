@@ -1,15 +1,14 @@
 [voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.70s audio en 4.1s — Jɔn de ye Segu masaya sigi?
-[voix] scène 1 phrase 0: 2.38s audio en 4.3s — Jaabi fɔlɔ: Biton Kulubali.
-[voix] scène 1 phrase 1: 2.68s audio en 4.8s — Jaabi filanan: Sunjata Keyita.
-[voix] scène 1 phrase 2: 2.48s audio en 4.3s — Jaabi sabanan: Samori Ture.
-[voix] scène 1 phrase 3: 0.98s audio en 2.7s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 0.95s audio en 2.6s — Jaabi ye fɔlɔ ye:
-[voix] scène 2 phrase 1: 1.01s audio en 2.7s — Biton Kulubali.
-[voix] scène 3 phrase 0: 2.07s audio en 4.1s — San kɛmɛ saba ni ko ye nin ye.
-[voix] scène 4 phrase 0: 2.41s audio en 4.5s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 24.7s avec le moteur spark
-[mix] audio.wav 24.7 s
+[voix] scène 0 phrase 0: 1.99s audio en 4.4s — Segu bɛ wele ko balanzan joli dugu?
+[voix] scène 1 phrase 0: 1.46s audio en 3.6s — Jaabi fɔlɔ: kɛmɛ.
+[voix] scène 1 phrase 1: 5.56s audio en 8.9s — Jaabi filanan: waa naani ni kɛmɛ naani ni binaani ni naani.
+[voix] scène 1 phrase 2: 2.25s audio en 5.3s — Jaabi sabanan: waa kelen.
+[voix] scène 1 phrase 3: 0.91s audio en 2.7s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.32s audio en 3.1s — Jaabi ye filanan ye!
+[voix] scène 3 phrase 0: 1.45s audio en 3.2s — Ani kelen min kurulen don!
+[voix] scène 4 phrase 0: 2.51s audio en 4.6s — Aw tun b'o dɔn wa? A fɔ an ye!
+[voix] durée totale 26.5s avec le moteur spark
+[mix] audio.wav 26.5 s
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 [transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
@@ -24,85 +23,16 @@ Cannot initialize model with low cpu memory usage because `accelerate` was not f
 pip install accelerate
 ```
 .
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.73it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.79it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.08it/s]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  3.86it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  5.48it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.03it/s]
 You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 16s
-[images] scène 0 en 39s : majestic 18th century bambara king of segou on a throne, traditional mande royal clothes, mud palace, warm light, cinematic painting
-[images] scène 1 en 39s : old mud brick palace of a bambara kingdom on the bank of the niger river, mali, 18th century, cinematic painting
-[images] scène 2 en 39s : powerful bambara warrior king with spear and royal cap, crowd of warriors behind, savanna, cinematic painting
-[images] scène 3 en 39s : ancient sahel town of segou with mud houses along the niger river, 18th century, aerial view, cinematic painting
-[images] scène 4 en 39s : niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo
-[rendu] image 0/739 (0s)
-[rendu] image 300/739 (34s)
-[rendu] image 600/739 (69s)
-[rendu] 018-quiz-segou-biton.mp4 prêt en 86s
-[statut] {"episode": "018-quiz-segou-biton", "started": "2026-10-04 21:50:29", "voice_s": 34, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 216, "render_s": 87, "ok": true, "video": "out/018-quiz-segou-biton.mp4", "duration": 24.663}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 3.17s audio en 5.5s — Biton ka kɛlɛcɛw tun bɛ wele ko di?
-[voix] scène 1 phrase 0: 1.68s audio en 3.5s — Jaabi fɔlɔ: sofaw.
-[voix] scène 1 phrase 1: 1.65s audio en 3.5s — Jaabi filanan: dozow.
-[voix] scène 1 phrase 2: 2.03s audio en 3.9s — Jaabi sabanan: tɔnjɔnw.
-[voix] scène 1 phrase 3: 0.97s audio en 2.7s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.24s audio en 2.8s — Jaabi ye sabanan ye:
-[voix] scène 2 phrase 1: 0.44s audio en 2.0s — tɔnjɔnw.
-[voix] scène 3 phrase 0: 2.13s audio en 4.0s — U daminɛna ni kamalen tɔn ye.
-[voix] scène 4 phrase 0: 2.36s audio en 4.4s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 23.8s avec le moteur spark
-[mix] audio.wav 23.8 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 13.83it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.89it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.87it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 1s
-[images] scène 0 en 39s : army of 18th century bambara warriors with spears and shields marching in the savanna, dust, epic cinematic painting
-[images] scène 1 en 39s : west african traditional hunters dozo with rifles and amulet shirts, and warriors, mali, cinematic photo
-[images] scène 2 en 39s : group of young bambara warriors standing proudly together with spears, mali village, golden hour, cinematic painting
-[images] scène 3 en 39s : young african men gathered in a circle in a village square under a big tree, meeting, mali, warm light, cinematic photo
-[images] scène 4 en 39s : niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo
-[rendu] image 0/714 (0s)
-[rendu] image 300/714 (34s)
-[rendu] image 600/714 (69s)
-[rendu] 019-quiz-segou-tondjon.mp4 prêt en 83s
-[statut] {"episode": "019-quiz-segou-tondjon", "started": "2026-10-04 21:56:08", "voice_s": 32, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 194, "render_s": 84, "ok": true, "video": "out/019-quiz-segou-tondjon.mp4", "duration": 23.833}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 2.10s audio en 4.0s — Segu bɛ wele ko balanzan joli dugu?
-[voix] scène 1 phrase 0: 1.82s audio en 3.5s — Jaabi fɔlɔ: kɛmɛ.
-[voix] scène 1 phrase 1: 5.67s audio en 9.3s — Jaabi filanan: waa naani ni kɛmɛ naani ni binaani ni naani.
-[voix] scène 1 phrase 2: 2.22s audio en 4.2s — Jaabi sabanan: waa kelen.
-[voix] scène 1 phrase 3: 0.97s audio en 2.8s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.29s audio en 3.0s — Jaabi ye filanan ye:
-[voix] scène 2 phrase 1: 4.83s audio en 7.6s — balanzan waa naani ni kɛmɛ naani ni binaani ni naani!
-[voix] scène 3 phrase 0: 1.35s audio en 2.9s — Ani kelen min kurulen don!
-[voix] scène 4 phrase 0: 2.27s audio en 4.3s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 31.1s avec le moteur spark
-[mix] audio.wav 31.1 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 14.16it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.34it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.30it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 1s
+[images] modèle chargé en 15s
 [images] scène 0 en 39s : many large balanzan acacia trees along the niger river in segou mali, morning light, photo
-[images] scène 1 en 39s : segou town street in mali with mud architecture and big trees, photo, warm light
-[images] scène 2 en 39s : huge balanzan faidherbia albida tree in the sahel, majestic, blue sky, photo
-[images] scène 3 en 39s : one twisted crooked old tree standing among straight trees, african savanna, sunset, photo
-[images] scène 4 en 39s : niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo
-[rendu] image 0/933 (0s)
-[rendu] image 300/933 (34s)
-[rendu] image 600/933 (71s)
-[rendu] image 900/933 (106s)
-[rendu] 020-quiz-segou-balanzan.mp4 prêt en 111s
-[statut] {"episode": "020-quiz-segou-balanzan", "started": "2026-10-04 22:01:21", "voice_s": 42, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 195, "render_s": 112, "ok": true, "video": "out/020-quiz-segou-balanzan.mp4", "duration": 31.101}
+[images] scène 1 en 38s : segou town street in mali with mud architecture and big trees, photo, warm light
+[images] scène 2 en 38s : huge balanzan faidherbia albida tree in the sahel, majestic, blue sky, photo
+[images] scène 3 en 38s : one twisted crooked old tree standing among straight trees, african savanna, sunset, photo
+[images] scène 4 en 38s : niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo
+[rendu] image 0/793 (0s)
+[rendu] image 300/793 (34s)
+[rendu] image 600/793 (71s)
+[rendu] 020-quiz-segou-balanzan.mp4 prêt en 94s
+[statut] {"episode": "020-quiz-segou-balanzan", "started": "2026-10-04 22:10:22", "voice_s": 36, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 212, "render_s": 95, "ok": true, "video": "out/020-quiz-segou-balanzan.mp4", "duration": 26.456}

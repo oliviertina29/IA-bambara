@@ -1,13 +1,13 @@
 {
  "episode": "020-quiz-segou-balanzan",
- "started": "2026-10-04 22:01:21",
- "voice_s": 42,
+ "started": "2026-10-04 22:10:22",
+ "voice_s": 36,
  "engine": "spark",
  "mix_s": 2,
  "images": 5,
- "images_s": 195,
- "render_s": 112,
+ "images_s": 212,
+ "render_s": 95,
  "ok": true,
  "video": "out/020-quiz-segou-balanzan.mp4",
- "duration": 31.101
+ "duration": 26.456
 }
