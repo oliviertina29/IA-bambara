@@ -1,13 +1,13 @@
 {
  "episode": "016-quiz-soundjata-soumaoro",
- "started": "2026-10-04 09:09:37",
- "voice_s": 32,
+ "started": "2026-10-04 11:16:19",
+ "voice_s": 37,
  "engine": "spark",
- "mix_s": 2,
+ "mix_s": 3,
  "images": 5,
- "images_s": 199,
- "render_s": 89,
+ "images_s": 95,
+ "render_s": 72,
  "ok": true,
  "video": "out/016-quiz-soundjata-soumaoro.mp4",
- "duration": 25.344
+ "duration": 29.671
 }
