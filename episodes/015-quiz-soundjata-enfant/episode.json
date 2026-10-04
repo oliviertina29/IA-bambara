@@ -13,43 +13,43 @@
   {
    "type": "hook",
    "params": {
-    "text": "Sunjata denmisɛnya,\ngɛlɛya jumɛn?",
+    "text": "Sunjata tun tɛ se\nka mun kɛ?",
     "icon": "people",
     "badge": "question",
     "color": "orange"
    },
    "image": "young west african boy sitting on the ground in a medieval mande village, his mother beside him, warm sunset, cinematic painting",
    "bm": [
-    "[Sunjata] denmisɛnya la, gɛlɛya tun b'a la."
+    "[Sunjata] tun ye den ye tuma min na,",
+    "a tun tɛ se ka mun kɛ?"
    ],
-   "fr": "Selon l'épopée, Soundjata enfant avait un problème."
+   "fr": "Quand Soundjata était enfant, qu'est-ce qu'il ne pouvait pas faire ?"
   },
   {
    "type": "quiz",
    "params": {
     "question": "Sunjata tun tɛ se\nka mun kɛ?",
     "options": [
-     "Ka ye",
+     "Ka yeli kɛ",
      "Ka taama",
      "Ka kuma"
     ],
-    "countdown": 5
+    "countdown": 4
    },
    "image": "medieval mande village with round mud huts and thatched roofs, mali, golden light, cinematic painting",
    "bm": [
-    "A tun tɛ se ka mun kɛ?",
-    "A: ka ye,",
-    "B: ka taama,",
-    "C: ka kuma?",
+    "A: ka yeli kɛ.",
+    "B: ka taama.",
+    "C: ka kuma.",
     "I ka jaabi sɛbɛn!"
    ],
-   "fr": "Il ne pouvait pas faire quoi ? A : voir, B : marcher, C : parler."
+   "fr": "A : voir. B : marcher. C : parler. Écris ta réponse !"
   },
   {
    "type": "quiz_reveal",
    "params": {
     "options": [
-     "Ka ye",
+     "Ka yeli kɛ",
      "Ka taama",
      "Ka kuma"
     ],
@@ -59,9 +59,9 @@
    "image": "young african prince standing up proudly leaning on a bent iron bar, crowd watching amazed, medieval mali, cinematic painting",
    "bm": [
     "Jaabi ye [B] ye:",
-    "a tun tɛ se ka [taama]!"
+    "Sunjata tun tɛ se ka [taama]."
    ],
-   "fr": "La réponse est B : il ne pouvait pas marcher !"
+   "fr": "La réponse est B : il ne pouvait pas marcher."
   },
   {
    "type": "robot_says",
@@ -71,21 +71,22 @@
    },
    "image": "huge african baobab tree uprooted lying on the ground, dramatic sky, mali savanna, cinematic",
    "bm": [
-    "Don dɔ, a wulila ka [sira] dɔ bɔ!"
+    "Don dɔ, a wulila ka taama.",
+    "A ye [sira] dɔ bɔ k'a di a ba ma."
    ],
-   "fr": "Un jour, il s'est levé et a arraché un baobab (pour sa mère) !"
+   "fr": "Un jour, il s'est levé et a marché. Il a arraché un baobab pour sa mère."
   },
   {
    "type": "outro",
    "params": {
     "cta": "Aw ye an tugu!",
-    "ask": "I tun b'a dɔn wa?"
+    "ask": "Aw tun b'o dɔn wa?"
    },
    "image": "ancient mande warrior king on horseback in the savanna at sunset, mali empire, epic cinematic painting",
    "bm": [
-    "I tun b'a dɔn wa? A fɔ an ye!"
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
    ],
-   "fr": "Tu le savais ? Dis-le en commentaire ! Abonne-toi."
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
   }
  ]
 }
