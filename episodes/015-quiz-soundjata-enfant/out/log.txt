@@ -1,16 +1,17 @@
 [voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 3.29s audio en 6.6s — Sunjata denmisɛnya la, gɛlɛya tun b'a la.
-[voix] scène 1 phrase 0: 1.19s audio en 3.3s — A tun tɛ se ka mun kɛ?
-[voix] scène 1 phrase 1: 1.18s audio en 3.2s — A: ka ye,
-[voix] scène 1 phrase 2: 0.65s audio en 2.5s — B: ka taama,
-[voix] scène 1 phrase 3: 0.56s audio en 2.3s — C: ka kuma?
-[voix] scène 1 phrase 4: 1.05s audio en 3.1s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.09s audio en 3.0s — Jaabi ye B ye:
-[voix] scène 2 phrase 1: 1.13s audio en 3.2s — a tun tɛ se ka taama!
-[voix] scène 3 phrase 0: 2.26s audio en 5.0s — Don dɔ, a wulila ka sira dɔ bɔ!
-[voix] scène 4 phrase 0: 2.29s audio en 4.7s — I tun b'a dɔn wa? A fɔ an ye!
-[voix] durée totale 26.8s avec le moteur spark
-[mix] audio.wav 26.8 s
+[voix] scène 0 phrase 0: 1.97s audio en 4.7s — Sunjata tun ye den ye tuma min na,
+[voix] scène 0 phrase 1: 1.24s audio en 3.5s — a tun tɛ se ka mun kɛ?
+[voix] scène 1 phrase 0: 0.83s audio en 2.8s — A: ka yeli kɛ.
+[voix] scène 1 phrase 1: 0.66s audio en 2.4s — B: ka taama.
+[voix] scène 1 phrase 2: 1.51s audio en 3.4s — C: ka kuma.
+[voix] scène 1 phrase 3: 1.06s audio en 3.1s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.02s audio en 2.9s — Jaabi ye B ye:
+[voix] scène 2 phrase 1: 1.74s audio en 3.8s — Sunjata tun tɛ se ka taama.
+[voix] scène 3 phrase 0: 1.92s audio en 4.2s — Don dɔ, a wulila ka taama.
+[voix] scène 3 phrase 1: 2.02s audio en 4.1s — A ye sira dɔ bɔ k'a di a ba ma.
+[voix] scène 4 phrase 0: 2.28s audio en 4.6s — Aw tun b'o dɔn wa? A fɔ an ye!
+[voix] durée totale 28.1s avec le moteur spark
+[mix] audio.wav 28.1 s
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 [transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
@@ -25,86 +26,16 @@ Cannot initialize model with low cpu memory usage because `accelerate` was not f
 pip install accelerate
 ```
 .
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 10.12it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.17it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.56it/s]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 18.72it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  6.65it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.52it/s]
 You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 19s
+[images] modèle chargé en 17s
 [images] scène 0 en 40s : young west african boy sitting on the ground in a medieval mande village, his mother beside him, warm sunset, cinematic painting
-[images] scène 1 en 40s : medieval mande village with round mud huts and thatched roofs, mali, golden light, cinematic painting
-[images] scène 2 en 40s : young african prince standing up proudly leaning on a bent iron bar, crowd watching amazed, medieval mali, cinematic painting
-[images] scène 3 en 40s : huge african baobab tree uprooted lying on the ground, dramatic sky, mali savanna, cinematic
-[images] scène 4 en 40s : ancient mande warrior king on horseback in the savanna at sunset, mali empire, epic cinematic painting
-[rendu] image 0/803 (0s)
-[rendu] image 300/803 (34s)
-[rendu] image 600/803 (70s)
-[rendu] 015-quiz-soundjata-enfant.mp4 prêt en 93s
-[statut] {"episode": "015-quiz-soundjata-enfant", "started": "2026-10-04 09:03:39", "voice_s": 37, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 224, "render_s": 94, "ok": true, "video": "out/015-quiz-soundjata-enfant.mp4", "duration": 26.797}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.72s audio en 3.8s — Sumaworo gundo tun ye mun ye?
-[voix] scène 1 phrase 0: 1.70s audio en 3.9s — Sunjata y'a se ni mun ye?
-[voix] scène 1 phrase 1: 0.92s audio en 2.7s — A: sanu tamba,
-[voix] scène 1 phrase 2: 0.92s audio en 2.8s — B: dontoro jɛ,
-[voix] scène 1 phrase 3: 0.75s audio en 2.5s — C: marifa?
-[voix] scène 1 phrase 4: 0.99s audio en 2.9s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.29s audio en 3.5s — Jaabi ye B ye: dontoro jɛ!
-[voix] scène 3 phrase 0: 2.55s audio en 5.0s — A balimamuso Nana Tiriban de ye gundo sɔrɔ!
-[voix] scène 4 phrase 0: 2.42s audio en 4.8s — I tun b'a dɔn wa? A fɔ an ye!
-[voix] durée totale 25.3s avec le moteur spark
-[mix] audio.wav 25.3 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 14.57it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.86it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.97it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 1s
-[images] scène 0 en 40s : mysterious powerful african sorcerer king in dark robes with amulets, medieval sosso fortress, night, torches, cinematic painting
-[images] scène 1 en 40s : two medieval west african armies facing each other on a savanna battlefield, horses and spears, dust, epic cinematic painting
-[images] scène 2 en 40s : a white rooster standing in dramatic light, african village background, cinematic
-[images] scène 3 en 40s : young african princess in medieval royal clothes secretly escaping a fortress at night, moonlight, cinematic painting
-[images] scène 4 en 40s : medieval mande army celebrating victory at kirina, horses and banners, sunset, epic cinematic painting
-[rendu] image 0/760 (0s)
-[rendu] image 300/760 (34s)
-[rendu] image 600/760 (69s)
-[rendu] 016-quiz-soundjata-soumaoro.mp4 prêt en 88s
-[statut] {"episode": "016-quiz-soundjata-soumaoro", "started": "2026-10-04 09:09:37", "voice_s": 32, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 199, "render_s": 89, "ok": true, "video": "out/016-quiz-soundjata-soumaoro.mp4", "duration": 25.344}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.59s audio en 3.7s — Sunjata ba tɔgɔ tun ye di?
-[voix] scène 1 phrase 0: 0.91s audio en 2.7s — A tɔgɔ tun ye di?
-[voix] scène 1 phrase 1: 1.08s audio en 2.9s — A: Sasuma Berete,
-[voix] scène 1 phrase 2: 0.70s audio en 2.5s — B: Sogolon,
-[voix] scène 1 phrase 3: 1.07s audio en 3.0s — C: Nana Tiriban?
-[voix] scène 1 phrase 4: 1.07s audio en 2.9s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 0.92s audio en 2.7s — Jaabi ye B ye:
-[voix] scène 2 phrase 1: 0.98s audio en 3.8s — Sogolon Kejugu!
-[voix] scène 3 phrase 0: 2.50s audio en 4.9s — Maana b'a fɔ ko a tun ye
-[voix] scène 3 phrase 1: 0.75s audio en 2.6s — sigi muso ye!
-[voix] scène 4 phrase 0: 2.23s audio en 4.4s — I tun b'a dɔn wa? A fɔ an ye!
-[voix] durée totale 26.2s avec le moteur spark
-[mix] audio.wav 26.2 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 14.90it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.02it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.16it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 1s
-[images] scène 0 en 40s : dignified medieval west african queen mother in traditional mande clothing and jewelry, royal court, warm light, cinematic painting
-[images] scène 1 en 40s : medieval mande royal compound with mud walls, women in traditional clothes, mali, golden hour, cinematic painting
-[images] scène 2 en 40s : african mother holding her young son tenderly, medieval mande village, soft warm light, cinematic painting
-[images] scène 3 en 39s : majestic african buffalo standing in the savanna at dawn, mist, mystical atmosphere, cinematic
-[images] scène 4 en 40s : ancient mande warrior king on horseback in the savanna at sunset, mali empire, epic cinematic painting
-[rendu] image 0/786 (0s)
-[rendu] image 300/786 (34s)
-[rendu] image 600/786 (68s)
-[rendu] 017-quiz-soundjata-sogolon.mp4 prêt en 90s
-[statut] {"episode": "017-quiz-soundjata-sogolon", "started": "2026-10-04 09:15:00", "voice_s": 36, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 199, "render_s": 91, "ok": true, "video": "out/017-quiz-soundjata-sogolon.mp4", "duration": 26.208}
+[images] scène 1 en 39s : medieval mande village with round mud huts and thatched roofs, mali, golden light, cinematic painting
+[images] scène 2 en 39s : young african prince standing up proudly leaning on a bent iron bar, crowd watching amazed, medieval mali, cinematic painting
+[images] scène 3 en 39s : huge african baobab tree uprooted lying on the ground, dramatic sky, mali savanna, cinematic
+[images] scène 4 en 39s : ancient mande warrior king on horseback in the savanna at sunset, mali empire, epic cinematic painting
+[rendu] image 0/841 (0s)
+[rendu] image 300/841 (34s)
+[rendu] image 600/841 (69s)
+[rendu] 015-quiz-soundjata-enfant.mp4 prêt en 97s
+[statut] {"episode": "015-quiz-soundjata-enfant", "started": "2026-10-04 11:01:42", "voice_s": 40, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 219, "render_s": 98, "ok": true, "video": "out/015-quiz-soundjata-enfant.mp4", "duration": 28.054}
