@@ -1,0 +1,13 @@
+{
+ "episode": "019-quiz-segou-tondjon",
+ "started": "2026-10-04 21:56:08",
+ "voice_s": 32,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 194,
+ "render_s": 84,
+ "ok": true,
+ "video": "out/019-quiz-segou-tondjon.mp4",
+ "duration": 23.833
+}
