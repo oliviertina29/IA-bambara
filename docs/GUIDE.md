@@ -77,29 +77,11 @@ python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin 
 ## Vocabulaire
 - Dire **forfɛ** (forfait) et jamais « mega » : les gens ne comprennent pas « mega ».
 
-## Ce qui marche sur TikTok (résultats réels, 30/09/2026, ~1 semaine)
-| Vidéo | Vues |
-|---|---|
-| 005 Mode avion (« Telefɔni bɛ se ka pankurun bin wa? ») | 140 |
-| 002 Le téléphone t'écoute | 124 |
-| 004 WhatsApp lu en cachette | 105 |
-| 001 C'est quoi l'IA (format long, lent) | 101 |
-| 007 Si Internet s'arrêtait | 95 |
-| 003 Téléphone qui chauffe | 93 |
-| 006 Forfait (récente) | 64 |
-
-Leçons :
-- Les meilleures = **questions choc, pratiques et un peu inquiétantes** (« est-ce que X peut vraiment faire Y ? »). Garder ce style d'accroche **mais varier les thèmes** : pas seulement le téléphone — aussi la vie quotidienne, la santé, l'argent, l'électricité, la maison, les transports, la nature, l'IA… toujours un angle tech/science simple.
-- Format court (17–23 s), accroche visible dès la 1re image (sert de miniature).
-- À éviter : concepts abstraits ou jeux de mots (le « robot et les proverbes » n'était pas compréhensible → remplacé).
-- Vocabulaire : dire **forfɛ**, pas « mega ».
-- Prochaine étape : suivre la durée moyenne de visionnage (> 70 % = bon signe).
-
-## Voix (30/09/2026)
+## Voix par défaut
 - Voix par défaut : **Spark, voix Moussa**. `"voice": {"engine": "spark", "speaker": "Moussa"}`.
 - Fonctionne sans modèle restreint : GGUF public MALIBA-AI/bambara-tts-gguf + vocodeur unsloth/Spark-TTS-0.5B, servis par llama.cpp sur CPU (pipeline/spark_server.sh). Repli automatique sur VITS si Spark échoue.
 
-## Quiz et images IA (30/09/2026)
+## Quiz et images IA
 - `quiz` : `question` (\n pour couper), `options` (2–4 réponses courtes), `countdown` (secondes, défaut 5). Répliques : la question, puis une par option (« A: … »), puis « I ka jaabi sɛbɛn sisan! ». Le compte à rebours (avec tic-tac) démarre après la dernière réplique.
 - `quiz_reveal` : mêmes `options`, `answer` (indice 0,1,2…), `title` (ex. « Jaabi ye B ye! »). La bonne réponse s'allume, les autres s'éteignent, confettis.
 - **Images IA** : ajouter `"image": "<prompt en anglais>"` à n'importe quelle scène → illustration réaliste générée sur CPU (stabilityai/sd-turbo) en fond, avec lent zoom. Facultatif : si ça échoue, la vidéo sort sans image.
