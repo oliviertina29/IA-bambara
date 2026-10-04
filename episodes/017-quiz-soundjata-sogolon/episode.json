@@ -1,0 +1,92 @@
+{
+ "slug": "017-quiz-soundjata-sogolon",
+ "title": "Quiz : la mère de Soundjata",
+ "lesson": 17,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Sunjata ba\ntɔgɔ tun ye di?",
+    "icon": "people",
+    "badge": "question",
+    "color": "teal"
+   },
+   "image": "dignified medieval west african queen mother in traditional mande clothing and jewelry, royal court, warm light, cinematic painting",
+   "bm": [
+    "[Sunjata] ba tɔgɔ tun ye di?"
+   ],
+   "fr": "Comment s'appelait la mère de Soundjata ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Sunjata ba\ntɔgɔ tun ye di?",
+    "options": [
+     "Sasuma Berete",
+     "Sogolon",
+     "Nana Tiriban"
+    ],
+    "countdown": 5
+   },
+   "image": "medieval mande royal compound with mud walls, women in traditional clothes, mali, golden hour, cinematic painting",
+   "bm": [
+    "A tɔgɔ tun ye di?",
+    "A: Sasuma Berete,",
+    "B: Sogolon,",
+    "C: Nana Tiriban?",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "A : Sassouma Bérété, B : Sogolon, C : Nana Triban."
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Sasuma Berete",
+     "Sogolon",
+     "Nana Tiriban"
+    ],
+    "answer": 1,
+    "title": "Jaabi ye B ye!"
+   },
+   "image": "african mother holding her young son tenderly, medieval mande village, soft warm light, cinematic painting",
+   "bm": [
+    "Jaabi ye [B] ye:",
+    "[Sogolon Kejugu]!"
+   ],
+   "fr": "La réponse est B : Sogolon Kédjou !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "cow",
+    "label": "Sigi muso"
+   },
+   "image": "majestic african buffalo standing in the savanna at dawn, mist, mystical atmosphere, cinematic",
+   "bm": [
+    "Maana b'a fɔ ko a tun ye",
+    "[sigi muso] ye!"
+   ],
+   "fr": "L'épopée l'appelle « la femme-buffle » !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "I tun b'a dɔn wa?"
+   },
+   "image": "ancient mande warrior king on horseback in the savanna at sunset, mali empire, epic cinematic painting",
+   "bm": [
+    "I tun b'a dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Tu le savais ? Dis-le en commentaire ! Abonne-toi."
+  }
+ ]
+}

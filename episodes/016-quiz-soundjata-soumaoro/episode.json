@@ -1,0 +1,90 @@
+{
+ "slug": "016-quiz-soundjata-soumaoro",
+ "title": "Quiz : le secret de Soumaoro",
+ "lesson": 16,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Sumaworo gundo\ntun ye mun ye?",
+    "icon": "lock",
+    "badge": "question",
+    "color": "purple"
+   },
+   "image": "mysterious powerful african sorcerer king in dark robes with amulets, medieval sosso fortress, night, torches, cinematic painting",
+   "bm": [
+    "[Sumaworo] gundo tun ye mun ye?"
+   ],
+   "fr": "Soumaoro, le roi du Sosso : quel était son secret ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Sunjata y'a se\nni mun ye?",
+    "options": [
+     "Sanu tamba",
+     "Dontoro jɛ",
+     "Marifa"
+    ],
+    "countdown": 5
+   },
+   "image": "two medieval west african armies facing each other on a savanna battlefield, horses and spears, dust, epic cinematic painting",
+   "bm": [
+    "Sunjata y'a se ni mun ye?",
+    "A: sanu tamba,",
+    "B: dontoro jɛ,",
+    "C: marifa?",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "Selon l'épopée, avec quoi Soundjata l'a vaincu ? A : une lance en or, B : un coq blanc, C : un fusil."
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Sanu tamba",
+     "Dontoro jɛ",
+     "Marifa"
+    ],
+    "answer": 1,
+    "title": "Jaabi ye B ye!"
+   },
+   "image": "a white rooster standing in dramatic light, african village background, cinematic",
+   "bm": [
+    "Jaabi ye [B] ye: [dontoro jɛ]!"
+   ],
+   "fr": "La réponse est B : une flèche avec l'ergot d'un coq blanc !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "people",
+    "label": "Nana Tiriban"
+   },
+   "image": "young african princess in medieval royal clothes secretly escaping a fortress at night, moonlight, cinematic painting",
+   "bm": [
+    "A balimamuso [Nana Tiriban] de ye gundo sɔrɔ!"
+   ],
+   "fr": "C'est sa sœur Nana Triban qui avait découvert ce secret !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "I tun b'a dɔn wa?"
+   },
+   "image": "medieval mande army celebrating victory at kirina, horses and banners, sunset, epic cinematic painting",
+   "bm": [
+    "I tun b'a dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Tu le savais ? Dis-le en commentaire ! Abonne-toi."
+  }
+ ]
+}
