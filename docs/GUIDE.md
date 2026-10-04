@@ -104,9 +104,3 @@ Leçons :
 - `quiz_reveal` : mêmes `options`, `answer` (indice 0,1,2…), `title` (ex. « Jaabi ye B ye! »). La bonne réponse s'allume, les autres s'éteignent, confettis.
 - **Images IA** : ajouter `"image": "<prompt en anglais>"` à n'importe quelle scène → illustration réaliste générée sur CPU (stabilityai/sd-turbo) en fond, avec lent zoom. Facultatif : si ça échoue, la vidéo sort sans image.
 - Nombres : les écrire en toutes lettres dans les répliques (bi duuru, kɛmɛ fila ni wɔɔrɔ…), en chiffres dans les options.
-
-## Ce qui marche (04/10/2026)
-- Le quiz **013 Kankou Moussa** démarre le mieux de toutes : 147+ vues et 12+ likes en quelques heures, avec des commentaires.
-- Leçon : l'audience veut **l'histoire et la culture du Mali** (empires, rois, villes, héros), toujours en quiz éducatif. Éviter la science abstraite (chimie, mécanique, quantique).
-- Garder : quiz A/B/C + compte à rebours, voix Moussa, une image IA par scène, fin avec une question facile à commenter.
-- Faits historiques : s'en tenir à ce qui est bien établi (sources écrites ou consensus) ; quand c'est de la tradition orale, le dire (« ko fɔlɔ la… »).
