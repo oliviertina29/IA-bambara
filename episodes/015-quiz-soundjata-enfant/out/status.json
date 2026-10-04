@@ -1,0 +1,13 @@
+{
+ "episode": "015-quiz-soundjata-enfant",
+ "started": "2026-10-04 09:03:39",
+ "voice_s": 37,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 224,
+ "render_s": 94,
+ "ok": true,
+ "video": "out/015-quiz-soundjata-enfant.mp4",
+ "duration": 26.797
+}

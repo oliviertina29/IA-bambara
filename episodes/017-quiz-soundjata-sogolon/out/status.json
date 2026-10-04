@@ -1,0 +1,13 @@
+{
+ "episode": "017-quiz-soundjata-sogolon",
+ "started": "2026-10-04 09:15:00",
+ "voice_s": 36,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 199,
+ "render_s": 91,
+ "ok": true,
+ "video": "out/017-quiz-soundjata-sogolon.mp4",
+ "duration": 26.208
+}
