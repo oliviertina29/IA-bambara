@@ -164,7 +164,7 @@ def run(ep_dir):
             log(f"scène {i} phrase {k}: {d:.2f}s audio en {time.time()-t0:.1f}s — {txt}")
             cl.append({"text": line, "t0": lt, "t1": lt + d})
             voice.append([round(t + lt, 3), f])
-            lt += d + (0.5 if line.rstrip()[-1:] in "?!." else 0.3)
+            lt += (d + (0.5 if line.rstrip()[-1:] in "?!." else 0.3) * float(ep.get("gap", 1.0)))
         voice_end = lt - (0.3 if cl else 0)
         L = max(rules["min"], voice_end + rules["tail"] + float(scene.get("params", {}).get("countdown", 0)))
         sc.append([round(t, 3), round(t + L, 3)])

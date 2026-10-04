@@ -86,3 +86,5 @@ python pipeline/produce.py episodes/<slug>   # voix + mixage + vidéo (a besoin 
 - `quiz_reveal` : mêmes `options`, `answer` (indice 0,1,2…), `title` (ex. « Jaabi ye B ye! »). La bonne réponse s'allume, les autres s'éteignent, confettis.
 - **Images IA** : ajouter `"image": "<prompt en anglais>"` à n'importe quelle scène → illustration réaliste générée sur CPU (stabilityai/sd-turbo) en fond, avec lent zoom. Facultatif : si ça échoue, la vidéo sort sans image.
 - Nombres : les écrire en toutes lettres dans les répliques (bi duuru, kɛmɛ fila ni wɔɔrɔ…), en chiffres dans les options.
+- `labels` (quiz et quiz_reveal) : texte des pastilles des réponses, par défaut « ABCD » ; « 123 » pour des réponses dites « jaabi fɔlɔ / filanan / sabanan ».
+- `gap` (au niveau de l'épisode) : multiplie les silences entre les répliques (1 = normal, 0.3 = très serré) pour raccourcir une vidéo sans toucher au texte.
