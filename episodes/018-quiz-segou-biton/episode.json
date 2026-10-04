@@ -1,0 +1,93 @@
+{
+ "slug": "018-quiz-segou-biton",
+ "title": "Quiz : le fondateur du royaume de Ségou",
+ "lesson": 18,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Jɔn de ye Segu\nmasaya sigi?",
+    "icon": "people",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "majestic 18th century bambara king of segou on a throne, traditional mande royal clothes, mud palace, warm light, cinematic painting",
+   "bm": [
+    "Jɔn de ye [Segu] masaya sigi?"
+   ],
+   "fr": "Qui a fondé le royaume de Ségou ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Jɔn de ye Segu\nmasaya sigi?",
+    "options": [
+     "Biton Kulubali",
+     "Sunjata Keyita",
+     "Samori Ture"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "old mud brick palace of a bambara kingdom on the bank of the niger river, mali, 18th century, cinematic painting",
+   "bm": [
+    "Jaabi fɔlɔ: Biton Kulubali.",
+    "Jaabi filanan: Sunjata Keyita.",
+    "Jaabi sabanan: Samori Ture.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Biton Coulibaly. 2 : Soundjata Keïta. 3 : Samory Touré. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Biton Kulubali",
+     "Sunjata Keyita",
+     "Samori Ture"
+    ],
+    "labels": "123",
+    "answer": 0,
+    "title": "Jaabi ye fɔlɔ ye!"
+   },
+   "image": "powerful bambara warrior king with spear and royal cap, crowd of warriors behind, savanna, cinematic painting",
+   "bm": [
+    "Jaabi ye [fɔlɔ] ye:",
+    "[Biton Kulubali]."
+   ],
+   "fr": "La réponse est la n°1 !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "book",
+    "label": "300+"
+   },
+   "image": "ancient sahel town of segou with mud houses along the niger river, 18th century, aerial view, cinematic painting",
+   "bm": [
+    "San [kɛmɛ saba] ni ko ye nin ye."
+   ],
+   "fr": "Il y a plus de 300 ans (vers 1712)."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

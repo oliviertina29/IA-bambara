@@ -1,0 +1,93 @@
+{
+ "slug": "019-quiz-segou-tondjon",
+ "title": "Quiz : l'armée de Biton",
+ "lesson": 19,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Biton ka kɛlɛcɛw tun\nbɛ wele ko di?",
+    "icon": "people",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "army of 18th century bambara warriors with spears and shields marching in the savanna, dust, epic cinematic painting",
+   "bm": [
+    "[Biton] ka kɛlɛcɛw tun bɛ wele ko di?"
+   ],
+   "fr": "Comment appelait-on les guerriers de Biton ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Biton ka kɛlɛcɛw tun\nbɛ wele ko di?",
+    "options": [
+     "Sofaw",
+     "Dozow",
+     "Tɔnjɔnw"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "west african traditional hunters dozo with rifles and amulet shirts, and warriors, mali, cinematic photo",
+   "bm": [
+    "Jaabi fɔlɔ: sofaw.",
+    "Jaabi filanan: dozow.",
+    "Jaabi sabanan: tɔnjɔnw.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : les sofas. 2 : les dozos. 3 : les tondjons. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Sofaw",
+     "Dozow",
+     "Tɔnjɔnw"
+    ],
+    "labels": "123",
+    "answer": 2,
+    "title": "Jaabi ye sabanan ye!"
+   },
+   "image": "group of young bambara warriors standing proudly together with spears, mali village, golden hour, cinematic painting",
+   "bm": [
+    "Jaabi ye [sabanan] ye:",
+    "[tɔnjɔnw]."
+   ],
+   "fr": "La réponse est la n°3 !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "people",
+    "label": "Tɔn"
+   },
+   "image": "young african men gathered in a circle in a village square under a big tree, meeting, mali, warm light, cinematic photo",
+   "bm": [
+    "U daminɛna ni [kamalen tɔn] ye."
+   ],
+   "fr": "Au départ, c'était une association de jeunes gens (le tɔn) dont Biton était le chef."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

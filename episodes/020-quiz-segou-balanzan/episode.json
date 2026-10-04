@@ -1,0 +1,93 @@
+{
+ "slug": "020-quiz-segou-balanzan",
+ "title": "Quiz : Ségou et ses balanzans",
+ "lesson": 20,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Segu, balanzan\njoli dugu?",
+    "icon": "tree",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "many large balanzan acacia trees along the niger river in segou mali, morning light, photo",
+   "bm": [
+    "[Segu] bɛ wele ko balanzan joli dugu?"
+   ],
+   "fr": "Ségou, c'est la ville de combien de balanzans ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Segu bɛ wele ko\nbalanzan joli dugu?",
+    "options": [
+     "100",
+     "4444",
+     "1000"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "segou town street in mali with mud architecture and big trees, photo, warm light",
+   "bm": [
+    "Jaabi fɔlɔ: kɛmɛ.",
+    "Jaabi filanan: waa naani ni kɛmɛ naani ni binaani ni naani.",
+    "Jaabi sabanan: waa kelen.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : 100. 2 : 4444. 3 : 1000. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "100",
+     "4444",
+     "1000"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "huge balanzan faidherbia albida tree in the sahel, majestic, blue sky, photo",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "balanzan [waa naani ni kɛmɛ naani ni binaani ni naani]!"
+   ],
+   "fr": "La réponse est la n°2 !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "tree",
+    "label": "+1"
+   },
+   "image": "one twisted crooked old tree standing among straight trees, african savanna, sunset, photo",
+   "bm": [
+    "Ani kelen min [kurulen] don!"
+   ],
+   "fr": "Et un tordu !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}
