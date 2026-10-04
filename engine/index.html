@@ -438,9 +438,9 @@ LIB.vrai_faux={
 
 /* ---- quiz : question + 2–4 answers (each appears when spoken) + countdown ---- */
 const OPTCOL=['#17BEBB','#F2A541','#8E6CDB','#E4572E'];
-function quizOptions(g,opts){return opts.map((o,i)=>{const el=add(g,`<g><rect x="-430" y="-60" width="860" height="120" rx="60" fill="#FFF1D6" filter="url(#shadow)"/>
+function quizOptions(g,opts,lab){lab=lab||'ABCD';return opts.map((o,i)=>{const el=add(g,`<g><rect x="-430" y="-60" width="860" height="120" rx="60" fill="#FFF1D6" filter="url(#shadow)"/>
   <rect class="ring" x="-430" y="-60" width="860" height="120" rx="60" fill="none" stroke="#2FB36B" stroke-width="10" opacity="0"/>
-  <circle cx="-360" cy="0" r="46" fill="${OPTCOL[i%4]}"/><text x="-360" y="18" text-anchor="middle" class="pop" font-size="52" fill="#fff">${'ABCD'[i]}</text>
+  <circle cx="-360" cy="0" r="46" fill="${OPTCOL[i%4]}"/><text x="-360" y="18" text-anchor="middle" class="pop" font-size="52" fill="#fff">${esc(String(lab[i]))}</text>
   <text x="-290" y="17" font-size="${o.length>18?40:48}" fill="#1B1E42">${esc(o)}</text>
   <g class="ok" transform="translate(370 0) scale(.001)">${ICON.check}</g><g class="no" transform="translate(370 0) scale(.001)">${ICON.cross}</g></g>`);
   return{el,ring:el.querySelector('.ring'),ok:el.querySelector('.ok'),no:el.querySelector('.no')}})}
@@ -449,7 +449,7 @@ LIB.quiz={
   const q=String(p.question||'?').split('\n');const card=add(g,`<g><rect x="-450" y="-${60+q.length*34}" width="900" height="${120+q.length*68}" rx="46" fill="#1B1E42" stroke="#F2A541" stroke-width="6" filter="url(#shadow)"/>
    <g transform="translate(-450 -${60+q.length*34})"><rect x="40" y="-30" width="170" height="60" rx="30" fill="#F2A541"/><text x="125" y="12" text-anchor="middle" class="pop" font-size="32" fill="#1B1E42">QUIZ</text></g>
    ${q.map((l,i)=>`<text x="0" y="${18+(i-(q.length-1)/2)*68}" text-anchor="middle" font-size="${q.some(x=>x.length>20)?50:58}" fill="#FFF1D6">${esc(l)}</text>`).join('')}</g>`);
-  const opts=quizOptions(g,p.options||[]);const cl=ctx.clauses;
+  const opts=quizOptions(g,p.options||[],p.labels);const cl=ctx.clauses;
   opts.forEach((o,i)=>{o.t0=cl.length>i+1?cl[i+1][0]-0.1:0.8+i*0.5;o.y=620+i*150});
   const n=Math.max(1,p.countdown||5);const cs=(cl.length?cl[cl.length-1][1]:ctx.len-n)+0.35;
   const timer=add(g,`<g><circle r="80" fill="#1B1E42" stroke="#FFF1D6" stroke-width="6"/><circle class="arc" r="80" fill="none" stroke="#E4572E" stroke-width="14" pathLength="1" stroke-dasharray="1 1" transform="rotate(-90)"/><text class="n pop" x="0" y="26" text-anchor="middle" font-size="76" fill="#FFF1D6">${n}</text></g>`);
@@ -467,7 +467,7 @@ LIB.quiz={
 /* ---- quiz_reveal : same answers, the right one lights up ---- */
 LIB.quiz_reveal={
  build(g,p,ctx){
-  const opts=quizOptions(g,p.options||[]);const ans=p.answer||0;opts.forEach((o,i)=>o.y=560+i*150);
+  const opts=quizOptions(g,p.options||[],p.labels);const ans=p.answer||0;opts.forEach((o,i)=>o.y=560+i*150);
   const r=(ctx.clauses[0]?ctx.clauses[0][0]:0.3)+0.4;
   const head=add(g,`<g><text x="0" y="0" text-anchor="middle" font-size="64" fill="#FFF1D6" stroke="#1B1E42" stroke-width="10" paint-order="stroke">${esc(p.title||'Jaabi ye…')}</text></g>`);
   const cf=[];const rr=rng(9);for(let i=0;i<40;i++)cf.push({el:add(g,`<rect x="-8" y="-4" width="16" height="8" rx="3" fill="${['#F2A541','#5FF2EE','#2FB36B','#FFF1D6'][i%4]}"/>`),a:rr()*6.28,v:300+rr()*500,rot:(rr()-.5)*800});

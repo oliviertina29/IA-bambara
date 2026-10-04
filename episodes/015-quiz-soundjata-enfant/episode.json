@@ -34,16 +34,17 @@
      "Ka taama",
      "Ka kuma"
     ],
-    "countdown": 4
+    "countdown": 4,
+    "labels": "123"
    },
    "image": "medieval mande village with round mud huts and thatched roofs, mali, golden light, cinematic painting",
    "bm": [
-    "A: ka yeli kɛ.",
-    "B: ka taama.",
-    "C: ka kuma.",
+    "Jaabi fɔlɔ: ka yeli kɛ.",
+    "Jaabi filanan: ka taama.",
+    "Jaabi sabanan: ka kuma.",
     "I ka jaabi sɛbɛn!"
    ],
-   "fr": "A : voir. B : marcher. C : parler. Écris ta réponse !"
+   "fr": "1 : voir. 2 : marcher. 3 : parler. Écris ta réponse !"
   },
   {
    "type": "quiz_reveal",
@@ -54,14 +55,15 @@
      "Ka kuma"
     ],
     "answer": 1,
-    "title": "Jaabi ye B ye!"
+    "title": "Jaabi ye filanan ye!",
+    "labels": "123"
    },
    "image": "young african prince standing up proudly leaning on a bent iron bar, crowd watching amazed, medieval mali, cinematic painting",
    "bm": [
-    "Jaabi ye [B] ye:",
+    "Jaabi ye [filanan] ye:",
     "Sunjata tun tɛ se ka [taama]."
    ],
-   "fr": "La réponse est B : il ne pouvait pas marcher."
+   "fr": "La réponse est la 2e : il ne pouvait pas marcher."
   },
   {
    "type": "robot_says",
