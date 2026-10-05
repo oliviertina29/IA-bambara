@@ -1,0 +1,93 @@
+{
+ "slug": "021-quiz-sinankunya",
+ "title": "Quiz : d'où vient le sinankunya ?",
+ "lesson": 21,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Sinankunya\nsigira min?",
+    "icon": "people",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "two malian men laughing and joking together under a big tree in a village, joyful, warm light, photo",
+   "bm": [
+    "Maana b'a fɔ ko [sinankunya] sigira min?"
+   ],
+   "fr": "Selon la tradition, où le sinankunya (cousinage à plaisanterie) a-t-il été établi ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Sinankunya\nsigira min?",
+    "options": [
+     "Kurukan Fuga",
+     "Tumbutu",
+     "Jenne"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "great assembly of medieval mande chiefs and people gathered in a large open plain, kurukan fuga, cinematic painting",
+   "bm": [
+    "Jaabi fɔlɔ: Kurukan Fuga.",
+    "Jaabi filanan: Tumbutu.",
+    "Jaabi sabanan: Jenne.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Kurukan Fuga. 2 : Tombouctou. 3 : Djenné. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Kurukan Fuga",
+     "Tumbutu",
+     "Jenne"
+    ],
+    "labels": "123",
+    "answer": 0,
+    "title": "Jaabi ye fɔlɔ ye!"
+   },
+   "image": "medieval west african emperor addressing a great assembly of chiefs on a plain, griots, banners, epic cinematic painting",
+   "bm": [
+    "Jaabi ye [fɔlɔ] ye:",
+    "[Kurukan Fuga], Sunjata ka waati la."
+   ],
+   "fr": "La réponse est la n°1 : Kurukan Fuga, au temps de Soundjata."
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "people",
+    "label": "Bozo + Dogon"
+   },
+   "image": "bozo fishermen with pirogue on the niger river and dogon cliff village of bandiagara, mali, split scene, photo",
+   "bm": [
+    "O de y'a to [Bozow] ni [Dogonw] ye sinankunw ye!"
+   ],
+   "fr": "C'est pour ça que Bozos et Dogons sont cousins à plaisanterie !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "I sinankun ye jɔn ye?"
+   },
+   "image": "group of smiling malian friends laughing together at a grin with tea, evening, warm light, photo",
+   "bm": [
+    "I sinankun ye jɔn ye? A fɔ an ye!"
+   ],
+   "fr": "Qui est ton sinankun ? Dis-le-nous ! Abonne-toi."
+  }
+ ]
+}
