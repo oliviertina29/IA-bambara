@@ -1,0 +1,39 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.20s audio en 4.5s — Maana b'a fɔ ko sinankunya sigira min?
+[voix] scène 1 phrase 0: 1.47s audio en 3.2s — Jaabi fɔlɔ: Kurukan Fuga.
+[voix] scène 1 phrase 1: 1.31s audio en 3.1s — Jaabi filanan: Tumbutu.
+[voix] scène 1 phrase 2: 1.70s audio en 3.5s — Jaabi sabanan: Jenne.
+[voix] scène 1 phrase 3: 1.18s audio en 3.1s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.19s audio en 2.9s — Jaabi ye fɔlɔ ye:
+[voix] scène 2 phrase 1: 2.41s audio en 4.4s — Kurukan Fuga, Sunjata ka waati la.
+[voix] scène 3 phrase 0: 2.95s audio en 5.1s — O de y'a to Bozow ni Dogonw ye sinankunw ye!
+[voix] scène 4 phrase 0: 2.53s audio en 4.7s — I sinankun ye jɔn ye? A fɔ an ye!
+[voix] durée totale 24.9s avec le moteur spark
+[mix] audio.wav 24.9 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 18.58it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.47it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  9.39it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 30s
+[images] scène 0 en 33s : two malian men laughing and joking together under a big tree in a village, joyful, warm light, photo
+[images] scène 1 en 32s : great assembly of medieval mande chiefs and people gathered in a large open plain, kurukan fuga, cinematic painting
+[images] scène 2 en 33s : medieval west african emperor addressing a great assembly of chiefs on a plain, griots, banners, epic cinematic painting
+[images] scène 3 en 32s : bozo fishermen with pirogue on the niger river and dogon cliff village of bandiagara, mali, split scene, photo
+[images] scène 4 en 32s : group of smiling malian friends laughing together at a grin with tea, evening, warm light, photo
+[rendu] image 0/748 (0s)
+[rendu] image 300/748 (30s)
+[rendu] image 600/748 (59s)
+[rendu] 021-quiz-sinankunya.mp4 prêt en 74s
+[statut] {"episode": "021-quiz-sinankunya", "started": "2026-10-05 14:55:48", "voice_s": 34, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 197, "render_s": 75, "ok": true, "video": "out/021-quiz-sinankunya.mp4", "duration": 24.935}

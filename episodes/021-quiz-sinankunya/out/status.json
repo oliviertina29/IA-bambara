@@ -1,0 +1,13 @@
+{
+ "episode": "021-quiz-sinankunya",
+ "started": "2026-10-05 14:55:48",
+ "voice_s": 34,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 197,
+ "render_s": 75,
+ "ok": true,
+ "video": "out/021-quiz-sinankunya.mp4",
+ "duration": 24.935
+}
