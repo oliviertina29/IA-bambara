@@ -14,7 +14,7 @@
   {
    "type": "hook",
    "params": {
-    "text": "Tasuma so datugulen\nkɔnɔ: mun na a ka jugu?",
+    "text": "Tasuma so kɔnɔ:\nmun na a ka jugu?",
     "icon": "warning",
     "badge": "question",
     "color": "red"
