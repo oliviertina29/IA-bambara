@@ -1,13 +1,13 @@
 {
  "episode": "018-quiz-segou-biton",
- "started": "2026-10-04 21:50:29",
- "voice_s": 34,
+ "started": "2026-10-05 07:44:17",
+ "voice_s": 36,
  "engine": "spark",
  "mix_s": 2,
  "images": 5,
- "images_s": 216,
- "render_s": 87,
+ "images_s": 215,
+ "render_s": 92,
  "ok": true,
  "video": "out/018-quiz-segou-biton.mp4",
- "duration": 24.663
+ "duration": 25.421
 }
