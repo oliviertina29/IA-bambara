@@ -1,0 +1,93 @@
+{
+ "slug": "022-quiz-nom-bamako",
+ "title": "Quiz : d'où vient le nom de Bamako ?",
+ "lesson": 22,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Bamako tɔgɔ\nbɔra mun na?",
+    "icon": "pin",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "aerial view of bamako city mali with the niger river and bridges at sunset, photo",
+   "bm": [
+    "[Bamako] tɔgɔ bɔra mun na?"
+   ],
+   "fr": "D'où vient le nom de Bamako ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Bamako tɔgɔ\nbɔra mun na?",
+    "options": [
+     "Sama",
+     "Mali",
+     "Bama"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "elephant, hippopotamus and crocodile near an african river, wildlife photo, golden light",
+   "bm": [
+    "Jaabi fɔlɔ: sama.",
+    "Jaabi filanan: mali.",
+    "Jaabi sabanan: bama.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : l'éléphant. 2 : l'hippopotame. 3 : le caïman. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Sama",
+     "Mali",
+     "Bama"
+    ],
+    "labels": "123",
+    "answer": 2,
+    "title": "Jaabi ye sabanan ye!"
+   },
+   "image": "nile crocodile resting on the muddy bank of an african river, close-up wildlife photo",
+   "bm": [
+    "Jaabi ye [sabanan] ye:",
+    "[bama ko]!"
+   ],
+   "fr": "La réponse est la n°3 : « bama ko », le marigot du caïman (selon la tradition) !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "water",
+    "label": "Joliba"
+   },
+   "image": "niger river joliba in bamako with pirogues and fishermen, morning light, photo",
+   "bm": [
+    "Bamako bɛ [Joliba] da la."
+   ],
+   "fr": "Bamako est au bord du Joliba (le fleuve Niger)."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "bamako skyline at night with city lights reflecting on the niger river, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}
