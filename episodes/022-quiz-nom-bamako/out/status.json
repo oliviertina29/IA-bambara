@@ -1,0 +1,13 @@
+{
+ "episode": "022-quiz-nom-bamako",
+ "started": "2026-10-05 15:29:09",
+ "voice_s": 26,
+ "engine": "spark",
+ "mix_s": 1,
+ "images": 5,
+ "images_s": 133,
+ "render_s": 52,
+ "ok": true,
+ "video": "out/022-quiz-nom-bamako.mp4",
+ "duration": 23.033
+}
