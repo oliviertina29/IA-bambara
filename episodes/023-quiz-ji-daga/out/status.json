@@ -1,0 +1,13 @@
+{
+ "episode": "023-quiz-ji-daga",
+ "started": "2026-10-05 15:42:27",
+ "voice_s": 27,
+ "engine": "spark",
+ "mix_s": 1,
+ "images": 5,
+ "images_s": 124,
+ "render_s": 57,
+ "ok": true,
+ "video": "out/023-quiz-ji-daga.mp4",
+ "duration": 26.289
+}

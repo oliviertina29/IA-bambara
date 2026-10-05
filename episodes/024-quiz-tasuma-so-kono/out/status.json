@@ -1,0 +1,13 @@
+{
+ "episode": "024-quiz-tasuma-so-kono",
+ "started": "2026-10-05 15:45:56",
+ "voice_s": 30,
+ "engine": "spark",
+ "mix_s": 1,
+ "images": 5,
+ "images_s": 92,
+ "render_s": 61,
+ "ok": true,
+ "video": "out/024-quiz-tasuma-so-kono.mp4",
+ "duration": 29.017
+}
