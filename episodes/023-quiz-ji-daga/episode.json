@@ -1,0 +1,94 @@
+{
+ "slug": "023-quiz-ji-daga",
+ "title": "Quiz : pourquoi l'eau du canari est fraîche ?",
+ "lesson": 23,
+ "tag": "Quiz · Ladilikan",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Mun na ji daga\nji ka suma?",
+    "icon": "water",
+    "badge": "question",
+    "color": "blue"
+   },
+   "image": "traditional african clay water jar canari in a shaded courtyard, drops of water on its surface, mali, warm light, photo",
+   "bm": [
+    "Mun na [ji daga] kɔnɔ ji ka suma?"
+   ],
+   "fr": "Pourquoi l'eau du canari est-elle fraîche ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Mun na ji daga\nji ka suma?",
+    "options": [
+     "Su suma bɛ to a la",
+     "A bɛ wɔsi",
+     "Kɔgɔ bɛ don a la"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "row of clay water pots in a malian house, cup of water, photo, soft light",
+   "bm": [
+    "Jaabi fɔlɔ: su suma bɛ to a la.",
+    "Jaabi filanan: a bɛ wɔsi.",
+    "Jaabi sabanan: kɔgɔ bɛ don a la.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : il garde la fraîcheur de la nuit. 2 : il transpire. 3 : on y met du sel. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Su suma bɛ to a la",
+     "A bɛ wɔsi",
+     "Kɔgɔ bɛ don a la"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "close-up of a wet clay pot surface with water droplets seeping through, macro photo",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "[ji daga] bɛ wɔsi!"
+   ],
+   "fr": "La réponse est la n°2 : le canari transpire !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "water",
+    "label": "Wɔsi"
+   },
+   "image": "african child drinking fresh water from a cup next to a clay canari, hot sunny day, photo",
+   "bm": [
+    "A wɔsi bɛ ja,",
+    "o de b'a kɔnɔ [ji] suma."
+   ],
+   "fr": "L'eau qui traverse s'évapore dehors : c'est ce qui refroidit l'eau à l'intérieur."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "clay canari water jar on a stand in a malian courtyard at sunset, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

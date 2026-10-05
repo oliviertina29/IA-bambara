@@ -1,0 +1,94 @@
+{
+ "slug": "024-quiz-tasuma-so-kono",
+ "title": "Quiz : dormir avec le feu dans la chambre",
+ "lesson": 24,
+ "tag": "Quiz · Ladilikan",
+ "pace": "fast",
+ "gap": 0.3,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Tasuma so datugulen\nkɔnɔ: mun na a ka jugu?",
+    "icon": "warning",
+    "badge": "question",
+    "color": "red"
+   },
+   "image": "metal charcoal brazier with glowing embers inside a small closed bedroom at night, mattress nearby, dark, photo",
+   "bm": [
+    "[Tasuma] so datugulen kɔnɔ, mun na a ka jugu?"
+   ],
+   "fr": "Si tu dors avec un feu (fourneau à charbon) dans une chambre fermée, pourquoi c'est dangereux ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Mun na a ka jugu?",
+    "options": [
+     "A bɛ kogo nɔgɔ",
+     "A sisi bɛ mɔgɔ faga",
+     "A bɛ sosow wele"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "glowing charcoal embers in an african metal brazier, close-up, dark room, photo",
+   "bm": [
+    "Jaabi fɔlɔ: a bɛ kogo nɔgɔ.",
+    "Jaabi filanan: a sisi bɛ mɔgɔ faga.",
+    "Jaabi sabanan: a bɛ sosow wele.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : ça salit le mur. 2 : sa fumée peut tuer. 3 : ça attire les moustiques. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "A bɛ kogo nɔgɔ",
+     "A sisi bɛ mɔgɔ faga",
+     "A bɛ sosow wele"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "dark closed bedroom with a sleeping person and a faint haze, door and window shut, night, photo",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "a [sisi] bɛ mɔgɔ faga!"
+   ],
+   "fr": "La réponse est la n°2 : sa fumée peut tuer !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "warning",
+    "label": "Farati"
+   },
+   "image": "open window of an african house at night letting fresh air in, moonlight, photo",
+   "bm": [
+    "O sisi tɛ ye, a kasa tɛ yen.",
+    "Kana [sunɔgɔ] ni tasuma ye so datugulen kɔnɔ!"
+   ],
+   "fr": "Cette fumée ne se voit pas et ne sent rien. Ne dors jamais avec le feu dans une chambre fermée !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "A ci i teriw ma!"
+   },
+   "image": "malian family sleeping safely in a ventilated room, mosquito net, calm night, photo",
+   "bm": [
+    "A ci i teriw ma!"
+   ],
+   "fr": "Envoie-la à tes amis, ça peut sauver une vie ! Abonne-toi."
+  }
+ ]
+}
