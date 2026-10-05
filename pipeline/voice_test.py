@@ -7,6 +7,14 @@ import voice, sfcompat as sf
 TEXT = "I ni ce! I ye i a tɔgɔ mɛn wa? A kɔrɔ ye mun ye? An ka i a kalan ɲɔgɔn fɛ."
 out = Path("voice-tests"); out.mkdir(exist_ok=True)
 lines = []
+phr = out / "phrases.txt"
+if phr.exists():  # mode variantes : une phrase par ligne, voix Moussa uniquement
+    s = voice.Spark("Moussa")
+    for k, txt in enumerate(l.strip() for l in phr.read_text(encoding="utf-8").splitlines() if l.strip()):
+        a = s.say(txt); sf.write(out / f"variante_{k+1}.wav", a, s.sr)
+        lines.append(f"variante_{k+1}: {txt}")
+    (out / "resultats.txt").write_text("\n".join(lines), encoding="utf-8")
+    print("\n".join(lines)); sys.exit(0)
 try:
     t = time.time(); v = voice.Vits(); load = time.time() - t
     t = time.time(); a = v.say(TEXT); sf.write(out / "vits_bambara.wav", a, v.sr)
