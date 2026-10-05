@@ -1,5 +1,5 @@
-vits: chargement 8s, génération 1.8s pour 5.2s d'audio
-spark Seydou: chargement 0s, génération 9.3s pour 6.3s d'audio
-spark Bourama: chargement 0s, génération 8.2s pour 5.6s d'audio
-spark Adama: chargement 0s, génération 8.0s pour 5.6s d'audio
-spark Moussa: chargement 0s, génération 9.7s pour 6.8s d'audio
+variante_1: Segu bɛ wele ko balanzan joli dugu?
+variante_2: segu bɛ wele ko balanzan joli dugu?
+variante_3: Ségou bɛ wele ko balanzan joli dugu?
+variante_4: Segou bɛ wele ko balanzan joli dugu?
+variante_5: Seegu bɛ wele ko balanzan joli dugu?
