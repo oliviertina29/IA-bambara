@@ -1,13 +1,13 @@
 {
  "episode": "028-quiz-modibo-keita",
- "started": "2026-10-06 14:58:23",
- "voice_s": 29,
+ "started": "2026-10-06 15:05:54",
+ "voice_s": 43,
  "engine": "spark",
- "mix_s": 1,
+ "mix_s": 2,
  "images": 5,
- "images_s": 99,
- "render_s": 59,
+ "images_s": 132,
+ "render_s": 66,
  "ok": true,
  "video": "out/028-quiz-modibo-keita.mp4",
- "duration": 26.457
+ "duration": 26.5
 }

@@ -1,17 +1,16 @@
 [voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 0.87s audio en 2.1s — Kulubaliw kɔfɛ,
-[voix] scène 0 phrase 1: 1.60s audio en 2.5s — jɔn de ye Ségou masaya ta?
-[voix] scène 1 phrase 0: 1.92s audio en 2.8s — Jaabi fɔlɔ: Da Monzon.
-[voix] scène 1 phrase 1: 2.61s audio en 4.2s — Jaabi filanan: Biton Kulubali.
-[voix] scène 1 phrase 2: 2.53s audio en 3.3s — Jaabi sabanan: Ngolo Jara.
-[voix] scène 1 phrase 3: 0.97s audio en 2.1s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.35s audio en 2.3s — Jaabi ye sabanan ye:
-[voix] scène 2 phrase 1: 0.86s audio en 1.9s — Ngolo Jara!
-[voix] scène 3 phrase 0: 1.03s audio en 2.0s — Da Monzon fana,
-[voix] scène 3 phrase 1: 1.43s audio en 2.5s — Ngolo mamaden de tun don.
-[voix] scène 4 phrase 0: 2.46s audio en 3.4s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 26.3s avec le moteur spark
-[mix] audio.wav 26.3 s
+[voix] scène 0 phrase 0: 1.94s audio en 6.0s — Mali jamanatigi fɔlɔ tun ye jɔn ye?
+[voix] scène 1 phrase 0: 2.29s audio en 4.6s — Jaabi fɔlɔ: Musa Tarawele.
+[voix] scène 1 phrase 1: 2.42s audio en 4.9s — Jaabi filanan: Modibo Keyita.
+[voix] scène 1 phrase 2: 2.57s audio en 5.0s — Jaabi sabanan: Alfa Umaru Konare.
+[voix] scène 1 phrase 3: 0.96s audio en 2.9s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.11s audio en 3.1s — Jaabi ye filanan ye:
+[voix] scène 2 phrase 1: 0.89s audio en 3.0s — Modibo Keyita!
+[voix] scène 3 phrase 0: 2.37s audio en 5.1s — Mali ye a yɛrɛmahɔrɔnya sɔrɔ
+[voix] scène 3 phrase 1: 0.82s audio en 2.9s — a ka waati la.
+[voix] scène 4 phrase 0: 2.58s audio en 5.2s — Aw tun b'o dɔn wa? A fɔ an ye!
+[voix] durée totale 26.5s avec le moteur spark
+[mix] audio.wav 26.5 s
 /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 [transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
@@ -26,122 +25,16 @@ Cannot initialize model with low cpu memory usage because `accelerate` was not f
 pip install accelerate
 ```
 .
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 34.67it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.66it/s]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 16.77it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.63it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.37it/s]
 You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 30s
-[images] scène 0 en 20s : 18th century bambara king of segou in royal clothes standing in front of a mud palace, warriors behind, cinematic painting
-[images] scène 1 en 20s : old bambara royal court gathering under a big tree, segou kingdom, 18th century, cinematic painting
-[images] scène 2 en 20s : proud elderly bambara king with white beard and royal cap, seated, warm light, cinematic painting
-[images] scène 3 en 20s : majestic young bambara king on horseback with warriors, segou, epic cinematic painting
-[images] scène 4 en 20s : niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo
-[rendu] image 0/788 (0s)
-[rendu] image 300/788 (22s)
-[rendu] image 600/788 (46s)
-[rendu] 025-quiz-segou-ngolo-diarra.mp4 prêt en 60s
-[statut] {"episode": "025-quiz-segou-ngolo-diarra", "started": "2026-10-06 14:47:58", "voice_s": 29, "engine": "spark", "mix_s": 1, "images": 5, "images_s": 133, "render_s": 61, "ok": true, "video": "out/025-quiz-segou-ngolo-diarra.mp4", "duration": 26.299}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.31s audio en 2.3s — Jɔn de y'a fɔ ko:
-[voix] scène 0 phrase 1: 1.50s audio en 2.3s — saya ka fisa ni maloya ye?
-[voix] scène 1 phrase 0: 2.54s audio en 3.5s — Jaabi fɔlɔ: Babemba Tarawele.
-[voix] scène 1 phrase 1: 2.74s audio en 3.6s — Jaabi filanan: Tiyeba Tarawele.
-[voix] scène 1 phrase 2: 2.30s audio en 3.1s — Jaabi sabanan: Samori Ture.
-[voix] scène 1 phrase 3: 0.97s audio en 2.1s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 0.95s audio en 2.0s — Jaabi ye fɔlɔ ye:
-[voix] scène 2 phrase 1: 2.76s audio en 3.6s — Babemba Tarawele, Sikaso masacɛ!
-[voix] scène 3 phrase 0: 2.01s audio en 2.9s — Faransiw ye Sikaso minɛ tuma min na,
-[voix] scène 3 phrase 1: 1.23s audio en 2.2s — a ma sɔn ka a yɛrɛ di.
-[voix] scène 4 phrase 0: 2.42s audio en 3.3s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 29.4s avec le moteur spark
-[mix] audio.wav 29.4 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 29.87it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 29.84it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 0s
-[images] scène 0 en 20s : proud west african king of sikasso in traditional royal clothes standing on a huge mud fortress wall tata, dramatic sky, cinematic painting
-[images] scène 1 en 20s : huge ancient mud brick defensive wall tata of sikasso mali, 19th century, cinematic painting
-[images] scène 2 en 20s : west african warrior king in a mud fortress at dusk, dramatic and solemn, cinematic painting
-[images] scène 3 en 20s : ruins of the old tata wall of sikasso mali today, sunset, photo
-[images] scène 4 en 20s : sikasso mali city landscape with green trees and mango orchards, golden hour, photo
-[rendu] image 0/881 (0s)
-[rendu] image 300/881 (22s)
-[rendu] image 600/881 (46s)
-[rendu] 026-quiz-babemba-sikasso.mp4 prêt en 68s
-[statut] {"episode": "026-quiz-babemba-sikasso", "started": "2026-10-06 14:51:43", "voice_s": 31, "engine": "spark", "mix_s": 1, "images": 5, "images_s": 101, "render_s": 68, "ok": true, "video": "out/026-quiz-babemba-sikasso.mp4", "duration": 29.387}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.59s audio en 2.6s — Tumbutu tɔgɔ bɔra jɔn na?
-[voix] scène 1 phrase 0: 2.02s audio en 3.0s — Jaabi fɔlɔ: Masacɛ dɔ.
-[voix] scène 1 phrase 1: 2.94s audio en 4.3s — Jaabi filanan: Muso dɔ: Buktu.
-[voix] scène 1 phrase 2: 2.07s audio en 2.9s — Jaabi sabanan: Baji dɔ.
-[voix] scène 1 phrase 3: 1.19s audio en 2.3s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.17s audio en 2.3s — Jaabi ye filanan ye:
-[voix] scène 2 phrase 1: 2.29s audio en 3.3s — muso dɔ, a tɔgɔ ko Buktu!
-[voix] scène 3 phrase 0: 1.44s audio en 2.5s — A tun bɛ kɔlɔn dɔ kɔlɔsi.
-[voix] scène 3 phrase 1: 2.40s audio en 3.4s — Tin Buktu: Buktu ka kɔlɔn!
-[voix] scène 4 phrase 0: 2.45s audio en 3.6s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 28.2s avec le moteur spark
-[mix] audio.wav 28.2 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 39.10it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 28.29it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 0s
-[images] scène 0 en 21s : timbuktu mali with the great mud mosque djinguereber and sandy streets, golden hour, photo
-[images] scène 1 en 20s : sahara desert near timbuktu with camels and nomads tents, sunset, cinematic photo
-[images] scène 2 en 20s : old tuareg woman in indigo veil standing next to a desert water well, sahara, cinematic portrait
-[images] scène 3 en 20s : ancient stone water well in the desert sand with a rope and bucket, sahara, photo
-[images] scène 4 en 20s : old manuscripts and books in a library of timbuktu, warm light, photo
-[rendu] image 0/845 (0s)
-[rendu] image 300/845 (22s)
-[rendu] image 600/845 (45s)
-[rendu] 027-quiz-nom-tombouctou.mp4 prêt en 64s
-[statut] {"episode": "027-quiz-nom-tombouctou", "started": "2026-10-06 14:55:04", "voice_s": 30, "engine": "spark", "mix_s": 1, "images": 5, "images_s": 102, "render_s": 65, "ok": true, "video": "out/027-quiz-nom-tombouctou.mp4", "duration": 28.18}
-[voix] moteur 'spark' chargé en 0.0s
-[voix] scène 0 phrase 0: 1.84s audio en 3.8s — Mali jamanatigi fɔlɔ tun ye jɔn ye?
-[voix] scène 1 phrase 0: 2.27s audio en 3.2s — Jaabi fɔlɔ: Musa Tarawele.
-[voix] scène 1 phrase 1: 2.94s audio en 3.9s — Jaabi filanan: Modibo Keyita.
-[voix] scène 1 phrase 2: 2.84s audio en 3.6s — Jaabi sabanan: Alfa Umaru Konare.
-[voix] scène 1 phrase 3: 1.01s audio en 2.1s — I ka jaabi sɛbɛn!
-[voix] scène 2 phrase 0: 1.25s audio en 2.3s — Jaabi ye filanan ye:
-[voix] scène 2 phrase 1: 0.97s audio en 2.3s — Modibo Keyita!
-[voix] scène 3 phrase 0: 1.77s audio en 2.8s — Mali ye a yɛrɛmahɔrɔnya sɔrɔ
-[voix] scène 3 phrase 1: 0.81s audio en 1.8s — a ka waati la.
-[voix] scène 4 phrase 0: 2.20s audio en 3.1s — Aw tun b'o dɔn wa? A fɔ an ye!
-[voix] durée totale 26.5s avec le moteur spark
-[mix] audio.wav 26.5 s
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
-```
-pip install accelerate
-```
-.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 31.73it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 31.70it/s]
-You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
-[images] modèle chargé en 0s
-[images] scène 0 en 20s : mali flag green yellow red waving in the wind against blue sky, photo
+[images] modèle chargé en 28s
+[images] scène 0 en 19s : vintage black and white photo of an african statesman in a 1960s suit giving a speech to a large crowd, historic moment
 [images] scène 1 en 20s : independence monument in bamako mali, blue sky, photo
 [images] scène 2 en 20s : crowd of malian people celebrating independence in 1960 with flags, vintage black and white photo style
 [images] scène 3 en 20s : vintage photo of bamako street in the 1960s, people in traditional clothes, black and white
-[images] scène 4 en 19s : bamako city with the niger river and bridges at sunset, photo
-[rendu] image 0/793 (0s)
-[rendu] image 300/793 (21s)
-[rendu] image 600/793 (44s)
-[rendu] 028-quiz-modibo-keita.mp4 prêt en 58s
-[statut] {"episode": "028-quiz-modibo-keita", "started": "2026-10-06 14:58:23", "voice_s": 29, "engine": "spark", "mix_s": 1, "images": 5, "images_s": 99, "render_s": 59, "ok": true, "video": "out/028-quiz-modibo-keita.mp4", "duration": 26.457}
+[images] scène 4 en 20s : bamako city with the niger river and bridges at sunset, photo
+[rendu] image 0/795 (0s)
+[rendu] image 300/795 (23s)
+[rendu] image 600/795 (48s)
+[rendu] 028-quiz-modibo-keita.mp4 prêt en 64s
+[statut] {"episode": "028-quiz-modibo-keita", "started": "2026-10-06 15:05:54", "voice_s": 43, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 132, "render_s": 66, "ok": true, "video": "out/028-quiz-modibo-keita.mp4", "duration": 26.5}
