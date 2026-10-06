@@ -1,0 +1,98 @@
+{
+ "slug": "026-quiz-babemba-sikasso",
+ "title": "Quiz : « plutôt la mort que la honte »",
+ "lesson": 26,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {
+  "Segu": "Ségou"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Saya ka fisa\nni maloya ye!",
+    "icon": "warning",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "proud west african king of sikasso in traditional royal clothes standing on a huge mud fortress wall tata, dramatic sky, cinematic painting",
+   "bm": [
+    "Jɔn de y'a fɔ ko:",
+    "[saya ka fisa ni maloya ye]?"
+   ],
+   "fr": "Qui a dit : « plutôt la mort que la honte » ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Jɔn y'a fɔ ko:\nsaya ka fisa ni maloya ye?",
+    "options": [
+     "Babemba Tarawele",
+     "Tiyeba Tarawele",
+     "Samori Ture"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "huge ancient mud brick defensive wall tata of sikasso mali, 19th century, cinematic painting",
+   "bm": [
+    "Jaabi fɔlɔ: Babemba Tarawele.",
+    "Jaabi filanan: Tiyeba Tarawele.",
+    "Jaabi sabanan: Samori Ture.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Babemba Traoré. 2 : Tiéba Traoré. 3 : Samory Touré. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Babemba Tarawele",
+     "Tiyeba Tarawele",
+     "Samori Ture"
+    ],
+    "labels": "123",
+    "answer": 0,
+    "title": "Jaabi ye fɔlɔ ye!"
+   },
+   "image": "west african warrior king in a mud fortress at dusk, dramatic and solemn, cinematic painting",
+   "bm": [
+    "Jaabi ye [fɔlɔ] ye:",
+    "[Babemba Tarawele], Sikaso masacɛ!"
+   ],
+   "fr": "La réponse est la n°1 : Babemba Traoré, roi de Sikasso !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "warning",
+    "label": "Sikaso"
+   },
+   "image": "ruins of the old tata wall of sikasso mali today, sunset, photo",
+   "bm": [
+    "Faransiw ye Sikaso minɛ tuma min na,",
+    "a ma sɔn ka a yɛrɛ di."
+   ],
+   "fr": "Quand les Français ont pris Sikasso (1898), il a refusé de se rendre."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "sikasso mali city landscape with green trees and mango orchards, golden hour, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

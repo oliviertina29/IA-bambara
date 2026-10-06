@@ -1,0 +1,97 @@
+{
+ "slug": "028-quiz-modibo-keita",
+ "title": "Quiz : le premier président du Mali",
+ "lesson": 28,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {
+  "Segu": "Ségou"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Mali jamanatigi\nfɔlɔ ye jɔn ye?",
+    "icon": "people",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "mali flag green yellow red waving in the wind against blue sky, photo",
+   "bm": [
+    "[Mali] jamanatigi fɔlɔ tun ye jɔn ye?"
+   ],
+   "fr": "Qui était le premier président du Mali ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Mali jamanatigi\nfɔlɔ tun ye jɔn ye?",
+    "options": [
+     "Musa Tarawele",
+     "Modibo Keyita",
+     "Alfa Umaru Konare"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "independence monument in bamako mali, blue sky, photo",
+   "bm": [
+    "Jaabi fɔlɔ: Musa Tarawele.",
+    "Jaabi filanan: Modibo Keyita.",
+    "Jaabi sabanan: Alfa Umaru Konare.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Moussa Traoré. 2 : Modibo Keïta. 3 : Alpha Oumar Konaré. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Musa Tarawele",
+     "Modibo Keyita",
+     "Alfa Umaru Konare"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "crowd of malian people celebrating independence in 1960 with flags, vintage black and white photo style",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "[Modibo Keyita]!"
+   ],
+   "fr": "La réponse est la n°2 : Modibo Keïta !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "book",
+    "label": "1960"
+   },
+   "image": "vintage photo of bamako street in the 1960s, people in traditional clothes, black and white",
+   "bm": [
+    "Mali ye a yɛrɛmahɔrɔnya sɔrɔ",
+    "a ka waati la."
+   ],
+   "fr": "Le Mali a obtenu son indépendance à son époque (22 septembre 1960)."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "bamako city with the niger river and bridges at sunset, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

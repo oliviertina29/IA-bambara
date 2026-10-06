@@ -1,0 +1,98 @@
+{
+ "slug": "025-quiz-segou-ngolo-diarra",
+ "title": "Quiz : qui a succédé aux Coulibaly à Ségou ?",
+ "lesson": 25,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {
+  "Segu": "Ségou"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Kulubaliw kɔfɛ,\njɔn ye Segu ta?",
+    "icon": "people",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "18th century bambara king of segou in royal clothes standing in front of a mud palace, warriors behind, cinematic painting",
+   "bm": [
+    "Kulubaliw kɔfɛ,",
+    "jɔn de ye [Segu] masaya ta?"
+   ],
+   "fr": "Après les Coulibaly, qui a pris le pouvoir à Ségou ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Kulubaliw kɔfɛ,\njɔn ye Segu ta?",
+    "options": [
+     "Da Monzon",
+     "Biton Kulubali",
+     "Ngolo Jara"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "old bambara royal court gathering under a big tree, segou kingdom, 18th century, cinematic painting",
+   "bm": [
+    "Jaabi fɔlɔ: Da Monzon.",
+    "Jaabi filanan: Biton Kulubali.",
+    "Jaabi sabanan: Ngolo Jara.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Da Monzon. 2 : Biton Coulibaly. 3 : Ngolo Diarra. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Da Monzon",
+     "Biton Kulubali",
+     "Ngolo Jara"
+    ],
+    "labels": "123",
+    "answer": 2,
+    "title": "Jaabi ye sabanan ye!"
+   },
+   "image": "proud elderly bambara king with white beard and royal cap, seated, warm light, cinematic painting",
+   "bm": [
+    "Jaabi ye [sabanan] ye:",
+    "[Ngolo Jara]!"
+   ],
+   "fr": "La réponse est la n°3 : Ngolo Diarra (vers 1766) !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "people",
+    "label": "Jaraw"
+   },
+   "image": "majestic young bambara king on horseback with warriors, segou, epic cinematic painting",
+   "bm": [
+    "[Da Monzon] fana,",
+    "Ngolo mamaden de tun don."
+   ],
+   "fr": "Et Da Monzon, le célèbre roi de Ségou, était le petit-fils de Ngolo !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "niger river at segou mali at sunset, pirogues, balanzan trees on the bank, cinematic photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

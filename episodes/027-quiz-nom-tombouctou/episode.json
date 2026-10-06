@@ -1,0 +1,97 @@
+{
+ "slug": "027-quiz-nom-tombouctou",
+ "title": "Quiz : d'où vient le nom de Tombouctou ?",
+ "lesson": 27,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {
+  "Segu": "Ségou"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Tumbutu tɔgɔ\nbɔra jɔn na?",
+    "icon": "pin",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "timbuktu mali with the great mud mosque djinguereber and sandy streets, golden hour, photo",
+   "bm": [
+    "[Tumbutu] tɔgɔ bɔra jɔn na?"
+   ],
+   "fr": "D'où vient le nom de Tombouctou ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Tumbutu tɔgɔ\nbɔra jɔn na?",
+    "options": [
+     "Masacɛ dɔ",
+     "Muso dɔ: Buktu",
+     "Baji dɔ"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "sahara desert near timbuktu with camels and nomads tents, sunset, cinematic photo",
+   "bm": [
+    "Jaabi fɔlɔ: Masacɛ dɔ.",
+    "Jaabi filanan: Muso dɔ: Buktu.",
+    "Jaabi sabanan: Baji dɔ.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : un roi. 2 : une femme appelée Bouctou. 3 : un fleuve. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Masacɛ dɔ",
+     "Muso dɔ: Buktu",
+     "Baji dɔ"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "old tuareg woman in indigo veil standing next to a desert water well, sahara, cinematic portrait",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "muso dɔ, a tɔgɔ ko [Buktu]!"
+   ],
+   "fr": "La réponse est la n°2 : une femme appelée Bouctou !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "water",
+    "label": "Kɔlɔn"
+   },
+   "image": "ancient stone water well in the desert sand with a rope and bucket, sahara, photo",
+   "bm": [
+    "A tun bɛ kɔlɔn dɔ kɔlɔsi.",
+    "[Tin Buktu]: Buktu ka kɔlɔn!"
+   ],
+   "fr": "Elle gardait un puits. Tin Bouctou : « le puits de Bouctou » (selon la tradition) !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "old manuscripts and books in a library of timbuktu, warm light, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}
