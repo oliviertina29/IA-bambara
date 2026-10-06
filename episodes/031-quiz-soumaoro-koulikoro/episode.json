@@ -1,0 +1,95 @@
+{
+ "slug": "031-quiz-soumaoro-koulikoro",
+ "title": "Quiz : où Soumaoro a-t-il disparu ?",
+ "lesson": 31,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Kirina kɔfɛ, Sumaworo\ntununna min?",
+    "icon": "question",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "mysterious sorcerer king in dark robes fleeing on horseback toward rocky hills at dusk, epic cinematic painting",
+   "bm": [
+    "Kirina kɔfɛ,",
+    "[Sumaworo] tununna min?"
+   ],
+   "fr": "Après la bataille de Kirina, où Soumaoro a-t-il disparu ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Sumaworo\ntununna min?",
+    "options": [
+     "Tumbutu",
+     "Kulikoro",
+     "Gao"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "medieval battlefield of kirina after the battle, dust and smoke, warriors, cinematic painting",
+   "bm": [
+    "Jaabi fɔlɔ: Tumbutu.",
+    "Jaabi filanan: Kulikoro.",
+    "Jaabi sabanan: Gao.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Tombouctou. 2 : Koulikoro. 3 : Gao. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Tumbutu",
+     "Kulikoro",
+     "Gao"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "rocky hills of koulikoro mali above the niger river, dramatic sky, photo",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "[Kulikoro] kuluw la!"
+   ],
+   "fr": "La réponse est la n°2 : dans les collines de Koulikoro !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "question",
+    "label": "Gundo"
+   },
+   "image": "dark mysterious cave entrance in rocky african hills, mist, cinematic",
+   "bm": [
+    "Maana b'a fɔ ko a ma sa,",
+    "a [tununna]."
+   ],
+   "fr": "Selon l'épopée, il n'est pas mort : il a disparu."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "niger river at koulikoro mali at sunset with hills, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}

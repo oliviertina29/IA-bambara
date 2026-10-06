@@ -1,0 +1,94 @@
+{
+ "slug": "029-quiz-fondateurs-bamako",
+ "title": "Quiz : qui a fondé Bamako ?",
+ "lesson": 29,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Jɔnw de ye\nBamako sigi?",
+    "icon": "pin",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "old african village of mud huts on the bank of the niger river, 17th century, bamako, cinematic painting",
+   "bm": [
+    "Jɔnw de ye [Bamako] sigi?"
+   ],
+   "fr": "Qui a fondé Bamako ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Jɔnw de ye\nBamako sigi?",
+    "options": [
+     "Keyitaw",
+     "Tarawelew",
+     "Ɲarew"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "elders of a malian family gathered under a big tree in a village, traditional clothes, warm light, photo",
+   "bm": [
+    "Jaabi fɔlɔ: Keyitaw.",
+    "Jaabi filanan: Tarawelew.",
+    "Jaabi sabanan: Ɲarew.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : les Keïta. 2 : les Traoré. 3 : les Niaré. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Keyitaw",
+     "Tarawelew",
+     "Ɲarew"
+    ],
+    "labels": "123",
+    "answer": 2,
+    "title": "Jaabi ye sabanan ye!"
+   },
+   "image": "traditional malian village chief with a walking stick in front of a mud house, dignified portrait, photo",
+   "bm": [
+    "Jaabi ye [sabanan] ye:",
+    "[Ɲarew]!"
+   ],
+   "fr": "La réponse est la n°3 : les Niaré (vers 1650-1700, selon la tradition) !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "house",
+    "label": "Ɲarela"
+   },
+   "image": "busy street of a popular neighbourhood in bamako mali with motorbikes and shops, photo",
+   "bm": [
+    "O de kosɔn,",
+    "kin dɔ tɔgɔ ye [Ɲarela] ye!"
+   ],
+   "fr": "C'est pour ça qu'un quartier de Bamako s'appelle Niaréla !"
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "I bɛ kin jumɛn na?"
+   },
+   "image": "aerial view of bamako city mali with the niger river at sunset, photo",
+   "bm": [
+    "I bɛ Bamako kin jumɛn na? A fɔ an ye!"
+   ],
+   "fr": "Tu habites dans quel quartier de Bamako ? Dis-le-nous ! Abonne-toi."
+  }
+ ]
+}

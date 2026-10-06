@@ -1,0 +1,94 @@
+{
+ "slug": "030-quiz-nom-mopti",
+ "title": "Quiz : que veut dire « Mopti » ?",
+ "lesson": 30,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Mopti tɔgɔ kɔrɔ\nye mun ye?",
+    "icon": "pin",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "mopti port in mali with colorful pirogues on the river and the mud mosque, morning, photo",
+   "bm": [
+    "[Mopti] tɔgɔ kɔrɔ ye mun ye?"
+   ],
+   "fr": "Que veut dire le nom « Mopti » ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Mopti tɔgɔ kɔrɔ\nye mun ye?",
+    "options": [
+     "Ɲɔgɔn lajɛ",
+     "Ji ba",
+     "Jɛgɛ caman"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "fishermen with nets and fish on pirogues in mopti mali, photo",
+   "bm": [
+    "Jaabi fɔlɔ: ɲɔgɔn lajɛ.",
+    "Jaabi filanan: ji ba.",
+    "Jaabi sabanan: jɛgɛ caman.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : le rassemblement. 2 : la grande eau. 3 : beaucoup de poissons. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Ɲɔgɔn lajɛ",
+     "Ji ba",
+     "Jɛgɛ caman"
+    ],
+    "labels": "123",
+    "answer": 0,
+    "title": "Jaabi ye fɔlɔ ye!"
+   },
+   "image": "crowd of people gathering at a riverside market in mopti mali, boats, colorful, photo",
+   "bm": [
+    "Jaabi ye [fɔlɔ] ye:",
+    "[ɲɔgɔn lajɛ], Fulakan na!"
+   ],
+   "fr": "La réponse est la n°1 : « le rassemblement », en peul !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "water",
+    "label": "Baji fila"
+   },
+   "image": "confluence of two rivers seen from above in the sahel, mali, aerial photo",
+   "bm": [
+    "Baji fila bɛ ɲɔgɔn sɔrɔ yen:",
+    "[Joliba] ni [Bani]."
+   ],
+   "fr": "Deux fleuves s'y rejoignent : le Niger et le Bani."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Aw tun b'o dɔn wa?"
+   },
+   "image": "great mud mosque of mopti mali at sunset, photo",
+   "bm": [
+    "Aw tun b'o dɔn wa? A fɔ an ye!"
+   ],
+   "fr": "Vous le saviez ? Dites-le-nous ! Abonnez-vous."
+  }
+ ]
+}
