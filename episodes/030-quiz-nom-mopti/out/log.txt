@@ -1,0 +1,111 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 1.24s audio en 3.6s — Jɔnw de ye Bamako sigi?
+[voix] scène 1 phrase 0: 1.93s audio en 3.9s — Jaabi fɔlɔ: Keyitaw.
+[voix] scène 1 phrase 1: 1.50s audio en 3.4s — Jaabi filanan: Tarawelew.
+[voix] scène 1 phrase 2: 1.97s audio en 3.8s — Jaabi sabanan: Ɲarew.
+[voix] scène 1 phrase 3: 0.92s audio en 2.7s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.11s audio en 2.9s — Jaabi ye sabanan ye:
+[voix] scène 2 phrase 1: 0.48s audio en 2.1s — Ɲarew!
+[voix] scène 3 phrase 0: 0.79s audio en 2.4s — O de kosɔn,
+[voix] scène 3 phrase 1: 1.33s audio en 3.6s — kin dɔ tɔgɔ ye Ɲarela ye!
+[voix] scène 4 phrase 0: 2.75s audio en 4.9s — I bɛ Bamako kin jumɛn na? A fɔ an ye!
+[voix] durée totale 22.9s avec le moteur spark
+[mix] audio.wav 22.9 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessor` requires torchvision (not installed); falling back to `Siglip2ImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `Siglip2ImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  8.10it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  5.09it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.27it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 18s
+[images] scène 0 en 39s : old african village of mud huts on the bank of the niger river, 17th century, bamako, cinematic painting
+[images] scène 1 en 39s : elders of a malian family gathered under a big tree in a village, traditional clothes, warm light, photo
+[images] scène 2 en 39s : traditional malian village chief with a walking stick in front of a mud house, dignified portrait, photo
+[images] scène 3 en 39s : busy street of a popular neighbourhood in bamako mali with motorbikes and shops, photo
+[images] scène 4 en 39s : aerial view of bamako city mali with the niger river at sunset, photo
+[rendu] image 0/687 (0s)
+[rendu] image 300/687 (35s)
+[rendu] image 600/687 (69s)
+[rendu] 029-quiz-fondateurs-bamako.mp4 prêt en 80s
+[statut] {"episode": "029-quiz-fondateurs-bamako", "started": "2026-10-06 21:29:02", "voice_s": 34, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 218, "render_s": 82, "ok": true, "video": "out/029-quiz-fondateurs-bamako.mp4", "duration": 22.932}
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 1.51s audio en 4.0s — Mopti tɔgɔ kɔrɔ ye mun ye?
+[voix] scène 1 phrase 0: 1.40s audio en 3.1s — Jaabi fɔlɔ: ɲɔgɔn lajɛ.
+[voix] scène 1 phrase 1: 2.01s audio en 4.2s — Jaabi filanan: ji ba.
+[voix] scène 1 phrase 2: 2.31s audio en 4.5s — Jaabi sabanan: jɛgɛ caman.
+[voix] scène 1 phrase 3: 0.97s audio en 2.7s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 0.90s audio en 2.7s — Jaabi ye fɔlɔ ye:
+[voix] scène 2 phrase 1: 1.37s audio en 3.2s — ɲɔgɔn lajɛ, Fulakan na!
+[voix] scène 3 phrase 0: 1.65s audio en 3.5s — Baji fila bɛ ɲɔgɔn sɔrɔ yen:
+[voix] scène 3 phrase 1: 1.11s audio en 2.8s — Joliba ni Bani.
+[voix] scène 4 phrase 0: 2.30s audio en 4.3s — Aw tun b'o dɔn wa? A fɔ an ye!
+[voix] durée totale 24.1s avec le moteur spark
+[mix] audio.wav 24.1 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  9.73it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.83it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.87it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 1s
+[images] scène 0 en 39s : mopti port in mali with colorful pirogues on the river and the mud mosque, morning, photo
+[images] scène 1 en 39s : fishermen with nets and fish on pirogues in mopti mali, photo
+[images] scène 2 en 39s : crowd of people gathering at a riverside market in mopti mali, boats, colorful, photo
+[images] scène 3 en 39s : confluence of two rivers seen from above in the sahel, mali, aerial photo
+[images] scène 4 en 39s : great mud mosque of mopti mali at sunset, photo
+[rendu] image 0/722 (0s)
+[rendu] image 300/722 (34s)
+[rendu] image 600/722 (67s)
+[rendu] 030-quiz-nom-mopti.mp4 prêt en 82s
+[statut] {"episode": "030-quiz-nom-mopti", "started": "2026-10-06 21:34:37", "voice_s": 35, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 196, "render_s": 82, "ok": true, "video": "out/030-quiz-nom-mopti.mp4", "duration": 24.068}
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 0.83s audio en 2.7s — Kirina kɔfɛ,
+[voix] scène 0 phrase 1: 1.45s audio en 3.3s — Sumaworo tununna min?
+[voix] scène 1 phrase 0: 2.09s audio en 4.0s — Jaabi fɔlɔ: Tumbutu.
+[voix] scène 1 phrase 1: 1.78s audio en 3.6s — Jaabi filanan: Kulikoro.
+[voix] scène 1 phrase 2: 2.35s audio en 4.5s — Jaabi sabanan: Gao.
+[voix] scène 1 phrase 3: 1.02s audio en 3.5s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.22s audio en 3.0s — Jaabi ye filanan ye:
+[voix] scène 2 phrase 1: 0.98s audio en 2.7s — Kulikoro kuluw la!
+[voix] scène 3 phrase 0: 1.65s audio en 3.5s — Maana b'a fɔ ko a ma sa,
+[voix] scène 3 phrase 1: 0.72s audio en 2.3s — a tununna.
+[voix] scène 4 phrase 0: 2.55s audio en 4.6s — Aw tun b'o dɔn wa? A fɔ an ye!
+[voix] durée totale 25.3s avec le moteur spark
+[mix] audio.wav 25.3 s
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  9.72it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.88it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 14.90it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 1s
+[images] scène 0 en 39s : mysterious sorcerer king in dark robes fleeing on horseback toward rocky hills at dusk, epic cinematic painting
+[images] scène 1 en 39s : medieval battlefield of kirina after the battle, dust and smoke, warriors, cinematic painting
+[images] scène 2 en 39s : rocky hills of koulikoro mali above the niger river, dramatic sky, photo
+[images] scène 3 en 39s : dark mysterious cave entrance in rocky african hills, mist, cinematic
+[images] scène 4 en 39s : niger river at koulikoro mali at sunset with hills, photo
+[rendu] image 0/759 (0s)
+[rendu] image 300/759 (32s)
+[rendu] image 600/759 (66s)
+[rendu] 031-quiz-soumaoro-koulikoro.mp4 prêt en 84s
+[statut] {"episode": "031-quiz-soumaoro-koulikoro", "started": "2026-10-06 21:39:53", "voice_s": 37, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 196, "render_s": 85, "ok": true, "video": "out/031-quiz-soumaoro-koulikoro.mp4", "duration": 25.3}

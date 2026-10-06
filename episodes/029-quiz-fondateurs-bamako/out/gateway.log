@@ -1,0 +1,82 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+INFO:     Started server process [4624]
+INFO:     Waiting for application startup.
+2026-10-06 21:28:56,698 INFO Loading BiCodec vocoder (device=cpu) ...
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-10-06 21:28:58,227 INFO Ready. sample_rate=16000, llama_url=http://127.0.0.1:8080
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-10-06 21:29:01,858 INFO HTTP Request: GET http://127.0.0.1:8080/health "HTTP/1.1 200 OK"
+Missing tensor: mel_transformer.spectrogram.window
+Missing tensor: mel_transformer.mel_scale.fb
+INFO:     127.0.0.1:39486 - "GET /health HTTP/1.1" 200 OK
+2026-10-06 21:29:02,064 INFO HTTP Request: GET http://127.0.0.1:8080/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39488 - "GET /health HTTP/1.1" 200 OK
+2026-10-06 21:29:04,417 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39490 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:08,276 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39494 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:11,870 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39500 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:15,544 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55150 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:18,701 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55166 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:21,463 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55174 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:23,998 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51610 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:26,319 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51622 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:29,528 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51628 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:29:33,995 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:40884 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:37,917 INFO HTTP Request: GET http://127.0.0.1:8080/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:40548 - "GET /health HTTP/1.1" 200 OK
+2026-10-06 21:34:40,629 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:40550 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:44,094 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49796 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:47,898 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49808 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:52,260 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49810 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:55,630 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:36872 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:34:58,386 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:36876 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:35:01,412 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:36886 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:35:04,842 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60924 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:35:07,882 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60930 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:35:11,674 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60934 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:39:53,616 INFO HTTP Request: GET http://127.0.0.1:8080/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:54014 - "GET /health HTTP/1.1" 200 OK
+2026-10-06 21:39:55,490 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:54026 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:39:58,590 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:54038 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:02,326 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:54044 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:06,041 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39050 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:10,170 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39056 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:14,033 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49156 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:17,195 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49172 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:20,021 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49176 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:23,193 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39802 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:25,889 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39814 - "POST /tts HTTP/1.1" 200 OK
+2026-10-06 21:40:29,651 INFO HTTP Request: POST http://127.0.0.1:8080/completion "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:39824 - "POST /tts HTTP/1.1" 200 OK

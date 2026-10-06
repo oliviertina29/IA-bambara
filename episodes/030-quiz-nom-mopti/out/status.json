@@ -1,0 +1,13 @@
+{
+ "episode": "030-quiz-nom-mopti",
+ "started": "2026-10-06 21:34:37",
+ "voice_s": 35,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 196,
+ "render_s": 82,
+ "ok": true,
+ "video": "out/030-quiz-nom-mopti.mp4",
+ "duration": 24.068
+}

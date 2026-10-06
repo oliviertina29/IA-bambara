@@ -1,0 +1,13 @@
+{
+ "episode": "029-quiz-fondateurs-bamako",
+ "started": "2026-10-06 21:29:02",
+ "voice_s": 34,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 218,
+ "render_s": 82,
+ "ok": true,
+ "video": "out/029-quiz-fondateurs-bamako.mp4",
+ "duration": 22.932
+}

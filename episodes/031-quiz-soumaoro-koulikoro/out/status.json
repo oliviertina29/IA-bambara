@@ -1,0 +1,13 @@
+{
+ "episode": "031-quiz-soumaoro-koulikoro",
+ "started": "2026-10-06 21:39:53",
+ "voice_s": 37,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 196,
+ "render_s": 85,
+ "ok": true,
+ "video": "out/031-quiz-soumaoro-koulikoro.mp4",
+ "duration": 25.3
+}
