@@ -1,0 +1,13 @@
+{
+ "episode": "025-quiz-segou-ngolo-diarra",
+ "started": "2026-10-06 14:47:58",
+ "voice_s": 29,
+ "engine": "spark",
+ "mix_s": 1,
+ "images": 5,
+ "images_s": 133,
+ "render_s": 61,
+ "ok": true,
+ "video": "out/025-quiz-segou-ngolo-diarra.mp4",
+ "duration": 26.299
+}

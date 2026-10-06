@@ -1,0 +1,13 @@
+{
+ "episode": "027-quiz-nom-tombouctou",
+ "started": "2026-10-06 14:55:04",
+ "voice_s": 30,
+ "engine": "spark",
+ "mix_s": 1,
+ "images": 5,
+ "images_s": 102,
+ "render_s": 65,
+ "ok": true,
+ "video": "out/027-quiz-nom-tombouctou.mp4",
+ "duration": 28.18
+}
