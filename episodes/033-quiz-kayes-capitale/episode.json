@@ -1,0 +1,96 @@
+{
+ "slug": "033-quiz-kayes-capitale",
+ "title": "Quiz : la capitale avant Bamako",
+ "lesson": 33,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {},
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Sani Bamako ka kɛ\nfaaba ye…",
+    "icon": "pin",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "aerial view of bamako city with the niger river and bridges at sunset, photo",
+   "bm": [
+    "Sani [Bamako] ka kɛ faaba ye,",
+    "yɔrɔ jumɛn de tun don?"
+   ],
+   "fr": "Avant que Bamako devienne la capitale, c'était où ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Yɔrɔ jumɛn de\ntun don?",
+    "options": [
+     "Segu",
+     "Kayi",
+     "Kulikoro"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "old colonial era town on the bank of the senegal river in west africa, early 1900s, sepia vintage photo",
+   "bm": [
+    "Jaabi fɔlɔ: Segu.",
+    "Jaabi filanan: Kayi.",
+    "Jaabi sabanan: Kulikoro.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Ségou. 2 : Kayes. 3 : Koulikoro. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Segu",
+     "Kayi",
+     "Kulikoro"
+    ],
+    "labels": "123",
+    "answer": 1,
+    "title": "Jaabi ye filanan ye!"
+   },
+   "image": "old colonial railway station in kayes mali with a vintage steam train, sepia photo",
+   "bm": [
+    "Jaabi ye [filanan] ye:",
+    "[Kayi]!"
+   ],
+   "fr": "La réponse est la n°2 : Kayes !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "pin",
+    "label": "Kayi"
+   },
+   "image": "senegal river at kayes mali with rocky hills, hot sunny day, photo",
+   "bm": [
+    "Faransiw ka waati la,",
+    "[Kayi] de tun ye faaba ye."
+   ],
+   "fr": "À l'époque coloniale, Kayes était la capitale du Soudan français (1892), avant Bamako (1908)."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "I bɛ Kayi wa, Bamako wa?"
+   },
+   "image": "kayes mali town street with mango trees and market, golden hour, photo",
+   "bm": [
+    "I bɛ Kayi wa, Bamako wa? A fɔ an ye!"
+   ],
+   "fr": "Tu es de Kayes ou de Bamako ? Dis-le-nous ! Abonne-toi."
+  }
+ ]
+}

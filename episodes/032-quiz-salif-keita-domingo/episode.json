@@ -1,0 +1,97 @@
+{
+ "slug": "032-quiz-salif-keita-domingo",
+ "title": "Quiz : le premier Ballon d'Or africain",
+ "lesson": 32,
+ "tag": "Quiz · Mali tariku",
+ "pace": "fast",
+ "gap": 0.4,
+ "voice": {
+  "engine": "spark",
+  "speaker": "Moussa"
+ },
+ "music_volume": 0.3,
+ "pronounce": {
+  "Eto'o": "Eto"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "params": {
+    "text": "Ballon d'or fɔlɔ,\njɔn y'a ta?",
+    "icon": "question",
+    "badge": "question",
+    "color": "orange"
+   },
+   "image": "golden football trophy ball shining on a podium in a stadium at night, spotlights, cinematic photo",
+   "bm": [
+    "Jɔn de ye [Afiriki] ballon d'or fɔlɔ ta?"
+   ],
+   "fr": "Qui a remporté le premier Ballon d'Or africain ?"
+  },
+  {
+   "type": "quiz",
+   "params": {
+    "question": "Ballon d'or fɔlɔ,\njɔn y'a ta?",
+    "options": [
+     "Samuel Eto'o",
+     "Seydou Keyita",
+     "Salifu Keyita"
+    ],
+    "labels": "123",
+    "countdown": 4
+   },
+   "image": "packed african football stadium with fans cheering in green yellow and red, vintage 1970s atmosphere, photo",
+   "bm": [
+    "Jaabi fɔlɔ: Samuel Eto'o.",
+    "Jaabi filanan: Seydou Keyita.",
+    "Jaabi sabanan: Salifu Keyita.",
+    "I ka jaabi sɛbɛn!"
+   ],
+   "fr": "1 : Samuel Eto'o. 2 : Seydou Keïta. 3 : Salif Keïta. Écris ta réponse !"
+  },
+  {
+   "type": "quiz_reveal",
+   "params": {
+    "options": [
+     "Samuel Eto'o",
+     "Seydou Keyita",
+     "Salifu Keyita"
+    ],
+    "labels": "123",
+    "answer": 2,
+    "title": "Jaabi ye sabanan ye!"
+   },
+   "image": "old leather football on a dusty african pitch at sunset, vintage 1970s style, photo",
+   "bm": [
+    "Jaabi ye [sabanan] ye:",
+    "[Salifu Keyita], Domingo!"
+   ],
+   "fr": "La réponse est la n°3 : Salif Keïta « Domingo », en 1970 !"
+  },
+  {
+   "type": "robot_says",
+   "params": {
+    "icon": "people",
+    "label": "1970"
+   },
+   "image": "kids playing football barefoot on a sandy field in a malian neighbourhood, sunset, joyful, photo",
+   "bm": [
+    "A tun ye Mali [ntolatanna] ye,",
+    "Afiriki bɛɛ y'a dɔn."
+   ],
+   "fr": "Un footballeur malien que toute l'Afrique connaissait."
+  },
+  {
+   "type": "outro",
+   "params": {
+    "cta": "Aw ye an tugu!",
+    "ask": "Ntolatanna jumɛn ka di i ye?"
+   },
+   "image": "football stadium in bamako at night with lights and crowd, photo",
+   "bm": [
+    "Ntolatanna Malika jumɛn ka di i ye? A fɔ an ye!"
+   ],
+   "fr": "Ton footballeur malien préféré ? Dis-le-nous ! Abonne-toi."
+  }
+ ]
+}
