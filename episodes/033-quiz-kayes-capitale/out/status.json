@@ -1,0 +1,13 @@
+{
+ "episode": "033-quiz-kayes-capitale",
+ "started": "2026-10-08 21:42:43",
+ "voice_s": 45,
+ "engine": "spark",
+ "mix_s": 2,
+ "images": 5,
+ "images_s": 117,
+ "render_s": 76,
+ "ok": true,
+ "video": "out/033-quiz-kayes-capitale.mp4",
+ "duration": 24.651
+}

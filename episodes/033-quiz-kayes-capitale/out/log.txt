@@ -1,0 +1,77 @@
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 2.82s audio en 7.3s — Jɔn de ye Afiriki ballon d'or fɔlɔ ta?
+[voix] scène 1 phrase 0: 2.99s audio en 7.4s — Jaabi fɔlɔ: Samuel Eto.
+[voix] scène 1 phrase 1: 2.61s audio en 6.5s — Jaabi filanan: Seydou Keyita.
+[voix] scène 1 phrase 2: 2.79s audio en 6.8s — Jaabi sabanan: Salifu Keyita.
+[voix] scène 1 phrase 3: 1.03s audio en 3.9s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.20s audio en 4.1s — Jaabi ye sabanan ye:
+[voix] scène 2 phrase 1: 2.30s audio en 5.6s — Salifu Keyita, Domingo!
+[voix] scène 3 phrase 0: 1.57s audio en 4.6s — A tun ye Mali ntolatanna ye,
+[voix] scène 3 phrase 1: 2.07s audio en 5.5s — Afiriki bɛɛ y'a dɔn.
+[voix] scène 4 phrase 0: 3.46s audio en 7.7s — Ntolatanna Malika jumɛn ka di i ye? A fɔ an ye!
+[voix] durée totale 31.4s avec le moteur spark
+[mix] audio.wav 31.4 s
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessor` requires torchvision (not installed); falling back to `Siglip2ImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `Siglip2ImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 12.64it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.54it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.92it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 31s
+[images] scène 0 en 24s : golden football trophy ball shining on a podium in a stadium at night, spotlights, cinematic photo
+[images] scène 1 en 23s : packed african football stadium with fans cheering in green yellow and red, vintage 1970s atmosphere, photo
+[images] scène 2 en 23s : old leather football on a dusty african pitch at sunset, vintage 1970s style, photo
+[images] scène 3 en 24s : kids playing football barefoot on a sandy field in a malian neighbourhood, sunset, joyful, photo
+[images] scène 4 en 24s : football stadium in bamako at night with lights and crowd, photo
+[rendu] image 0/941 (0s)
+[rendu] image 300/941 (30s)
+[rendu] image 600/941 (63s)
+[rendu] image 900/941 (92s)
+[rendu] 032-quiz-salif-keita-domingo.mp4 prêt en 97s
+[statut] {"episode": "032-quiz-salif-keita-domingo", "started": "2026-10-08 21:37:27", "voice_s": 59, "engine": "spark", "mix_s": 3, "images": 5, "images_s": 155, "render_s": 98, "ok": true, "video": "out/032-quiz-salif-keita-domingo.mp4", "duration": 31.396}
+[voix] moteur 'spark' chargé en 0.0s
+[voix] scène 0 phrase 0: 1.83s audio en 4.5s — Sani Bamako ka kɛ faaba ye,
+[voix] scène 0 phrase 1: 1.07s audio en 3.7s — yɔrɔ jumɛn de tun don?
+[voix] scène 1 phrase 0: 1.53s audio en 4.1s — Jaabi fɔlɔ: Segu.
+[voix] scène 1 phrase 1: 1.85s audio en 4.6s — Jaabi filanan: Kayi.
+[voix] scène 1 phrase 2: 1.47s audio en 4.1s — Jaabi sabanan: Kulikoro.
+[voix] scène 1 phrase 3: 1.09s audio en 3.6s — I ka jaabi sɛbɛn!
+[voix] scène 2 phrase 0: 1.15s audio en 3.7s — Jaabi ye filanan ye:
+[voix] scène 2 phrase 1: 0.38s audio en 2.5s — Kayi!
+[voix] scène 3 phrase 0: 1.13s audio en 3.8s — Faransiw ka waati la,
+[voix] scène 3 phrase 1: 1.24s audio en 3.7s — Kayi de tun ye faaba ye.
+[voix] scène 4 phrase 0: 3.01s audio en 6.3s — I bɛ Kayi wa, Bamako wa? A fɔ an ye!
+[voix] durée totale 24.7s avec le moteur spark
+[mix] audio.wav 24.7 s
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 18.34it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 16.92it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 17.07it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+[images] modèle chargé en 0s
+[images] scène 0 en 23s : aerial view of bamako city with the niger river and bridges at sunset, photo
+[images] scène 1 en 24s : old colonial era town on the bank of the senegal river in west africa, early 1900s, sepia vintage photo
+[images] scène 2 en 24s : old colonial railway station in kayes mali with a vintage steam train, sepia photo
+[images] scène 3 en 23s : senegal river at kayes mali with rocky hills, hot sunny day, photo
+[images] scène 4 en 23s : kayes mali town street with mango trees and market, golden hour, photo
+[rendu] image 0/739 (0s)
+[rendu] image 300/739 (29s)
+[rendu] image 600/739 (60s)
+[rendu] 033-quiz-kayes-capitale.mp4 prêt en 75s
+[statut] {"episode": "033-quiz-kayes-capitale", "started": "2026-10-08 21:42:43", "voice_s": 45, "engine": "spark", "mix_s": 2, "images": 5, "images_s": 117, "render_s": 76, "ok": true, "video": "out/033-quiz-kayes-capitale.mp4", "duration": 24.651}
