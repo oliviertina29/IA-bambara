@@ -1,13 +1,13 @@
 {
  "episode": "032-quiz-salif-keita-domingo",
- "started": "2026-10-08 21:37:27",
- "voice_s": 59,
+ "started": "2026-10-08 21:50:27",
+ "voice_s": 41,
  "engine": "spark",
- "mix_s": 3,
+ "mix_s": 2,
  "images": 5,
- "images_s": 155,
- "render_s": 98,
+ "images_s": 220,
+ "render_s": 99,
  "ok": true,
  "video": "out/032-quiz-salif-keita-domingo.mp4",
- "duration": 31.396
+ "duration": 27.918
 }
